@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>http://thisisone.github.io/hexo-deploy-github-nopassword/</loc>
+        <lastmod>2020-02-08T16:49:40.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://thisisone.github.io/nodejs-tcp-server-sample/</loc>
         <lastmod>2020-02-08T15:42:11.723Z</lastmod>
         <changefreq>weekly</changefreq>

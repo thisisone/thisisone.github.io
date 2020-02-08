@@ -83,7 +83,7 @@
     <script defer type="text/javascript" src="/js/index.js"></script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>Tag: app | 퇴근후서버다운, 그건일 - 곧사십</title>
+    <title>hexo 에서 github 으로 deploy 할때 암호 입력 없이 진행하는법 | 퇴근후서버다운, 그건일 - 곧사십</title>
     
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<script>
@@ -134,21 +134,69 @@
         <div class="main-container">
           <div class="content">
             
-<div id="tag" class="tag page">
-  <h1 class="page-title">app</h1>
+<div id="post" class="page">
   
   <article class="article post card animate" itemscope itemtype="http://schema.org/Article">
-    <header id="post-header" class="post-header">
-      <h1 class="post-title-simple" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/hyper-is/" itemprop="url">hyper.is 사용법</a>
-      </h1>
-      
-      <span class="post-date">
-        <time title="post-date" itemprop="dateCreated datePublished" datetime="2019-01-16T21:15:02+09:00">01-16</time>
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://thisisone.github.io/hexo-deploy-github-nopassword/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="그건일">
+       <meta itemprop="description" content="퇴근후서버다운, 그건일">
+       <meta itemprop="image" content="/images/avatar.png">
       </span>
-      
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="퇴근후서버다운, 그건일">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">hexo 에서 github 으로 deploy 할때 암호 입력 없이 진행하는법</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2020-02-09T01:34:22+09:00">2020-02-09 01:34:22</time></span>
+        </span>
+        
+        
+        
+      </div>
     </header>
+    <main class="post-main" itemprop="articleBody">
+      <p>참고 링크: <a href="https://soulsearcher.github.io/2019/08/09/hexo-deploy-failed/" target="_blank" rel="noopener">https://soulsearcher.github.io/2019/08/09/hexo-deploy-failed/</a></p>
+<p>참고 링크는 이중인증에 대한 내용이지만<br>이중인증과 상관없이 사용가능하다.<br>암호 매번 입력하는것도 번거럽고</p>
+<h3 id="ssh-key-만들기"><a href="#ssh-key-만들기" class="headerlink" title="ssh key 만들기"></a>ssh key 만들기</h3><p>git 깔고<br>git bash 를 이용했다.</p>
+<figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">ssh-keygen -t rsa -b 4096<br></code></pre></td></tr></table></figure>
+<p>이러면 .ssh 폴더와<br>id_rsa<br>id_rsa.pub<br>가 생긴다.</p>
+<h3 id="ssh-config-추가"><a href="#ssh-config-추가" class="headerlink" title="ssh config 추가"></a>ssh config 추가</h3><p>내가할땐 UseKeychain yes 부분이 문제가 되서 주석처리했다. </p>
+<figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs text">Host *<br>  AddKeysToAgent yes<br>  #UseKeychain yes<br>  IdentityFile ~/.ssh/id_rsa<br></code></pre></td></tr></table></figure>
+<h3 id="github-에-ssh-key-등록하기"><a href="#github-에-ssh-key-등록하기" class="headerlink" title="github 에 ssh key 등록하기"></a>github 에 ssh key 등록하기</h3><p>우측 상단 의 프로필 아이콘 -&gt; Settings -&gt; SSH And ~~ -&gt; SSH 키 등록 id_rsa.pub 내용을 복분한다.</p>
+<h3 id="암호-없는-ssh-확인"><a href="#암호-없는-ssh-확인" class="headerlink" title="암호 없는 ssh 확인"></a>암호 없는 ssh 확인</h3><p>id 도 쓸필요 없이 연결해본다.<br><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs undefined">ssh -T git@github.com<br><br>결과:<br>Hi [내ID]! You&apos;ve successfully authenticated, but GitHub does not provide shell access.<br></code></pre></td></tr></table></figure></p>
+<p>github 는 ssh 명령을 던지지 못하게 막혀있지만<br>접속자가 누구인지 인지하면 성공</p>
+<h3 id="hexo-의-config-yml-수정"><a href="#hexo-의-config-yml-수정" class="headerlink" title="hexo 의 _config.yml 수정"></a>hexo 의 _config.yml 수정</h3><p>기존의 <a href="https://github~" target="_blank" rel="noopener">https://github~</a>~ 주소가 아니고<br>git@ 로 시작한다.<br>마지막은 .git 으로 끝난다.<br><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs undefined">deploy:<br>  type: git<br>  repo: git@github.com:~~~.git<br></code></pre></td></tr></table></figure></p>
+<h3 id="hexo-로-배포해보자"><a href="#hexo-로-배포해보자" class="headerlink" title="hexo 로 배포해보자"></a>hexo 로 배포해보자</h3><p>암호없이 잘 넘어가면 성공</p>
+
+    </main>
+    <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/tags/hexo/" rel="tag"><i class="fas fa-tags"></i>hexo</a>
+        
+      </div>
+      
+    </footer>
   </article>
+  
+  
+  <nav class="page-nav">
+    <div class="page-nav-next page-nav-item">
+      
+      <a href="/nodejs-tcp-server-sample/" rel="next" title="node.js 에서 tcp 서버 샘플"><i class="fas fa-angle-left"></i><span class="nav-title">node.js 에서 tcp 서버 샘플</span></a>
+      
+    </div>
+    <div class="page-nav-prev page-nav-item">
+      
+    </div>
+  </nav>
   
   
 </div>
@@ -208,6 +256,17 @@
 
 
   <div class="sidebar-sticky">
+    
+    
+    
+    
+    
+    <hr>
+    <div class="post-toc sidebar-item" id="toc-div">
+      <div><i class="fas fa-list-ol"></i>Table of Contents</div>
+      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#ssh-key-만들기"><span class="toc-text">ssh key 만들기</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#ssh-config-추가"><span class="toc-text">ssh config 추가</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#github-에-ssh-key-등록하기"><span class="toc-text">github 에 ssh key 등록하기</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#암호-없는-ssh-확인"><span class="toc-text">암호 없는 ssh 확인</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#hexo-의-config-yml-수정"><span class="toc-text">hexo 의 _config.yml 수정</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#hexo-로-배포해보자"><span class="toc-text">hexo 로 배포해보자</span></a></li></ol></div>
+    </div>
+    
     
     
     
