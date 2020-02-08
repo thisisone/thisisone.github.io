@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://thisisone.github.io/"/>
-  <updated>2020-02-08T16:49:40.917Z</updated>
+  <updated>2020-02-08T18:18:28.403Z</updated>
   <id>http://thisisone.github.io/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>gvim 사용해보기</title>
+    <link href="http://thisisone.github.io/gvim/"/>
+    <id>http://thisisone.github.io/gvim/</id>
+    <published>2020-02-08T17:44:49.000Z</published>
+    <updated>2020-02-08T18:18:28.403Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;hyper.is 나 커맨드 창을 많이 쓰니까&lt;br&gt;에디터가 필요해서 찾아보다 gvim 이 있군요&lt;/p&gt;
+&lt;p&gt;(검은 화면의 에디터)&lt;/p&gt;
+&lt;p&gt;utf-8 파일을 표시 못해서 설정방법을 찾았습니다.&lt;br&gt;그런데 이렇게 셋팅하면 euc-kr 가
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>hexo 에서 github 으로 deploy 할때 암호 입력 없이 진행하는법</title>
     <link href="http://thisisone.github.io/hexo-deploy-github-nopassword/"/>
     <id>http://thisisone.github.io/hexo-deploy-github-nopassword/</id>
     <published>2020-02-08T16:34:22.000Z</published>
-    <updated>2020-02-08T16:49:40.917Z</updated>
+    <updated>2020-02-08T18:18:28.403Z</updated>
     
     <summary type="html">
     
@@ -45,7 +69,7 @@
     <link href="http://thisisone.github.io/nodejs-tcp-server-sample/"/>
     <id>http://thisisone.github.io/nodejs-tcp-server-sample/</id>
     <published>2020-02-08T15:25:42.000Z</published>
-    <updated>2020-02-08T15:42:11.723Z</updated>
+    <updated>2020-02-08T18:18:28.403Z</updated>
     
     <summary type="html">
     
@@ -74,7 +98,7 @@
     <link href="http://thisisone.github.io/nodesj-process-execute/"/>
     <id>http://thisisone.github.io/nodesj-process-execute/</id>
     <published>2020-02-08T06:32:07.000Z</published>
-    <updated>2020-02-08T15:27:09.849Z</updated>
+    <updated>2020-02-08T18:18:28.403Z</updated>
     
     <summary type="html">
     
@@ -99,7 +123,7 @@
     <link href="http://thisisone.github.io/draw-profile-image/"/>
     <id>http://thisisone.github.io/draw-profile-image/</id>
     <published>2019-09-08T05:08:40.000Z</published>
-    <updated>2020-02-08T10:02:15.876Z</updated>
+    <updated>2020-02-08T18:18:28.403Z</updated>
     
     <summary type="html">
     
@@ -124,7 +148,7 @@
     <link href="http://thisisone.github.io/neck-stretching/"/>
     <id>http://thisisone.github.io/neck-stretching/</id>
     <published>2019-09-04T13:51:47.000Z</published>
-    <updated>2020-02-08T10:02:15.929Z</updated>
+    <updated>2020-02-08T18:18:28.403Z</updated>
     
     <summary type="html">
     
@@ -149,7 +173,7 @@
     <link href="http://thisisone.github.io/csharp-string-append-and-format-diff/"/>
     <id>http://thisisone.github.io/csharp-string-append-and-format-diff/</id>
     <published>2019-09-03T15:30:12.000Z</published>
-    <updated>2020-02-08T10:02:15.896Z</updated>
+    <updated>2020-02-08T18:18:28.403Z</updated>
     
     <summary type="html">
     
@@ -174,7 +198,7 @@
     <link href="http://thisisone.github.io/hexo-setting/"/>
     <id>http://thisisone.github.io/hexo-setting/</id>
     <published>2019-09-01T13:36:56.000Z</published>
-    <updated>2019-09-01T13:49:36.608Z</updated>
+    <updated>2020-02-08T18:19:07.881Z</updated>
     
     <summary type="html">
     
@@ -198,7 +222,7 @@
     <link href="http://thisisone.github.io/web_crawler/"/>
     <id>http://thisisone.github.io/web_crawler/</id>
     <published>2019-02-18T16:02:45.000Z</published>
-    <updated>2020-02-08T15:27:09.866Z</updated>
+    <updated>2020-02-08T18:18:28.403Z</updated>
     
     <summary type="html">
     
@@ -223,7 +247,7 @@
     <link href="http://thisisone.github.io/keystore/"/>
     <id>http://thisisone.github.io/keystore/</id>
     <published>2019-02-03T03:18:55.000Z</published>
-    <updated>2020-02-08T10:02:15.912Z</updated>
+    <updated>2020-02-08T18:18:28.403Z</updated>
     
     <summary type="html">
     
@@ -249,7 +273,7 @@
     <link href="http://thisisone.github.io/hyper-is/"/>
     <id>http://thisisone.github.io/hyper-is/</id>
     <published>2019-01-16T12:15:02.000Z</published>
-    <updated>2020-02-08T09:01:59.541Z</updated>
+    <updated>2020-02-08T18:18:28.403Z</updated>
     
     <summary type="html">
     

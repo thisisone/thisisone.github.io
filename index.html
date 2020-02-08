@@ -139,6 +139,54 @@
   
   <article class="article post card animate" itemscope itemtype="http://schema.org/Article">
     <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://thisisone.github.io/gvim/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <meta itemprop="name" content="그건일">
+        <meta itemprop="description" content="퇴근후서버다운, 그건일">
+        <meta itemprop="image" content="/images/avatar.png">
+      </span>
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="퇴근후서버다운, 그건일">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link post-title-link-external" href="/gvim/" itemprop="url">gvim 사용해보기</a>
+      </h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2020-02-09T02:44:49+09:00">2020-02-09 02:44:49</time></span>
+        </span>
+        
+        
+        
+      </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      
+      <p>hyper.is 나 커맨드 창을 많이 쓰니까<br>에디터가 필요해서 찾아보다 gvim 이 있군요</p>
+<p>(검은 화면의 에디터)</p>
+<p>utf-8 파일을 표시 못해서 설정방법을 찾았습니다.<br>그런데 이렇게 셋팅하면 euc-kr 가 깨져보입니다. </p>
+<p>설정파일: C:\Program Files (x86)\Vim_vimrc</p>
+<p>제일 마지막에 써줍니다. </p>
+<figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs undefined">set tenc=korea<br>set enc=utf8<br>set langmenu=none<br>lang en<br></code></pre></td></tr></table></figure>
+<p>출처:</p>
+<ul>
+<li><a href>설치페이지</a><a href="https://www.vim.org/download.php" target="_blank" rel="noopener">https://www.vim.org/download.php</a>)</li>
+<li><a href="https://kldp.org/node/85494" target="_blank" rel="noopener">utf-8문제해결책</a></li>
+<li></li>
+</ul>
+
+      
+    </main>
+    <footer class="post-footer">
+      
+    </footer>
+  </article>
+  
+  <article class="article post card animate" itemscope itemtype="http://schema.org/Article">
+    <div class="post-block">
       <link itemprop="mainEntityOfPage" href="http://thisisone.github.io/hexo-deploy-github-nopassword/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
         <meta itemprop="name" content="그건일">
@@ -469,7 +517,12 @@
 <p>새로운 포스트<br><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new post 파일명<br></code></pre></td></tr></table></figure></p>
 <h2 id="업로드-방법"><a href="#업로드-방법" class="headerlink" title="업로드 방법"></a>업로드 방법</h2><p>배포 플러그인 설치<br><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install --save hexo-deployer-git<br></code></pre></td></tr></table></figure></p>
 <p>변경점 업데이트 문제가 생긴다면 이거 해주고<br><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean<br></code></pre></td></tr></table></figure></p>
-<p>올릴때는 보통 이렇게<br><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate<br>hexo deploy<br></code></pre></td></tr></table></figure></p>
+<p>올릴때는 보통 이렇게<br><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean<br>hexo deploy<br></code></pre></td></tr></table></figure></p>
+<h3 id="링크"><a href="#링크" class="headerlink" title="링크"></a>링크</h3><ul>
+<li><a href="https://tbr74.github.io/2017/07/09/Study-Hexo-2017-07-09-hexo-markdown/" target="_blank" rel="noopener">마크다운</a></li>
+<li><a href="hexo-deploy-github-nopassword">github 암호 없이 업로드</a></li>
+<li><a href="https://www.codeblocq.com/2016/04/Create-links-automatically-in-your-hexo-posts/" target="_blank" rel="noopener">autolink 플러그인 설명</a></li>
+</ul>
 
       
     </main>
@@ -583,69 +636,10 @@ PlayerSettings.Android.keyaliasPass = &quot;dcappkey&quot;;
     </footer>
   </article>
   
-  <article class="article post card animate" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="http://thisisone.github.io/hyper-is/">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="그건일">
-        <meta itemprop="description" content="퇴근후서버다운, 그건일">
-        <meta itemprop="image" content="/images/avatar.png">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="퇴근후서버다운, 그건일">
-      </span>
-    </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/hyper-is/" itemprop="url">hyper.is 사용법</a>
-      </h1>
-      <div class="post-meta">
-        
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-01-16T21:15:02+09:00">2019-01-16 21:15:02</time></span>
-        </span>
-        
-        
-        
-      </div>
-    </header>
-    <main class="post-main" itemprop="articleBody">
-      
-      <p>커맨드창보다 뜨는게 좀 느리지만 장점도 있음</p>
-<h2 id="장점"><a href="#장점" class="headerlink" title="장점"></a>장점</h2><ol>
-<li>복사 붙여넣기 가 편리함</li>
-<li>창 크기를 자유롭게 조정 가능함</li>
-<li>링크가 있다면 클릭 할 수 있다</li>
-<li>폰트가 작아서 좀더 많이 볼 수 있다.</li>
-</ol>
-<h2 id="설치-amp-설정"><a href="#설치-amp-설정" class="headerlink" title="설치 &amp; 설정"></a>설치 &amp; 설정</h2><ol>
-<li><a href="https://hyper.is" target="_blank" rel="noopener">hyper.is</a> 에서 설치파일을 다운로드합니다.</li>
-<li>hyper 를 실행합니다.</li>
-<li>플러그인을 커맨드 명령으로 설치한다.<figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs text">$ hyper install hyperpower<br>$ hyper install hyper-letters<br>$ hyper install hyperborder<br></code></pre></td></tr></table></figure>
-</li>
-</ol>
-<ul>
-<li>hyperpower - 글자 칠때마다 폭발을한다. |</li>
-<li>hyper-letters - 입력하면 글자가 흘러내린다.</li>
-<li>hyperborder - 창틀의 테두리가 빨간색으로 바뀐다. (잘보임)</li>
-</ul>
-<p><img src="https://user-images.githubusercontent.com/5426590/50339456-f687ea80-0517-11e9-9103-bfcda5634186.gif" alt></p>
-
-      
-    </main>
-    <footer class="post-footer">
-      
-      <div class="post-tags">
-        
-        <a class="post-tag button" href="/tags/hyper/" rel="tag"><i class="fas fa-tags"></i>hyper</a>
-        
-        <a class="post-tag button" href="/tags/app/" rel="tag"><i class="fas fa-tags"></i>app</a>
-        
-      </div>
-      
-    </footer>
-  </article>
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-angle-right" aria-label="Next Page"></i></a>
+  </nav>
   
   
 </div>
@@ -674,7 +668,7 @@ PlayerSettings.Android.keyaliasPass = &quot;dcappkey&quot;;
     
     <div class="archives-count">
       <div class="site-count-title">Archives</div>
-      <div><a href="/archives/">10</a></div>
+      <div><a href="/archives/">11</a></div>
     </div>
     
     
