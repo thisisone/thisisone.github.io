@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#33363b">
+    <meta name="msapplication-TileColor" content="#33363b">
+    
+    
+    
+    
+    <meta name="keywords" content="programming, coding, piano">
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    
+    
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#33363b">
+    
+    
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    
+    
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    
+    
+    <link rel="alternate" href="/atom.xml" title="퇴근후서버다운, 그건일" type="application/atom+xml">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
+    
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    
+    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
+    
+    
+<link rel="stylesheet" type="text/css" href="/css/page.css">
+<link rel="stylesheet" type="text/css" href="/css/post.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/atom-one-dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script defer type="text/javascript" src="/js/util.js"></script>
+    <script defer type="text/javascript" src="/js/scrollspy.js"></script>
+    <script defer type="text/javascript" src="/js/fontawesome-all.min.js"></script>
+    <script defer type="text/javascript" src="/js/lightgallery.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-fullscreen.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-hash.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-pager.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-thumbnail.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-zoom.min.js"></script>
+    
+    <script defer src="/js/busuanzi.pure.mini.js"></script>
+    
+    
+    <script defer type="text/javascript" src="/js/search.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      var searchPath = "search.xml";
+      if (searchPath.length === 0) {
+        searchPath = "search.xml";
+      }
+      var path = "/" + searchPath;
+      searchFunc(path, "search-input", "search-result");
+    });
+    </script>
+    
+    
+    <script defer type="text/javascript" src="/js/index.js"></script>
+    
+    <script defer type="text/javascript" src="/js/custom.js"></script>
+    <title>node.js 에서 tcp 서버 샘플 | 퇴근후서버다운, 그건일 - 곧사십</title>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-4928043623873125",
+		enable_page_level_ads: true
+	  });
+	</script>
+	
+  </head>
+  <body itemscope itemtype="http://schema.org/WebPage" lang="ko" data-spy="scroll" data-target=".list-group">
+    
+<header id="header" class="header" style="background: #33363b;">
+  <div class="container">
+    <div class="header-container">
+      <div class="header-title">
+        <h1 class="title"><a href="/">퇴근후서버다운, 그건일</a></h1>
+        <h2 class="subtitle">곧사십</h2>
+      </div>
+      
+      <div class="logo">
+        <img src="/images/logo.png" alt="logo">
+      </div>
+      
+    </div>
+    <nav id="nav" class="nav">
+      <a id="nav-toggle" class="nav-toggle" aria-hidden="true"><i class="fas fa-bars" aria-label="Toggle Navbar"></i></a>
+      <ul id="menu" role="menubar" aria-hidden="false">
+        
+        <li role="menuitem"><a href="/">Home</a></li>
+        
+        <li role="menuitem"><a href="/archives/">Archives</a></li>
+        
+        <li role="menuitem"><a href="/categories/">Categories</a></li>
+        
+        <li role="menuitem"><a href="/tags/">Tags</a></li>
+        
+        <li role="menuitem"><a href="/about/">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <main id="main" class="main">
+      <div class="container">
+        <div class="main-container">
+          <div class="content">
+            
+<div id="post" class="page">
+  
+  <article class="article post card animate" itemscope itemtype="http://schema.org/Article">
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://thisisone.github.io/nodejs-tcp-server-sample/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="그건일">
+       <meta itemprop="description" content="퇴근후서버다운, 그건일">
+       <meta itemprop="image" content="/images/avatar.png">
+      </span>
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="퇴근후서버다운, 그건일">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">node.js 에서 tcp 서버 샘플</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2020-02-09T00:25:42+09:00">2020-02-09 00:25:42</time></span>
+        </span>
+        
+        
+        
+      </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      <p>샘플을 발견하였는데<br>필요한 대부분의 이벤트가 잘들어가 있었으며<br>세션 별로 setTimeout 를 걸수 있었어서 편리했다.</p>
+<p>빨리 만들어야 해서 for 문돌면서 글자 합쳐 주는 부분이 있는데<br>효율은 잘 모르겠다.</p>
+<p>telnet 으로 테스트 정도는 할 수 있었다.<br>npm 으로 별다른 설치를 하지않아도 되서 좋다..</p>
+<figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> net = <span class="hljs-built_in">require</span>(<span class="hljs-string">'net'</span>);<br><span class="hljs-keyword">var</span> server = net.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">client</span>) </span>&#123;<br><br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'연결됨'</span>);<br><br>    client.setTimeout(<span class="hljs-number">10000</span>); <span class="hljs-comment">// 주기적으로 업데이트 가능</span><br>    client.recv = <span class="hljs-string">''</span>; <span class="hljs-comment">// 받기 버퍼 같은 용도 json 통신을 할예정</span><br><br>    client.on(<span class="hljs-string">'data'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data</span>) </span>&#123;<br><br>		<span class="hljs-comment">// json 통신을 파싱합니다.</span><br>        <span class="hljs-keyword">var</span> text = data.toString();<br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; text.length; i++) &#123;<br>            <span class="hljs-keyword">if</span> (text[i] === <span class="hljs-string">'\r'</span>)<br>                <span class="hljs-keyword">continue</span>;<br>            <span class="hljs-keyword">if</span> (text[i] !== <span class="hljs-string">'\n'</span>) &#123;<br>                client.recv += text[i];<br>                <span class="hljs-keyword">continue</span>;<br>            &#125;<br><br>            <span class="hljs-keyword">var</span> req_text = client.recv;<br>            client.recv = <span class="hljs-string">''</span>;<br>            <span class="hljs-keyword">var</span> jreq = jsonParsing(req_text);<br>            <span class="hljs-keyword">if</span> (jreq === <span class="hljs-literal">null</span>)<br>            &#123;<br>            	<span class="hljs-built_in">console</span>.error(<span class="hljs-string">"json 파싱 실패"</span>, req_text);<br>                <span class="hljs-keyword">continue</span>;<br>			&#125;<br><br>            <span class="hljs-keyword">if</span> (jreq.api == <span class="hljs-string">'hello'</span>) &#123;<br>            	<span class="hljs-comment">// 응답도 json</span><br>				<span class="hljs-keyword">var</span> data = &#123;<br>					<span class="hljs-attr">api</span>: jreq.api,<br>					<span class="hljs-attr">code</span>: <span class="hljs-number">100</span>,<br>					<span class="hljs-attr">message</span>: <span class="hljs-string">'hello2'</span><br>				&#125;;<br>				writeData(client, data);<br>            &#125;<br>            <span class="hljs-keyword">else</span> &#123;<br>                <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'처리되지 않은 api'</span>, jreq.api);<br>                <br>                <span class="hljs-keyword">var</span> data = &#123;<br>					<span class="hljs-attr">api</span>: jreq.api,<br>					<span class="hljs-attr">code</span>: <span class="hljs-number">-1</span>,<br>					<span class="hljs-attr">message</span>: <span class="hljs-string">'api fail'</span>, <br>				&#125;;<br>				writeData(client, data);<br>            &#125;<br>        &#125;<br>    &#125;);<br>    client.on(<span class="hljs-string">'end'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;<br>        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'연결이 끊겼다.'</span>);<br><br>        server.getConnections(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, count</span>) </span>&#123;<br>            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'남은 연결 가능수:'</span>, count);<br>        &#125;);<br>    &#125;);<br>    client.on(<span class="hljs-string">'error'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err</span>) </span>&#123;<br>        <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'소켓 에러r:'</span>, err);<br>    &#125;);<br>    client.on(<span class="hljs-string">'timeout'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;<br>        <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'소켓 타이머 이벤트'</span>);<br>        client.destroy();<br>    &#125;);<br>&#125;);<br>server.listen(<span class="hljs-number">8000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;<br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'서버 시작합니다.'</span>, server.address());<br>    <br>    server.on(<span class="hljs-string">'close'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;<br>        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'서버 종료합니다.'</span>);<br>    &#125;);<br>    <br>    server.on(<span class="hljs-string">'error'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err</span>) </span>&#123;<br>    	<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'서버 에러:'</span>, err);<br>    &#125;);<br>&#125;);<br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">writeData</span>(<span class="hljs-params">socket, data</span>) </span>&#123;<br>    <span class="hljs-keyword">var</span> data2 = <span class="hljs-built_in">JSON</span>.stringify(data) + <span class="hljs-string">"\r\n"</span>; <br>    socket.write(data2);<br>&#125;<br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">jsonParsing</span>(<span class="hljs-params">data</span>) </span>&#123;<br>    <span class="hljs-keyword">try</span> &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-built_in">JSON</span>.parse(data);<br>    &#125; <span class="hljs-keyword">catch</span> &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>cafe24 에 웹서버포트를 tcp 로 돌리려고 했는데<br>웹통신이 아니면 통신 못하도록 막혀있는거 같다..</p>
+
+    </main>
+    <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/tags/node-js/" rel="tag"><i class="fas fa-tags"></i>node.js</a>
+        
+        <a class="post-tag button" href="/tags/tcp/" rel="tag"><i class="fas fa-tags"></i>tcp</a>
+        
+        <a class="post-tag button" href="/tags/server/" rel="tag"><i class="fas fa-tags"></i>server</a>
+        
+      </div>
+      
+    </footer>
+  </article>
+  
+  
+  <nav class="page-nav">
+    <div class="page-nav-next page-nav-item">
+      
+      <a href="/nodesj-process-execute/" rel="next" title="node.js 에서 뭔가 실행하기"><i class="fas fa-angle-left"></i><span class="nav-title">node.js 에서 뭔가 실행하기</span></a>
+      
+    </div>
+    <div class="page-nav-prev page-nav-item">
+      
+    </div>
+  </nav>
+  
+  
+</div>
+
+          </div>
+          
+          
+          
+<aside class="sidebar" id="sidebar" style="background: url(/images/background.png);">
+  
+  <div class="search">
+    <div class="form-group">
+      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="Search" class="form-control">
+    </div>
+  </div>
+  <div class="search-result-box" id="search-result"></div>
+  
+  
+<div class="info sidebar-item" id="info">
+  
+  <img class="author-avatar" src="/images/avatar.png" alt="그건일">
+  
+  <h1 class="author-name">그건일</h1>
+  <h2 class="author-description">퇴근후서버다운, 그건일</h2>
+  <div class="site-count">
+    
+    <div class="archives-count">
+      <div class="site-count-title">Archives</div>
+      <div><a href="/archives/">9</a></div>
+    </div>
+    
+    
+    
+    <span class="site-count-divider divider">|</span>
+    
+    <div class="categories-count">
+      <div class="site-count-title">Categories</div>
+      <div><a href="/categories/">1</a></div>
+    </div>
+    
+    
+    
+    <span class="site-count-divider divider">|</span>
+    
+    <div class="tags-count">
+      <div class="site-count-title">Tags</div>
+      <div><a href="/tags/">9</a></div>
+    </div>
+    
+  </div>
+  
+  <div class="rss">
+    <a class="rss-link button sidebar-item" href="/atom.xml"><i class="fas fa-rss"></i>RSS</a>
+  </div>
+  
+</div>
+
+
+  <div class="sidebar-sticky">
+    
+    
+    
+    
+    
+    
+    
+    
+    <hr>
+    <div class="blogroll sidebar-item">
+      <div><i class="fas fa-link"></i>Blogroll</div>
+      <ul>
+        
+        <li><i class="fas fa-link"></i><a href="https://github.com/" target="_blank">GitHub</a></li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</aside>
+
+
+          
+        </div>
+      </div>
+    </main>
+    
+<footer id="footer" class="footer" style="background: #33363b;">
+  <div class="container">
+    <div class="back-to-top">
+      <button id="back-to-top"><i class="fas fa-angle-double-up" aria-label="Back to Top"></i></button>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="copyright">
+          <span class="author">그건일</span><span class="year"><i class="far fa-copyright"></i>2020</span>
+        </div>
+        
+        <div class="busuanzi">
+          <span id="busuanzi_container_site_pv"><i class="fas fa-eye" aria-label="Site Visit Count" aria-hidden="false"></i><span id="busuanzi_value_site_pv"></span></span><span id="busuanzi_container_site_uv"><i class="fas fa-user" aria-label="Site User Count" aria-hidden="false"></i><span id="busuanzi_value_site_uv"></span></span><span id="busuanzi_container_page_pv"><i class="far fa-file-alt"></i><span id="busuanzi_value_page_pv" aria-label="Page Click Count" aria-hidden="false"></span></span>
+        </div>
+        
+      </div>
+      <div class="footer-right">
+        <div class="custom-info">
+          
+          <i class="fab fa-github-alt"></i><a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+          
+        </div>
+        <div class="powered-by">
+          Proudly Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> | Theme is <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>

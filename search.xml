@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>node.js 에서 tcp 서버 샘플</title>
+      <link href="/nodejs-tcp-server-sample/"/>
+      <url>/nodejs-tcp-server-sample/</url>
+      
+        <content type="html"><![CDATA[<p>샘플을 발견하였는데<br>필요한 대부분의 이벤트가 잘들어가 있었으며<br>세션 별로 setTimeout 를 걸수 있었어서 편리했다.</p><p>빨리 만들어야 해서 for 문돌면서 글자 합쳐 주는 부분이 있는데<br>효율은 잘 모르겠다.</p><p>telnet 으로 테스트 정도는 할 수 있었다.<br>npm 으로 별다른 설치를 하지않아도 되서 좋다..</p><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> net = <span class="hljs-built_in">require</span>(<span class="hljs-string">'net'</span>);<br><span class="hljs-keyword">var</span> server = net.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">client</span>) </span>&#123;<br><br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'연결됨'</span>);<br><br>    client.setTimeout(<span class="hljs-number">10000</span>); <span class="hljs-comment">// 주기적으로 업데이트 가능</span><br>    client.recv = <span class="hljs-string">''</span>; <span class="hljs-comment">// 받기 버퍼 같은 용도 json 통신을 할예정</span><br><br>    client.on(<span class="hljs-string">'data'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data</span>) </span>&#123;<br><br><span class="hljs-comment">// json 통신을 파싱합니다.</span><br>        <span class="hljs-keyword">var</span> text = data.toString();<br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; text.length; i++) &#123;<br>            <span class="hljs-keyword">if</span> (text[i] === <span class="hljs-string">'\r'</span>)<br>                <span class="hljs-keyword">continue</span>;<br>            <span class="hljs-keyword">if</span> (text[i] !== <span class="hljs-string">'\n'</span>) &#123;<br>                client.recv += text[i];<br>                <span class="hljs-keyword">continue</span>;<br>            &#125;<br><br>            <span class="hljs-keyword">var</span> req_text = client.recv;<br>            client.recv = <span class="hljs-string">''</span>;<br>            <span class="hljs-keyword">var</span> jreq = jsonParsing(req_text);<br>            <span class="hljs-keyword">if</span> (jreq === <span class="hljs-literal">null</span>)<br>            &#123;<br>            <span class="hljs-built_in">console</span>.error(<span class="hljs-string">"json 파싱 실패"</span>, req_text);<br>                <span class="hljs-keyword">continue</span>;<br>&#125;<br><br>            <span class="hljs-keyword">if</span> (jreq.api == <span class="hljs-string">'hello'</span>) &#123;<br>            <span class="hljs-comment">// 응답도 json</span><br><span class="hljs-keyword">var</span> data = &#123;<br><span class="hljs-attr">api</span>: jreq.api,<br><span class="hljs-attr">code</span>: <span class="hljs-number">100</span>,<br><span class="hljs-attr">message</span>: <span class="hljs-string">'hello2'</span><br>&#125;;<br>writeData(client, data);<br>            &#125;<br>            <span class="hljs-keyword">else</span> &#123;<br>                <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'처리되지 않은 api'</span>, jreq.api);<br>                <br>                <span class="hljs-keyword">var</span> data = &#123;<br><span class="hljs-attr">api</span>: jreq.api,<br><span class="hljs-attr">code</span>: <span class="hljs-number">-1</span>,<br><span class="hljs-attr">message</span>: <span class="hljs-string">'api fail'</span>, <br>&#125;;<br>writeData(client, data);<br>            &#125;<br>        &#125;<br>    &#125;);<br>    client.on(<span class="hljs-string">'end'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;<br>        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'연결이 끊겼다.'</span>);<br><br>        server.getConnections(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, count</span>) </span>&#123;<br>            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'남은 연결 가능수:'</span>, count);<br>        &#125;);<br>    &#125;);<br>    client.on(<span class="hljs-string">'error'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err</span>) </span>&#123;<br>        <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'소켓 에러r:'</span>, err);<br>    &#125;);<br>    client.on(<span class="hljs-string">'timeout'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;<br>        <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'소켓 타이머 이벤트'</span>);<br>        client.destroy();<br>    &#125;);<br>&#125;);<br>server.listen(<span class="hljs-number">8000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;<br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'서버 시작합니다.'</span>, server.address());<br>    <br>    server.on(<span class="hljs-string">'close'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;<br>        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'서버 종료합니다.'</span>);<br>    &#125;);<br>    <br>    server.on(<span class="hljs-string">'error'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err</span>) </span>&#123;<br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'서버 에러:'</span>, err);<br>    &#125;);<br>&#125;);<br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">writeData</span>(<span class="hljs-params">socket, data</span>) </span>&#123;<br>    <span class="hljs-keyword">var</span> data2 = <span class="hljs-built_in">JSON</span>.stringify(data) + <span class="hljs-string">"\r\n"</span>; <br>    socket.write(data2);<br>&#125;<br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">jsonParsing</span>(<span class="hljs-params">data</span>) </span>&#123;<br>    <span class="hljs-keyword">try</span> &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-built_in">JSON</span>.parse(data);<br>    &#125; <span class="hljs-keyword">catch</span> &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><p>cafe24 에 웹서버포트를 tcp 로 돌리려고 했는데<br>웹통신이 아니면 통신 못하도록 막혀있는거 같다..</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> node.js </tag>
+            
+            <tag> tcp </tag>
+            
+            <tag> server </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>node.js 에서 뭔가 실행하기</title>
+      <link href="/nodesj-process-execute/"/>
+      <url>/nodesj-process-execute/</url>
+      
+        <content type="html"><![CDATA[<p>test.bat 를 실행하는 코드</p><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> exec = <span class="hljs-built_in">require</span>(<span class="hljs-string">'child_process'</span>).exec;<br><span class="hljs-keyword">var</span> child = exec(<span class="hljs-string">"test.bat"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">error, stdout, stderr</span>) </span>&#123;<br>    <span class="hljs-comment">// error !== null 알 수 있다.</span><br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"exec end"</span>, stdout, stderr, error);<br>&#125;);<br></code></pre></td></tr></table></figure><p>npm 설치 없이도 되는거 같다.<br>윈도우즈에서는 stdout, stderr, error 가 글자가깨져서 보이는데…</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> node.js </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>프로필 사진을 그려보았다</title>
+      <link href="/draw-profile-image/"/>
+      <url>/draw-profile-image/</url>
+      
+        <content type="html"><![CDATA[<p>유튜브를 해야하기때문에 날림으로<br>채널도 만들고 프로필사진도 만들었다.</p><p>원본은 <a href="https://www.datadoghq.com" target="_blank" rel="noopener">DATADOG</a> 의 로그를 보고 그림판으로 그린거임</p><h3 id="DATADOG-의-로고"><a href="#DATADOG-의-로고" class="headerlink" title="DATADOG 의 로고"></a>DATADOG 의 로고</h3><p><img src="../images/datadog_logo.png" alt></p><h3 id="내가그린거-채널용"><a href="#내가그린거-채널용" class="headerlink" title="내가그린거 (채널용)"></a>내가그린거 (채널용)</h3><p><img src="../images/profile_ch.png" alt></p><h3 id="내가그린거-내-계정용"><a href="#내가그린거-내-계정용" class="headerlink" title="내가그린거 (내 계정용)"></a>내가그린거 (내 계정용)</h3><p><img src="../images/profile_me.png" alt></p><h3 id="그런데"><a href="#그런데" class="headerlink" title="그런데.."></a>그런데..</h3><p>구글계정에서 프로필 사진을 올렸지만 곧바로 적용이 안되는지 옛날 사진이 자꾸 나온다.</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> youtube </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>거북목 교정 운동</title>
+      <link href="/neck-stretching/"/>
+      <url>/neck-stretching/</url>
+      
+        <content type="html"><![CDATA[<div class="video-container"><iframe src="//www.youtube.com/embed/3aTPapvWpKs" frameborder="0" allowfullscreen></iframe></div><h2 id="으앗"><a href="#으앗" class="headerlink" title="으앗"></a>으앗</h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 운동 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>c# 에서 문자열 연산의 성능 문제</title>
+      <link href="/csharp-string-append-and-format-diff/"/>
+      <url>/csharp-string-append-and-format-diff/</url>
+      
+        <content type="html"><![CDATA[<p>유니티에서 로그를 on / off 시키는걸 만들려다 우연히 테스트 해보았는데 꽤 충젹적인 결과가 나와서 공유 해봅니다.</p><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs undefined">// 1번. 더한다<br>Debug.Log(&quot;abc&quot;+&quot;def&quot;);<br><br>// 2번. string.format() 형태로 쓴다.<br>Debug.Log(&quot;&#123;0&#125;&#123;1&#125;&quot;, &quot;abc&quot;, &quot;def&quot;);<br></code></pre></td></tr></table></figure><p>로그를 끄는 걸 가정하고 위 고드는 그대로 배포 된다면<br>문자열 연산이 일어나지 않나 해서 <b>2번이 더 좋을것 같았다.</b></p><h3 id="성능을-측정"><a href="#성능을-측정" class="headerlink" title="성능을 측정"></a>성능을 측정</h3><figure class="hljs highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs csharp">abc= <span class="hljs-number">1</span>ms <span class="hljs-comment">// 안 더한다.</span><br>abc+def= <span class="hljs-number">1</span>ms <span class="hljs-comment">// 한번 더한다.</span><br>abc+def+ghi= <span class="hljs-number">1</span>ms <span class="hljs-comment">// 두번 더한다.</span><br>format:abcdef= <span class="hljs-number">3</span>ms <span class="hljs-comment">// string format, params object[] args 를 첫번째 인자만 썼다.</span><br>format:[<span class="hljs-number">0</span>],abcdef= <span class="hljs-number">10</span>ms <span class="hljs-comment">// 두번째 인자 까지 썼다.</span><br>format:[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>],abcdef,ghi= <span class="hljs-number">19</span>ms <span class="hljs-comment">// 세번째 인자 까지 썼다.</span><br></code></pre></td></tr></table></figure><h3 id="맙소사"><a href="#맙소사" class="headerlink" title="맙소사"></a>맙소사</h3><p>테스트코드 공유해봅니다.</p><figure class="hljs highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><code class="hljs csharp"><span class="hljs-keyword">using</span> System;<br><span class="hljs-keyword">using</span> System.Collections;<br><span class="hljs-keyword">using</span> System.Collections.Generic;<br><span class="hljs-keyword">using</span> UnityEngine;<br><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">FirstScene</span> : <span class="hljs-title">MonoBehaviour</span><br>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Update</span>(<span class="hljs-params"></span>)</span><br>    &#123;<br>        <span class="hljs-keyword">if</span>(Input.GetKeyDown(KeyCode.Space))<br>&#123;<br><span class="hljs-keyword">int</span> count = <span class="hljs-number">100000</span>;<br><span class="hljs-keyword">var</span> sw = <span class="hljs-keyword">new</span> System.Diagnostics.Stopwatch();<br>sw.Start();<br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>; i&lt; count; i++)<br>&#123;<br>LogTest1(<span class="hljs-string">"abc"</span>);<br>&#125;<br>sw.Stop();<br><span class="hljs-keyword">var</span> test1 = sw.ElapsedMilliseconds;<br><br><br>sw.Reset();<br>sw.Start();<br><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; count; i++)<br>&#123;<br>LogTest1(<span class="hljs-string">"abc"</span> + <span class="hljs-string">"def"</span>);<br>&#125;<br>sw.Stop();<br><span class="hljs-keyword">var</span> test11 = sw.ElapsedMilliseconds;<br><br><br>sw.Reset();<br>sw.Start();<br><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; count; i++)<br>&#123;<br>LogTest1(<span class="hljs-string">"abc"</span> + <span class="hljs-string">"def"</span> + <span class="hljs-string">"ghi"</span>);<br>&#125;<br>sw.Stop();<br><span class="hljs-keyword">var</span> test111 = sw.ElapsedMilliseconds;<br><br><br>sw.Reset();<br>sw.Start();<br><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; count; i++)<br>&#123;<br>LogTest2(<span class="hljs-string">"abcdef"</span>);<br>&#125;<br>sw.Stop();<br><span class="hljs-keyword">var</span> test2 = sw.ElapsedMilliseconds;<br><br><br>sw.Reset();<br>sw.Start();<br><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; count; i++)<br>&#123;<br>LogTest2(<span class="hljs-string">"&#123;0&#125;"</span>, <span class="hljs-string">"abcdef"</span>);<br>&#125;<br>sw.Stop();<br><span class="hljs-keyword">var</span> test22 = sw.ElapsedMilliseconds;<br><br><br>sw.Reset();<br>sw.Start();<br><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; count; i++)<br>&#123;<br>LogTest2(<span class="hljs-string">"&#123;0&#125;&#123;1&#125;"</span>, <span class="hljs-string">"abcdef"</span>, <span class="hljs-string">"ghi"</span>);<br>&#125;<br>sw.Stop();<br><span class="hljs-keyword">var</span> test222 = sw.ElapsedMilliseconds;<br><br><span class="hljs-keyword">string</span> s = <span class="hljs-string">""</span>;<br>s += <span class="hljs-keyword">string</span>.Format(<span class="hljs-string">"abc= &#123;0&#125;ms\n"</span>, test1);<br>s += <span class="hljs-keyword">string</span>.Format(<span class="hljs-string">"abc+def= &#123;0&#125;ms\n"</span>, test11);<br>s += <span class="hljs-keyword">string</span>.Format(<span class="hljs-string">"abc+def+ghi= &#123;0&#125;ms\n"</span>, test111);<br>s += <span class="hljs-keyword">string</span>.Format(<span class="hljs-string">"format:abcdef= &#123;0&#125;ms\n"</span>, test2);<br>s += <span class="hljs-keyword">string</span>.Format(<span class="hljs-string">"format:[0],abcdef= &#123;0&#125;ms\n"</span>, test22);<br>s += <span class="hljs-keyword">string</span>.Format(<span class="hljs-string">"format:[0][1],abcdef,ghi= &#123;0&#125;ms\n"</span>, test222);<br>Debug.Log(s);<br>&#125;<br>    &#125;<br><br><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">LogTest1</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> msg</span>)</span><br>&#123;<br><br>&#125;<br><br><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">LogTest2</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> format, <span class="hljs-keyword">params</span> <span class="hljs-keyword">object</span>[] args</span>)</span><br>&#123;<br><br>&#125;<br>&#125;<br></code></pre></td></tr></table></figure><h3 id="추가로"><a href="#추가로" class="headerlink" title="추가로"></a>추가로</h3><p>Unity 에서는 쓸 수 없지만<br>dotnet core 에서 아래와 같이 쓰는 기능이 있던데</p><figure class="hljs highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs csharp">Log(<span class="hljs-string">$"<span class="hljs-subst">&#123;arg[<span class="hljs-number">0</span>]&#125;</span><span class="hljs-subst">&#123;arg[<span class="hljs-number">1</span>]&#125;</span>"</span>);<br></code></pre></td></tr></table></figure><p>이게 속도가 제일 빨랐다.</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> c# </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo 셋팅 방법</title>
+      <link href="/hexo-setting/"/>
+      <url>/hexo-setting/</url>
+      
+        <content type="html"><![CDATA[<p>한번하면 까먹고 검색하고 또 까먹고 해서 기록해둡니다.</p><h3 id="참고-링크"><a href="#참고-링크" class="headerlink" title="참고 링크"></a>참고 링크</h3><ul><li><a href="http://localhost:4000/hexo-setting/" target="_blank" rel="noopener">설치법</a></li><li><a href="https://tbr74.github.io/2017/07/09/Study-Hexo-2017-07-09-hexo-markdown/" target="_blank" rel="noopener">마크다운요약</a></li></ul><h2 id="설치할때"><a href="#설치할때" class="headerlink" title="설치할때"></a>설치할때</h2><p>nas 에서 blog 를 받는다.</p><p>windows 를 새로 설치했다면 hxeo-cli 설치<br><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install -g hexo-cli<br></code></pre></td></tr></table></figure></p><p>다음 명령어 실행<br><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install<br></code></pre></td></tr></table></figure></p><h2 id="작업할때"><a href="#작업할때" class="headerlink" title="작업할때"></a>작업할때</h2><p>사이트 띄우기<br><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo serve<br></code></pre></td></tr></table></figure></p><p>새로운 포스트<br><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new post 파일명<br></code></pre></td></tr></table></figure></p><h2 id="업로드-방법"><a href="#업로드-방법" class="headerlink" title="업로드 방법"></a>업로드 방법</h2><p>배포 플러그인 설치<br><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install --save hexo-deployer-git<br></code></pre></td></tr></table></figure></p><p>변경점 업데이트 문제가 생긴다면 이거 해주고<br><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean<br></code></pre></td></tr></table></figure></p><p>올릴때는 보통 이렇게<br><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate<br>hexo deploy<br></code></pre></td></tr></table></figure></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>웹 크롤링 해보기</title>
+      <link href="/web_crawler/"/>
+      <url>/web_crawler/</url>
+      
+        <content type="html"><![CDATA[<p>node.js phantom 을 사용</p><figure class="hljs highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">/*jshint esversion: 6 */</span><br><br><span class="hljs-keyword">const</span> URL = <span class="hljs-string">"http://search.danawa.com/dsearch.php?k1=ddr4&amp;module=goods&amp;act=dispMain"</span>;<br><br><span class="hljs-keyword">const</span> phantom = <span class="hljs-built_in">require</span>(<span class="hljs-string">'phantom'</span>);<br><span class="hljs-keyword">var</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);<br><br>(<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>  <span class="hljs-keyword">const</span> instance = <span class="hljs-keyword">await</span> phantom.create();<br>  <span class="hljs-keyword">const</span> page = <span class="hljs-keyword">await</span> instance.createPage();<br>  <span class="hljs-keyword">await</span> page.on(<span class="hljs-string">'onResourceRequested'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">requestData</span>) </span>&#123;<br>    <span class="hljs-comment">/*<br>    var ext = path.extname(requestData.url);<br>    if(ext == '.png' || ext == '.gif' || ext == '.jpeg') &#123;<br>      return;<br>    &#125;<br>    else if(ext.indexOf('.css') == 0 || ext.indexOf('.js') == 0 || ext.indexOf('.jpg') == 0 ) &#123;<br>      return;<br>    &#125;<br>    console.info('Requesting', ext, requestData.url);<br>    */</span><br>  &#125;);<br>  <span class="hljs-keyword">await</span> page.on(<span class="hljs-string">'onConsoleMessage'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">msg</span>) </span>&#123;<br>      <span class="hljs-built_in">console</span>.info(<span class="hljs-string">'onConsoleMessage'</span>, msg);<br>  &#125;);<br>  <span class="hljs-keyword">await</span> page.on(<span class="hljs-string">'onError'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">msg</span>) </span>&#123;<br>      <span class="hljs-built_in">console</span>.info(<span class="hljs-string">'onError'</span>, msg);<br>  &#125;);<br><br>  <span class="hljs-keyword">const</span> status = <span class="hljs-keyword">await</span> page.open(URL);<br><br>  <span class="hljs-keyword">await</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-params">resolve</span> =&gt;</span> setTimeout(resolve, <span class="hljs-number">3000</span>))<br><br>    <span class="hljs-comment">// await page.includeJs('https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js');</span><br>    <span class="hljs-comment">// await page.includeJs('http://static.danawa.com/globaljs/external/jquery/core/last/jquery-last.min.js?v=1901301728');</span><br><br>    <span class="hljs-keyword">await</span> page.evaluate(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>        <span class="hljs-comment">// $('span[price]').filter(function () &#123;</span><br>        <span class="hljs-comment">//     var data = $(this);</span><br>        <span class="hljs-comment">//     console.log("Price: " + data.text());</span><br>        <span class="hljs-comment">// &#125;);</span><br>    &#125;);<br><br>    <span class="hljs-keyword">const</span> content = <span class="hljs-keyword">await</span> page.property(<span class="hljs-string">'content'</span>);<br>    <span class="hljs-built_in">console</span>.log(content);<br><br>    <span class="hljs-keyword">await</span> instance.exit();<br>&#125;)();<br></code></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> node.js </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>안드로이드 앱 용 keystore 만들기</title>
+      <link href="/keystore/"/>
+      <url>/keystore/</url>
+      
+        <content type="html"><![CDATA[<h3 id="명령어"><a href="#명령어" class="headerlink" title="명령어"></a>명령어</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">keytool -genkey -v -keystore [파일명] -<span class="hljs-built_in">alias</span> [앱이름] -keyalg RSA -keysize 2048 -validity [유효일]<br></code></pre></td></tr></table></figure><h2 id="삽질기"><a href="#삽질기" class="headerlink" title="삽질기"></a>삽질기</h2><ol><li>keytool 명령어가 keystore 인줄 잘못 봤음</li><li>keytool 은 jdk 에 있었음 (anroid sdk 에 있는 줄)</li><li>암호가 6자는 넘어야함</li></ol><pre><code>// :\Java\jdk1.8.0_191\bin\keytool -genkey -v -keystore dcapp.keystore -alias dcapp -keyalg RSA -keysize 2048 -validity 10000PlayerSettings.Android.keystoreName = &quot;Assets/Editor/dcapp.keystore&quot;;PlayerSettings.Android.keystorePass = &quot;dcappkey&quot;;PlayerSettings.Android.keyaliasName = &quot;dcapp&quot;;PlayerSettings.Android.keyaliasPass = &quot;dcappkey&quot;;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 개발 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 안드로이드 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hyper.is 사용법</title>
+      <link href="/hyper-is/"/>
+      <url>/hyper-is/</url>
+      
+        <content type="html"><![CDATA[<p>커맨드창보다 뜨는게 좀 느리지만 장점도 있음</p><h2 id="장점"><a href="#장점" class="headerlink" title="장점"></a>장점</h2><ol><li>복사 붙여넣기 가 편리함</li><li>창 크기를 자유롭게 조정 가능함</li><li>링크가 있다면 클릭 할 수 있다</li><li>폰트가 작아서 좀더 많이 볼 수 있다.</li></ol><h2 id="설치-amp-설정"><a href="#설치-amp-설정" class="headerlink" title="설치 &amp; 설정"></a>설치 &amp; 설정</h2><ol><li><a href="https://hyper.is" target="_blank" rel="noopener">hyper.is</a> 에서 설치파일을 다운로드합니다.</li><li>hyper 를 실행합니다.</li><li>플러그인을 커맨드 명령으로 설치한다.<figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs text">$ hyper install hyperpower<br>$ hyper install hyper-letters<br>$ hyper install hyperborder<br></code></pre></td></tr></table></figure></li></ol><ul><li>hyperpower - 글자 칠때마다 폭발을한다. |</li><li>hyper-letters - 입력하면 글자가 흘러내린다.</li><li>hyperborder - 창틀의 테두리가 빨간색으로 바뀐다. (잘보임)</li></ul><p><img src="https://user-images.githubusercontent.com/5426590/50339456-f687ea80-0517-11e9-9103-bfcda5634186.gif" alt></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hyper </tag>
+            
+            <tag> app </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+    
+    
+    <entry>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[<p><img src="/avatar/avatar2.gif" alt></p><table><thead><tr><th style="text-align:center">always test</th></tr></thead><tbody><tr><td style="text-align:center">윈터이즈커밍</td></tr></tbody></table>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+  
+</search>
