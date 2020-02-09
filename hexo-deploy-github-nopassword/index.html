@@ -161,7 +161,7 @@
       </div>
     </header>
     <main class="post-main" itemprop="articleBody">
-      <p>참고 링크: <a href="https://soulsearcher.github.io/2019/08/09/hexo-deploy-failed/" target="_blank" rel="noopener">https://soulsearcher.github.io/2019/08/09/hexo-deploy-failed/</a></p>
+      <p>참고 링크: <a href="https://soulsearcher.github.io/2019/08/09/hexo-deploy-failed/" rel="external nofollow noopener noreferrer" target="_blank">https://soulsearcher.github.io/2019/08/09/hexo-deploy-failed/</a></p>
 <p>참고 링크는 이중인증에 대한 내용이지만<br>이중인증과 상관없이 사용가능하다.<br>암호 매번 입력하는것도 번거럽고</p>
 <h3 id="ssh-key-만들기"><a href="#ssh-key-만들기" class="headerlink" title="ssh key 만들기"></a>ssh key 만들기</h3><p>git 깔고<br>git bash 를 이용했다.</p>
 <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">ssh-keygen -t rsa -b 4096<br></code></pre></td></tr></table></figure>
@@ -171,7 +171,7 @@
 <h3 id="github-에-ssh-key-등록하기"><a href="#github-에-ssh-key-등록하기" class="headerlink" title="github 에 ssh key 등록하기"></a>github 에 ssh key 등록하기</h3><p>우측 상단 의 프로필 아이콘 -&gt; Settings -&gt; SSH And ~~ -&gt; SSH 키 등록 id_rsa.pub 내용을 복분한다.</p>
 <h3 id="암호-없는-ssh-확인"><a href="#암호-없는-ssh-확인" class="headerlink" title="암호 없는 ssh 확인"></a>암호 없는 ssh 확인</h3><p>id 도 쓸필요 없이 연결해본다.<br><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs undefined">ssh -T git@github.com<br><br>결과:<br>Hi [내ID]! You&apos;ve successfully authenticated, but GitHub does not provide shell access.<br></code></pre></td></tr></table></figure></p>
 <p>github 는 ssh 명령을 던지지 못하게 막혀있지만<br>접속자가 누구인지 인지하면 성공</p>
-<h3 id="hexo-의-config-yml-수정"><a href="#hexo-의-config-yml-수정" class="headerlink" title="hexo 의 _config.yml 수정"></a>hexo 의 _config.yml 수정</h3><p>기존의 <a href="https://github~" target="_blank" rel="noopener">https://github~</a>~ 주소가 아니고<br>git@ 로 시작한다.<br>마지막은 .git 으로 끝난다.<br><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs undefined">deploy:<br>  type: git<br>  repo: git@github.com:~~~.git<br></code></pre></td></tr></table></figure></p>
+<h3 id="hexo-의-config-yml-수정"><a href="#hexo-의-config-yml-수정" class="headerlink" title="hexo 의 _config.yml 수정"></a>hexo 의 _config.yml 수정</h3><p>기존의 <a href="https://github~" rel="external nofollow noopener noreferrer" target="_blank">https://github~</a>~ 주소가 아니고<br>git@ 로 시작한다.<br>마지막은 .git 으로 끝난다.<br><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs undefined">deploy:<br>  type: git<br>  repo: git@github.com:~~~.git<br></code></pre></td></tr></table></figure></p>
 <h3 id="hexo-로-배포해보자"><a href="#hexo-로-배포해보자" class="headerlink" title="hexo 로 배포해보자"></a>hexo 로 배포해보자</h3><p>암호없이 잘 넘어가면 성공</p>
 
     </main>
@@ -221,7 +221,7 @@
 	(d.head || d.body).appendChild(s);
 	})();
 	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>                              
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="external nofollow noopener noreferrer" target="_blank">comments powered by Disqus.</a></noscript>                              
 </div>
 
           </div>
@@ -298,7 +298,7 @@
       <div><i class="fas fa-link"></i>Blogroll</div>
       <ul>
         
-        <li><i class="fas fa-link"></i><a href="https://github.com/" target="_blank">GitHub</a></li>
+        <li><i class="fas fa-link"></i><a href="https://github.com/" target="_blank" rel="external nofollow noopener noreferrer">GitHub</a></li>
         
       </ul>
     </div>
@@ -331,11 +331,11 @@
       <div class="footer-right">
         <div class="custom-info">
           
-          <i class="fab fa-github-alt"></i><a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+          <i class="fab fa-github-alt"></i><a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener noreferrer">GitHub Pages</a>
           
         </div>
         <div class="powered-by">
-          Proudly Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> | Theme is <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+          Proudly Powered by <a href="https://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> | Theme is <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank" rel="external nofollow noopener noreferrer">ARIA</a>
         </div>
       </div>
     </div>

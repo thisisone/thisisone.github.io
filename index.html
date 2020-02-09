@@ -173,8 +173,8 @@
 <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs undefined">set tenc=korea<br>set enc=utf8<br>set langmenu=none<br>lang en<br></code></pre></td></tr></table></figure>
 <p>출처:</p>
 <ul>
-<li><a href>설치페이지</a><a href="https://www.vim.org/download.php" target="_blank" rel="noopener">https://www.vim.org/download.php</a>)</li>
-<li><a href="https://kldp.org/node/85494" target="_blank" rel="noopener">utf-8문제해결책</a></li>
+<li><a href>설치페이지</a><a href="https://www.vim.org/download.php" rel="external nofollow noopener noreferrer" target="_blank">https://www.vim.org/download.php</a>)</li>
+<li><a href="https://kldp.org/node/85494" rel="external nofollow noopener noreferrer" target="_blank">utf-8문제해결책</a></li>
 <li></li>
 </ul>
 
@@ -213,7 +213,7 @@
     </header>
     <main class="post-main" itemprop="articleBody">
       
-      <p>참고 링크: <a href="https://soulsearcher.github.io/2019/08/09/hexo-deploy-failed/" target="_blank" rel="noopener">https://soulsearcher.github.io/2019/08/09/hexo-deploy-failed/</a></p>
+      <p>참고 링크: <a href="https://soulsearcher.github.io/2019/08/09/hexo-deploy-failed/" rel="external nofollow noopener noreferrer" target="_blank">https://soulsearcher.github.io/2019/08/09/hexo-deploy-failed/</a></p>
 <p>참고 링크는 이중인증에 대한 내용이지만<br>이중인증과 상관없이 사용가능하다.<br>암호 매번 입력하는것도 번거럽고</p>
 <h3 id="ssh-key-만들기"><a href="#ssh-key-만들기" class="headerlink" title="ssh key 만들기"></a>ssh key 만들기</h3><p>git 깔고<br>git bash 를 이용했다.</p>
 <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">ssh-keygen -t rsa -b 4096<br></code></pre></td></tr></table></figure>
@@ -223,7 +223,7 @@
 <h3 id="github-에-ssh-key-등록하기"><a href="#github-에-ssh-key-등록하기" class="headerlink" title="github 에 ssh key 등록하기"></a>github 에 ssh key 등록하기</h3><p>우측 상단 의 프로필 아이콘 -&gt; Settings -&gt; SSH And ~~ -&gt; SSH 키 등록 id_rsa.pub 내용을 복분한다.</p>
 <h3 id="암호-없는-ssh-확인"><a href="#암호-없는-ssh-확인" class="headerlink" title="암호 없는 ssh 확인"></a>암호 없는 ssh 확인</h3><p>id 도 쓸필요 없이 연결해본다.<br><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs undefined">ssh -T git@github.com<br><br>결과:<br>Hi [내ID]! You&apos;ve successfully authenticated, but GitHub does not provide shell access.<br></code></pre></td></tr></table></figure></p>
 <p>github 는 ssh 명령을 던지지 못하게 막혀있지만<br>접속자가 누구인지 인지하면 성공</p>
-<h3 id="hexo-의-config-yml-수정"><a href="#hexo-의-config-yml-수정" class="headerlink" title="hexo 의 _config.yml 수정"></a>hexo 의 _config.yml 수정</h3><p>기존의 <a href="https://github~" target="_blank" rel="noopener">https://github~</a>~ 주소가 아니고<br>git@ 로 시작한다.<br>마지막은 .git 으로 끝난다.<br><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs undefined">deploy:<br>  type: git<br>  repo: git@github.com:~~~.git<br></code></pre></td></tr></table></figure></p>
+<h3 id="hexo-의-config-yml-수정"><a href="#hexo-의-config-yml-수정" class="headerlink" title="hexo 의 _config.yml 수정"></a>hexo 의 _config.yml 수정</h3><p>기존의 <a href="https://github~" rel="external nofollow noopener noreferrer" target="_blank">https://github~</a>~ 주소가 아니고<br>git@ 로 시작한다.<br>마지막은 .git 으로 끝난다.<br><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs undefined">deploy:<br>  type: git<br>  repo: git@github.com:~~~.git<br></code></pre></td></tr></table></figure></p>
 <h3 id="hexo-로-배포해보자"><a href="#hexo-로-배포해보자" class="headerlink" title="hexo 로 배포해보자"></a>hexo 로 배포해보자</h3><p>암호없이 잘 넘어가면 성공</p>
 
       
@@ -364,7 +364,7 @@
     <main class="post-main" itemprop="articleBody">
       
       <p>유튜브를 해야하기때문에 날림으로<br>채널도 만들고 프로필사진도 만들었다.</p>
-<p>원본은 <a href="https://www.datadoghq.com" target="_blank" rel="noopener">DATADOG</a> 의 로그를 보고 그림판으로 그린거임</p>
+<p>원본은 <a href="https://www.datadoghq.com" rel="external nofollow noopener noreferrer" target="_blank">DATADOG</a> 의 로그를 보고 그림판으로 그린거임</p>
 <h3 id="DATADOG-의-로고"><a href="#DATADOG-의-로고" class="headerlink" title="DATADOG 의 로고"></a>DATADOG 의 로고</h3><p><img src="../images/datadog_logo.png" alt></p>
 <h3 id="내가그린거-채널용"><a href="#내가그린거-채널용" class="headerlink" title="내가그린거 (채널용)"></a>내가그린거 (채널용)</h3><p><img src="../images/profile_ch.png" alt></p>
 <h3 id="내가그린거-내-계정용"><a href="#내가그린거-내-계정용" class="headerlink" title="내가그린거 (내 계정용)"></a>내가그린거 (내 계정용)</h3><p><img src="../images/profile_me.png" alt></p>
@@ -507,8 +507,8 @@
       
       <p>한번하면 까먹고 검색하고 또 까먹고 해서 기록해둡니다.</p>
 <h3 id="참고-링크"><a href="#참고-링크" class="headerlink" title="참고 링크"></a>참고 링크</h3><ul>
-<li><a href="http://localhost:4000/hexo-setting/" target="_blank" rel="noopener">설치법</a></li>
-<li><a href="https://tbr74.github.io/2017/07/09/Study-Hexo-2017-07-09-hexo-markdown/" target="_blank" rel="noopener">마크다운요약</a></li>
+<li><a href="http://localhost:4000/hexo-setting/" rel="external nofollow noopener noreferrer" target="_blank">설치법</a></li>
+<li><a href="https://tbr74.github.io/2017/07/09/Study-Hexo-2017-07-09-hexo-markdown/" rel="external nofollow noopener noreferrer" target="_blank">마크다운요약</a></li>
 </ul>
 <h2 id="설치할때"><a href="#설치할때" class="headerlink" title="설치할때"></a>설치할때</h2><p>nas 에서 blog 를 받는다.</p>
 <p>windows 를 새로 설치했다면 hxeo-cli 설치<br><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install -g hexo-cli<br></code></pre></td></tr></table></figure></p>
@@ -519,9 +519,9 @@
 <p>변경점 업데이트 문제가 생긴다면 이거 해주고<br><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean<br></code></pre></td></tr></table></figure></p>
 <p>올릴때는 보통 이렇게<br><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean<br>hexo deploy<br></code></pre></td></tr></table></figure></p>
 <h3 id="링크"><a href="#링크" class="headerlink" title="링크"></a>링크</h3><ul>
-<li><a href="https://tbr74.github.io/2017/07/09/Study-Hexo-2017-07-09-hexo-markdown/" target="_blank" rel="noopener">마크다운</a></li>
+<li><a href="https://tbr74.github.io/2017/07/09/Study-Hexo-2017-07-09-hexo-markdown/" rel="external nofollow noopener noreferrer" target="_blank">마크다운</a></li>
 <li><a href="hexo-deploy-github-nopassword">github 암호 없이 업로드</a></li>
-<li><a href="https://www.codeblocq.com/2016/04/Create-links-automatically-in-your-hexo-posts/" target="_blank" rel="noopener">autolink 플러그인 설명</a></li>
+<li><a href="https://www.codeblocq.com/2016/04/Create-links-automatically-in-your-hexo-posts/" rel="external nofollow noopener noreferrer" target="_blank">autolink 플러그인 설명</a></li>
 </ul>
 
       
@@ -707,7 +707,7 @@ PlayerSettings.Android.keyaliasPass = &quot;dcappkey&quot;;
       <div><i class="fas fa-link"></i>Blogroll</div>
       <ul>
         
-        <li><i class="fas fa-link"></i><a href="https://github.com/" target="_blank">GitHub</a></li>
+        <li><i class="fas fa-link"></i><a href="https://github.com/" target="_blank" rel="external nofollow noopener noreferrer">GitHub</a></li>
         
       </ul>
     </div>
@@ -740,11 +740,11 @@ PlayerSettings.Android.keyaliasPass = &quot;dcappkey&quot;;
       <div class="footer-right">
         <div class="custom-info">
           
-          <i class="fab fa-github-alt"></i><a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+          <i class="fab fa-github-alt"></i><a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener noreferrer">GitHub Pages</a>
           
         </div>
         <div class="powered-by">
-          Proudly Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> | Theme is <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+          Proudly Powered by <a href="https://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> | Theme is <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank" rel="external nofollow noopener noreferrer">ARIA</a>
         </div>
       </div>
     </div>

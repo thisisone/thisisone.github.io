@@ -16,14 +16,6 @@
     </url>
 
     <url>
-        <loc>http://thisisone.github.io/csharp-string-append-and-format-diff/</loc>
-        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://thisisone.github.io/draw-profile-image/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -33,6 +25,14 @@
 
     <url>
         <loc>http://thisisone.github.io/gvim/</loc>
+        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://thisisone.github.io/csharp-string-append-and-format-diff/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -72,7 +72,7 @@
     </url>
 
     <url>
-        <loc>http://thisisone.github.io/nodejs-tcp-server-sample/</loc>
+        <loc>http://thisisone.github.io/web_crawler/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -88,7 +88,7 @@
     </url>
 
     <url>
-        <loc>http://thisisone.github.io/web_crawler/</loc>
+        <loc>http://thisisone.github.io/nodejs-tcp-server-sample/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
