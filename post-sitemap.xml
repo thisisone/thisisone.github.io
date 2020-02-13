@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>http://thisisone.github.io/svn-merge-automation/</loc>
+        <lastmod>2020-02-13T12:08:36.442Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://thisisone.github.io/hexo-setting/</loc>
         <lastmod>2020-02-08T18:19:07.881Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -16,7 +24,7 @@
     </url>
 
     <url>
-        <loc>http://thisisone.github.io/draw-profile-image/</loc>
+        <loc>http://thisisone.github.io/gvim/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -24,7 +32,7 @@
     </url>
 
     <url>
-        <loc>http://thisisone.github.io/gvim/</loc>
+        <loc>http://thisisone.github.io/draw-profile-image/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -48,6 +56,14 @@
     </url>
 
     <url>
+        <loc>http://thisisone.github.io/hyper-is/</loc>
+        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://thisisone.github.io/keystore/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -64,15 +80,7 @@
     </url>
 
     <url>
-        <loc>http://thisisone.github.io/hyper-is/</loc>
-        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://thisisone.github.io/web_crawler/</loc>
+        <loc>http://thisisone.github.io/nodejs-tcp-server-sample/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -88,7 +96,7 @@
     </url>
 
     <url>
-        <loc>http://thisisone.github.io/nodejs-tcp-server-sample/</loc>
+        <loc>http://thisisone.github.io/web_crawler/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

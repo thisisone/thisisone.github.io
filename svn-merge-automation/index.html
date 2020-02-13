@@ -83,7 +83,7 @@
     <script defer type="text/javascript" src="/js/index.js"></script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>Tag: node.js | 퇴근후서버다운, 그건일 - 곧사십</title>
+    <title>svn 머지 자동화 | 퇴근후서버다운, 그건일 - 곧사십</title>
     
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<script>
@@ -134,49 +134,86 @@
         <div class="main-container">
           <div class="content">
             
-<div id="tag" class="tag page">
-  <h1 class="page-title">node.js</h1>
+<div id="post" class="page">
   
   <article class="article post card animate" itemscope itemtype="http://schema.org/Article">
-    <header id="post-header" class="post-header">
-      <h1 class="post-title-simple" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/nodejs-tcp-server-sample/" itemprop="url">node.js 에서 tcp 서버 샘플</a>
-      </h1>
-      
-      <span class="post-date">
-        <time title="post-date" itemprop="dateCreated datePublished" datetime="2020-02-09T00:25:42+09:00">02-09</time>
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://thisisone.github.io/svn-merge-automation/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="그건일">
+       <meta itemprop="description" content="퇴근후서버다운, 그건일">
+       <meta itemprop="image" content="/images/avatar.png">
       </span>
-      
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="퇴근후서버다운, 그건일">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">svn 머지 자동화</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2020-02-13T20:52:18+09:00">2020-02-13 20:52:18</time></span>
+        </span>
+        
+        
+        
+      </div>
     </header>
+    <main class="post-main" itemprop="articleBody">
+      <p>svn 머지 하고 배포하는 기능을 구현해야하는데 가끔 이상해질때가 있어서 방법을 정리본다.</p>
+<p>문제의 현상이 머지는 계속 되는데 실제로 머지되는게 아니고 마지막 머지 버전만 올라 가버린다.</p>
+<h3 id="문제-있는-방법"><a href="#문제-있는-방법" class="headerlink" title="문제 있는 방법"></a>문제 있는 방법</h3><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs undefined">svn revert 폴더<br><br>svn update 폴더<br><br>// 마지막리비전 을 얻는다.<br>svn log --limit 1 폴더    <br>// 결과<br>// ------------------------------------------------------------------------<br>// r166 | thisisone | 2020-02-13 20:35:20 +0900 (목, 13 2 2020) | 1 line<br>// <br>//<br>// ------------------------------------------------------------------------<br>// ------------------------------------------------------------------------<br><br>svn merge -r마지막리비전:HEAD SVN머지원본폴더 폴더<br><br>svn commit -m &quot;&quot; 폴더<br></code></pre></td></tr></table></figure>
+<h3 id="개선-후"><a href="#개선-후" class="headerlink" title="개선 후"></a>개선 후</h3><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs undefined">svn revert 폴더<br><br>svn update 폴더<br><br>// 마지막 리비전 얻고<br>svn log --limit 1 폴더<br><br>svn merge -r마지막리비전:HEAD SVN머지원본폴더 폴더<br><br>// 머지된 내용이 있는지 확인한다.<br>svn status 폴더<br>// 결과:<br>//  M      bb<br>// M       bb\aa.txt<br><br>// svn status 결과가 2줄 이상이면 커밋하고 아니면 할필요 없다.<br>if( 결과가 2줄이면 then<br>    svn commit -m &quot;&quot; 폴더<br>else<br>    svn reviert -R 폴더<br>fi<br></code></pre></td></tr></table></figure>
+<p>마지막에 커밋할때 머지할게 없다면 커밋하지 말아야한다.<br>결과라고 한부분은 “svn status 폴더 &gt; result.txt” 로 파일로 뺀다음<br>c# 으로 짠 프로그램으로 검사했다.</p>
+<p>쉘 프로그램은 익숙치 않아서… wc -l 로 뭔가 하면될것 같긴한데..</p>
+
+    </main>
+    <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/tags/svn/" rel="tag"><i class="fas fa-tags"></i>svn</a>
+        
+      </div>
+      
+    </footer>
   </article>
   
-  <article class="article post card animate" itemscope itemtype="http://schema.org/Article">
-    <header id="post-header" class="post-header">
-      <h1 class="post-title-simple" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/nodesj-process-execute/" itemprop="url">node.js 에서 뭔가 실행하기</a>
-      </h1>
-      
-      <span class="post-date">
-        <time title="post-date" itemprop="dateCreated datePublished" datetime="2020-02-08T15:32:07+09:00">02-08</time>
-      </span>
-      
-    </header>
-  </article>
   
-  <article class="article post card animate" itemscope itemtype="http://schema.org/Article">
-    <header id="post-header" class="post-header">
-      <h1 class="post-title-simple" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/web_crawler/" itemprop="url">웹 크롤링 해보기</a>
-      </h1>
+  <nav class="page-nav">
+    <div class="page-nav-next page-nav-item">
       
-      <span class="post-date">
-        <time title="post-date" itemprop="dateCreated datePublished" datetime="2019-02-19T01:02:45+09:00">02-19</time>
-      </span>
+      <a href="/gvim/" rel="next" title="gvim 사용해보기"><i class="fas fa-angle-left"></i><span class="nav-title">gvim 사용해보기</span></a>
       
-    </header>
-  </article>
+    </div>
+    <div class="page-nav-prev page-nav-item">
+      
+    </div>
+  </nav>
   
   
+  
+	<div id="disqus_thread"></div>
+	<script>
+	
+	/**
+	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+	*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+	/*
+	var disqus_config = function () {
+	this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+	this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+	};
+	*/
+	(function() { // DON'T EDIT BELOW THIS LINE
+	var d = document, s = d.createElement('script');
+	s.src = 'https://geugeonil.disqus.com/embed.js';
+	s.setAttribute('data-timestamp', +new Date());
+	(d.head || d.body).appendChild(s);
+	})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="external nofollow noopener noreferrer" target="_blank">comments powered by Disqus.</a></noscript>                              
 </div>
 
           </div>
@@ -234,6 +271,17 @@
 
 
   <div class="sidebar-sticky">
+    
+    
+    
+    
+    
+    <hr>
+    <div class="post-toc sidebar-item" id="toc-div">
+      <div><i class="fas fa-list-ol"></i>Table of Contents</div>
+      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#문제-있는-방법"><span class="toc-text">문제 있는 방법</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#개선-후"><span class="toc-text">개선 후</span></a></li></ol></div>
+    </div>
+    
     
     
     

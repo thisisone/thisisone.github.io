@@ -139,6 +139,67 @@
   
   <article class="article post card animate" itemscope itemtype="http://schema.org/Article">
     <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://thisisone.github.io/keystore/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <meta itemprop="name" content="그건일">
+        <meta itemprop="description" content="퇴근후서버다운, 그건일">
+        <meta itemprop="image" content="/images/avatar.png">
+      </span>
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="퇴근후서버다운, 그건일">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link post-title-link-external" href="/keystore/" itemprop="url">안드로이드 앱 용 keystore 만들기</a>
+      </h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-02-03T12:18:55+09:00">2019-02-03 12:18:55</time></span>
+        </span>
+        
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/개발/" itemprop="url" rel="index"><span itemprop="name">개발</span></a></span>
+        </span>
+        
+        
+      </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      
+      <h3 id="명령어"><a href="#명령어" class="headerlink" title="명령어"></a>명령어</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">keytool -genkey -v -keystore [파일명] -<span class="hljs-built_in">alias</span> [앱이름] -keyalg RSA -keysize 2048 -validity [유효일]<br></code></pre></td></tr></table></figure>
+<h2 id="삽질기"><a href="#삽질기" class="headerlink" title="삽질기"></a>삽질기</h2><ol>
+<li>keytool 명령어가 keystore 인줄 잘못 봤음</li>
+<li>keytool 은 jdk 에 있었음 (anroid sdk 에 있는 줄)</li>
+<li>암호가 6자는 넘어야함</li>
+</ol>
+<pre><code>// :\Java\jdk1.8.0_191\bin\keytool -genkey -v -keystore dcapp.keystore -alias dcapp -keyalg RSA -keysize 2048 -validity 10000
+PlayerSettings.Android.keystoreName = &quot;Assets/Editor/dcapp.keystore&quot;;
+PlayerSettings.Android.keystorePass = &quot;dcappkey&quot;;
+PlayerSettings.Android.keyaliasName = &quot;dcapp&quot;;
+PlayerSettings.Android.keyaliasPass = &quot;dcappkey&quot;;
+</code></pre>
+      
+    </main>
+    <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/tags/안드로이드/" rel="tag"><i class="fas fa-tags"></i>안드로이드</a>
+        
+      </div>
+      
+    </footer>
+  </article>
+  
+  <article class="article post card animate" itemscope itemtype="http://schema.org/Article">
+    <div class="post-block">
       <link itemprop="mainEntityOfPage" href="http://thisisone.github.io/hyper-is/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
         <meta itemprop="name" content="그건일">
@@ -232,7 +293,7 @@
     
     <div class="archives-count">
       <div class="site-count-title">Archives</div>
-      <div><a href="/archives/">11</a></div>
+      <div><a href="/archives/">12</a></div>
     </div>
     
     
@@ -250,7 +311,7 @@
     
     <div class="tags-count">
       <div class="site-count-title">Tags</div>
-      <div><a href="/tags/">10</a></div>
+      <div><a href="/tags/">11</a></div>
     </div>
     
   </div>

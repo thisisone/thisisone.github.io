@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>svn 머지 자동화</title>
+      <link href="/svn-merge-automation/"/>
+      <url>/svn-merge-automation/</url>
+      
+        <content type="html"><![CDATA[<p>svn 머지 하고 배포하는 기능을 구현해야하는데 가끔 이상해질때가 있어서 방법을 정리본다.</p><p>문제의 현상이 머지는 계속 되는데 실제로 머지되는게 아니고 마지막 머지 버전만 올라 가버린다.</p><h3 id="문제-있는-방법"><a href="#문제-있는-방법" class="headerlink" title="문제 있는 방법"></a>문제 있는 방법</h3><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs undefined">svn revert 폴더<br><br>svn update 폴더<br><br>// 마지막리비전 을 얻는다.<br>svn log --limit 1 폴더    <br>// 결과<br>// ------------------------------------------------------------------------<br>// r166 | thisisone | 2020-02-13 20:35:20 +0900 (목, 13 2 2020) | 1 line<br>// <br>//<br>// ------------------------------------------------------------------------<br>// ------------------------------------------------------------------------<br><br>svn merge -r마지막리비전:HEAD SVN머지원본폴더 폴더<br><br>svn commit -m &quot;&quot; 폴더<br></code></pre></td></tr></table></figure><h3 id="개선-후"><a href="#개선-후" class="headerlink" title="개선 후"></a>개선 후</h3><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs undefined">svn revert 폴더<br><br>svn update 폴더<br><br>// 마지막 리비전 얻고<br>svn log --limit 1 폴더<br><br>svn merge -r마지막리비전:HEAD SVN머지원본폴더 폴더<br><br>// 머지된 내용이 있는지 확인한다.<br>svn status 폴더<br>// 결과:<br>//  M      bb<br>// M       bb\aa.txt<br><br>// svn status 결과가 2줄 이상이면 커밋하고 아니면 할필요 없다.<br>if( 결과가 2줄이면 then<br>    svn commit -m &quot;&quot; 폴더<br>else<br>    svn reviert -R 폴더<br>fi<br></code></pre></td></tr></table></figure><p>마지막에 커밋할때 머지할게 없다면 커밋하지 말아야한다.<br>결과라고 한부분은 “svn status 폴더 &gt; result.txt” 로 파일로 뺀다음<br>c# 으로 짠 프로그램으로 검사했다.</p><p>쉘 프로그램은 익숙치 않아서… wc -l 로 뭔가 하면될것 같긴한데..</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> svn </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>gvim 사용해보기</title>
       <link href="/gvim/"/>
       <url>/gvim/</url>
