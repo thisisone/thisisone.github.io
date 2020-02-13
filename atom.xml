@@ -45,11 +45,11 @@
   </entry>
   
   <entry>
-    <title>svn 머지 자동화</title>
+    <title>svn merge (머지) 쉘스크립트</title>
     <link href="http://thisisone.github.io/svn-merge-automation/"/>
     <id>http://thisisone.github.io/svn-merge-automation/</id>
     <published>2020-02-13T11:52:18.000Z</published>
-    <updated>2020-02-13T12:08:36.442Z</updated>
+    <updated>2020-02-13T16:30:15.576Z</updated>
     
     <summary type="html">
     
@@ -57,9 +57,8 @@
       
         
         
-          &lt;p&gt;svn 머지 하고 배포하는 기능을 구현해야하는데 가끔 이상해질때가 있어서 방법을 정리본다.&lt;/p&gt;
-&lt;p&gt;문제의 현상이 머지는 계속 되는데 실제로 머지되는게 아니고 마지막 머지 버전만 올라 가버린다.&lt;/p&gt;
-&lt;h3 id=&quot;문제-있는-방법&quot;&gt;&lt;a
+          &lt;p&gt;자동으로 svn 머지 하고 배포하는 기능을 구현하였는데&lt;br&gt;마지막 리비전 번호를 참조해서 하다보니&lt;br&gt;아무것도 머지할게 없을때도 머지 하면 리비전 번호가&lt;br&gt;높아져서 다음 리비전에 문제가 생기는 경우가 생겼습니다.&lt;/p&gt;
+&lt;h3
         
       
     
@@ -67,6 +66,10 @@
     
     
       <category term="svn" scheme="http://thisisone.github.io/tags/svn/"/>
+    
+      <category term="shell" scheme="http://thisisone.github.io/tags/shell/"/>
+    
+      <category term="linux" scheme="http://thisisone.github.io/tags/linux/"/>
     
   </entry>
   

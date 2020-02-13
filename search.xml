@@ -25,17 +25,21 @@
     
     
     <entry>
-      <title>svn 머지 자동화</title>
+      <title>svn merge (머지) 쉘스크립트</title>
       <link href="/svn-merge-automation/"/>
       <url>/svn-merge-automation/</url>
       
-        <content type="html"><![CDATA[<p>svn 머지 하고 배포하는 기능을 구현해야하는데 가끔 이상해질때가 있어서 방법을 정리본다.</p><p>문제의 현상이 머지는 계속 되는데 실제로 머지되는게 아니고 마지막 머지 버전만 올라 가버린다.</p><h3 id="문제-있는-방법"><a href="#문제-있는-방법" class="headerlink" title="문제 있는 방법"></a>문제 있는 방법</h3><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs undefined">svn revert 폴더<br><br>svn update 폴더<br><br>// 마지막리비전 을 얻는다.<br>svn log --limit 1 폴더    <br>// 결과<br>// ------------------------------------------------------------------------<br>// r166 | thisisone | 2020-02-13 20:35:20 +0900 (목, 13 2 2020) | 1 line<br>// <br>//<br>// ------------------------------------------------------------------------<br>// ------------------------------------------------------------------------<br><br>svn merge -r마지막리비전:HEAD SVN머지원본폴더 폴더<br><br>svn commit -m &quot;&quot; 폴더<br></code></pre></td></tr></table></figure><h3 id="개선-후"><a href="#개선-후" class="headerlink" title="개선 후"></a>개선 후</h3><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs undefined">svn revert 폴더<br><br>svn update 폴더<br><br>// 마지막 리비전 얻고<br>svn log --limit 1 폴더<br><br>svn merge -r마지막리비전:HEAD SVN머지원본폴더 폴더<br><br>// 머지된 내용이 있는지 확인한다.<br>svn status 폴더<br>// 결과:<br>//  M      bb<br>// M       bb\aa.txt<br><br>// svn status 결과가 2줄 이상이면 커밋하고 아니면 할필요 없다.<br>if( 결과가 2줄이면 then<br>    svn commit -m &quot;&quot; 폴더<br>else<br>    svn reviert -R 폴더<br>fi<br></code></pre></td></tr></table></figure><p>마지막에 커밋할때 머지할게 없다면 커밋하지 말아야한다.<br>결과라고 한부분은 “svn status 폴더 &gt; result.txt” 로 파일로 뺀다음<br>c# 으로 짠 프로그램으로 검사했다.</p><p>쉘 프로그램은 익숙치 않아서… wc -l 로 뭔가 하면될것 같긴한데..</p>]]></content>
+        <content type="html"><![CDATA[<p>자동으로 svn 머지 하고 배포하는 기능을 구현하였는데<br>마지막 리비전 번호를 참조해서 하다보니<br>아무것도 머지할게 없을때도 머지 하면 리비전 번호가<br>높아져서 다음 리비전에 문제가 생기는 경우가 생겼습니다.</p><h3 id="문제-있는-방법"><a href="#문제-있는-방법" class="headerlink" title="문제 있는 방법"></a>문제 있는 방법</h3><p>svn 머지할 내용이 없어도 머지하고 있습니다.</p><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs bash">svn revert -R 폴더<br>svn update 폴더<br><br><span class="hljs-comment"># 마지막리비전 을 얻는다.</span><br>svn <span class="hljs-built_in">log</span> --<span class="hljs-built_in">limit</span> 1 폴더 &gt; svn_log<br>cat svn_log | head -n 2 | awk <span class="hljs-string">'&#123; rev=substr($1,2); print rev &#125;'</span> &gt; svn_log_revision<br>LAST_REVISION=$(cat revision | wc -l)<br><span class="hljs-comment"># REVISION=166</span><br><br><br>svn merge -r <span class="hljs-variable">$REVISION</span>:HEAD 머지소스URL 폴더<br><span class="hljs-comment"># 머지소스URL:SVN 주소 입니다.</span><br><span class="hljs-comment"># 폴더: 머지소스URL 에서 소스를 가져와서 머지할 폴더 를 말합니다.</span><br><br>svn commit -m <span class="hljs-string">"솰라솰라"</span> 폴더<br></code></pre></td></tr></table></figure><h3 id="개선-후"><a href="#개선-후" class="headerlink" title="개선 후"></a>개선 후</h3><p>이 방법은 머지할 내용이 없다면 커밋을 진행하지 않습니다.</p><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs bash">svn revert -R 폴더<br>svn update 폴더<br><br><span class="hljs-comment"># 마지막리비전 을 얻는다.</span><br>svn <span class="hljs-built_in">log</span> --<span class="hljs-built_in">limit</span> 1 폴더 &gt; svn_log<br>cat svn_log | head -n 2 | awk <span class="hljs-string">'&#123; rev=substr($1,2); print rev &#125;'</span> &gt; svn_log_revision<br>LAST_REVISION=$(cat revision | wc -l)<br><span class="hljs-comment"># REVISION=166</span><br><br><br>svn merge -r <span class="hljs-variable">$REVISION</span>:HEAD 머지소스URL 폴더<br><span class="hljs-comment"># 머지소스URL:SVN 주소 입니다.</span><br><span class="hljs-comment"># 폴더: 머지소스URL 에서 소스를 가져와서 머지할 폴더 를 말합니다.</span><br><br><br>svn status 폴더 &gt; svn_status<br><br>LINE_COUNT=$(cat /game/dotnet/svn_status_after_merge | wc -l)<br><span class="hljs-comment"># LINE_COUNT=1</span><br><span class="hljs-comment"># 1 이상이 나옵니다.</span><br><span class="hljs-comment"># 2 이상이면 변동사항이 생겼다는 의미</span><br><br><span class="hljs-keyword">if</span> [ <span class="hljs-variable">$LINE_COUNT</span> \&gt; 1 ];<br><span class="hljs-keyword">then</span><br>   svn commit -m <span class="hljs-string">"커밋합니다. <span class="hljs-variable">$&#123;LAST_REVISION&#125;</span>~"</span> 폴더<br>   <span class="hljs-built_in">echo</span> <span class="hljs-string">"커밋합니다. <span class="hljs-variable">$&#123;LAST_REVISION&#125;</span>~"</span><br><span class="hljs-keyword">else</span><br>   <span class="hljs-built_in">echo</span> <span class="hljs-string">"커밋하지 않는다."</span>;<br><span class="hljs-keyword">fi</span>;<br></code></pre></td></tr></table></figure><p>결과물을 파일로 뽑아서 다시 읽는 내용이 좀 있습니다.<br>중간 결과가 어떤게 나오는지 좀 봐야해서 그렇게 했습니다.</p><p>대충 이런 명령어들을 알고 있어야 개발이 수월할듯합니다.</p><ul><li>head : 텍스트의 위에서 몇번째 줄까지 출력할지 정할 수 있다.</li><li>awk : n번째 단어를 얻거나 글씨를 자를 수 있다.</li><li>wc : 출력물의 라인수를 카운트할 수 있다.</li><li>변수에 결과 넣기 : 결과를 변수에 넣을 수 있다.</li><li>if 문 : 조건문 </li></ul><p>결국 시간 들이면 편하긴하지만<br>특수문자 같은걸 많이 썽해서 보기에는 안좋습니다. ㅎ</p>]]></content>
       
       
       
         <tags>
             
             <tag> svn </tag>
+            
+            <tag> shell </tag>
+            
+            <tag> linux </tag>
             
         </tags>
       
@@ -267,9 +271,9 @@
     
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -278,9 +282,9 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
