@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://thisisone.github.io/"/>
-  <updated>2020-02-13T12:08:36.442Z</updated>
+  <updated>2020-02-13T12:42:02.917Z</updated>
   <id>http://thisisone.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OWC Eenvoy Pro 제품 설명</title>
+    <link href="http://thisisone.github.io/owc-envoy-pro/"/>
+    <id>http://thisisone.github.io/owc-envoy-pro/</id>
+    <published>2020-02-13T12:27:48.000Z</published>
+    <updated>2020-02-13T12:42:02.917Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;집에 호기롭게 구매한 Mac Pro 2013 late (원통모양) 이 있는데&lt;br&gt;호기롭게 모양보고 샀기때문에 ssd 가 256gb 밖에 안된다.&lt;/p&gt;
+&lt;p&gt;(그래픽 카드도 구리다.)&lt;/p&gt;
+&lt;p&gt;안에 있는 ssd 를 1tb 로 바꾸고
+        
+      
+    
+    </summary>
+    
+    
+      <category term="장비" scheme="http://thisisone.github.io/tags/%EC%9E%A5%EB%B9%84/"/>
+    
+      <category term="쇼핑" scheme="http://thisisone.github.io/tags/%EC%87%BC%ED%95%91/"/>
+    
+  </entry>
   
   <entry>
     <title>svn 머지 자동화</title>
