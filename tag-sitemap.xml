@@ -17,13 +17,6 @@
     </url>
 
     <url>
-        <loc>http://thisisone.github.io/tags/hexo/</loc>
-        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://thisisone.github.io/tags/hyper/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -39,6 +32,13 @@
 
     <url>
         <loc>http://thisisone.github.io/tags/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C/</loc>
+        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://thisisone.github.io/tags/hexo/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -73,27 +73,6 @@
     </url>
 
     <url>
-        <loc>http://thisisone.github.io/tags/svn/</loc>
-        <lastmod>2020-02-13T16:30:15.576Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://thisisone.github.io/tags/shell/</loc>
-        <lastmod>2020-02-13T16:30:15.576Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://thisisone.github.io/tags/linux/</loc>
-        <lastmod>2020-02-13T16:30:15.576Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://thisisone.github.io/tags/%EC%9E%A5%EB%B9%84/</loc>
         <lastmod>2020-02-15T04:09:33.607Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -103,6 +82,27 @@
     <url>
         <loc>http://thisisone.github.io/tags/%EC%87%BC%ED%95%91/</loc>
         <lastmod>2020-02-15T04:09:33.607Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://thisisone.github.io/tags/svn/</loc>
+        <lastmod>2020-02-15T13:17:47.893Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://thisisone.github.io/tags/shell/</loc>
+        <lastmod>2020-02-15T13:17:47.893Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://thisisone.github.io/tags/linux/</loc>
+        <lastmod>2020-02-15T13:17:47.893Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

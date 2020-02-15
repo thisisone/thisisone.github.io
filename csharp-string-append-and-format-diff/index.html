@@ -1,90 +1,31 @@
-<!DOCTYPE html>
-<html>
-  <head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <meta name="theme-color" content="#33363b">
-    <meta name="msapplication-TileColor" content="#33363b">
-    
-    
-    
-    
-    <meta name="keywords" content="programming, coding, piano">
-    
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-    
-    
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
-    
-    
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-    
-    
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    
-    
-    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#33363b">
-    
-    
-    <link rel="manifest" href="/favicons/site.webmanifest">
-    
-    
-    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-    
-    
-    <link rel="alternate" href="/atom.xml" title="퇴근후서버다운, 그건일" type="application/atom+xml">
-    
-    
-    <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
-    
-    
-    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/css/index.css">
-    
-    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
-    
-    
-<link rel="stylesheet" type="text/css" href="/css/page.css">
-<link rel="stylesheet" type="text/css" href="/css/post.css">
 
-    <link rel="stylesheet" type="text/css" href="/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="/css/atom-one-dark.css">
-    <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script defer type="text/javascript" src="/js/util.js"></script>
-    <script defer type="text/javascript" src="/js/scrollspy.js"></script>
-    <script defer type="text/javascript" src="/js/fontawesome-all.min.js"></script>
-    <script defer type="text/javascript" src="/js/lightgallery.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-fullscreen.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-hash.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-pager.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-thumbnail.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-zoom.min.js"></script>
-    
-    <script defer src="/js/busuanzi.pure.mini.js"></script>
-    
-    
-    <script defer type="text/javascript" src="/js/search.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function () {
-      var searchPath = "search.xml";
-      if (searchPath.length === 0) {
-        searchPath = "search.xml";
-      }
-      var path = "/" + searchPath;
-      searchFunc(path, "search-input", "search-result");
-    });
-    </script>
-    
-    
-    <script defer type="text/javascript" src="/js/index.js"></script>
-    
-    <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>c# 에서 문자열 연산의 성능 문제 | 퇴근후서버다운, 그건일 - 곧사십</title>
-    
+<!DOCTYPE html>
+<html lang="ko" class="loading">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>c# 에서 문자열 연산의 성능 문제 - 퇴근후서버다운, 그건일</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="TriDiamond Obsidian,"> 
+    <meta name="description" content="퇴근후서버다운, 그건일,유니티에서 로그를 on / off 시키는걸 만들려다 우연히 테스트 해보았는데 꽤 충젹적인 결과가 나와서 공유 해봅니다.
+12345// 1번. 더한다Debug.Log(&amp;quot;a,"> 
+    <meta name="author" content="그건일"> 
+    <link rel="alternative" href="atom.xml" title="퇴근후서버다운, 그건일" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link href="https://fonts.loli.net/css?family=Roboto+Mono|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1429596_nzgqgvnmkjb.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/codemirror.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/theme/dracula.css">
+    <link rel="stylesheet" href="/css/obsidian.css">
+    <link rel="stylesheet" href="/css/ball-atom.min.css">
+	
+	<link rel="canonical" href="http://thisisone.github.io/csharp-string-append-and-format-diff/">
+	
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<script>
 	  (adsbygoogle = window.adsbygoogle || []).push({
@@ -93,115 +34,171 @@
 	  });
 	</script>
 	
-  </head>
-  <body itemscope itemtype="http://schema.org/WebPage" lang="ko" data-spy="scroll" data-target=".list-group">
-    
-<header id="header" class="header" style="background: #33363b;">
-  <div class="container">
-    <div class="header-container">
-      <div class="header-title">
-        <h1 class="title"><a href="/">퇴근후서버다운, 그건일</a></h1>
-        <h2 class="subtitle">곧사십</h2>
-      </div>
-      
-      <div class="logo">
-        <img src="/images/logo.png" alt="logo">
-      </div>
-      
+	
+</head>
+</html>
+
+<body class="loading">
+    <div class="loader">
+        <div class="la-ball-atom la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
-    <nav id="nav" class="nav">
-      <a id="nav-toggle" class="nav-toggle" aria-hidden="true"><i class="fas fa-bars" aria-label="Toggle Navbar"></i></a>
-      <ul id="menu" role="menubar" aria-hidden="false">
-        
-        <li role="menuitem"><a href="/">Home</a></li>
-        
-        <li role="menuitem"><a href="/archives/">Archives</a></li>
-        
-        <li role="menuitem"><a href="/categories/">Categories</a></li>
-        
-        <li role="menuitem"><a href="/tags/">Tags</a></li>
-        
-        <li role="menuitem"><a href="/about/">About</a></li>
-        
-      </ul>
-    </nav>
-  </div>
-</header>
+    <span id="config-title" style="display:none">퇴근후서버다운, 그건일</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div class="scrollbar gradient-bg-rev"></div>
+<div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <div class="navigation animated fadeIn fast delay-1s">
+        <img id="home-icon" class="icon-home" src="/img/favicon.png" alt data-url="http://thisisone.github.io">
+        <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
+        <h3 class="subtitle">c# 에서 문자열 연산의 성능 문제</h3>
+        <div class="social">
+            <!--        <div class="like-icon">-->
+            <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+            <!--        </div>-->
+            <div>
+                <div class="share">
+                    
+                        <a href="javascript:;" class="iconfont icon-share1"></a>
+                        <div class="share-component-cc" data-disabled="facebook,douban,linkedin,diandian,tencent,google"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-    <main id="main" class="main">
-      <div class="container">
-        <div class="main-container">
-          <div class="content">
+    <div class="section">
+        <div class="article-header-wrapper">
+    <div class="article-header">
+        <div class="article-cover animated fadeIn" style="
+            animation-delay: 600ms;
+            animation-duration: 1.2s;
+            background-image: 
+                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+                url(/img/cover.jpg) ">
+        </div>
+        <div class="else">
+            <p class="animated fadeInDown">
+                
+                <a href="javascript:;"><b>「 </b>Article<b> 」</b></a>
+                
+                9월 04, 2019
+            </p>
+            <h3 class="post-title animated fadeInDown"><a href="/csharp-string-append-and-format-diff/" title="c# 에서 문자열 연산의 성능 문제">c# 에서 문자열 연산의 성능 문제</a>
+            </h3>
             
-<div id="post" class="page">
-  
-  <article class="article post card animate" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="http://thisisone.github.io/csharp-string-append-and-format-diff/">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-       <meta itemprop="name" content="그건일">
-       <meta itemprop="description" content="게임개발자 블로그 해보자">
-       <meta itemprop="image" content="/images/avatar.png">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-       <meta itemprop="name" content="퇴근후서버다운, 그건일">
-      </span>
+            <p class="post-count animated fadeInDown">
+                
+                <span>
+                    <b class="iconfont icon-text2"></b> <i>Words count</i>
+                    10k
+                </span>
+                
+                
+                <span>
+                    <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
+                    10 mins.
+                </span>
+                
+                
+                
+                <span id="busuanzi_container_page_pv">
+                    <b class="iconfont icon-read"></b> <i>Read count</i>
+                    <span id="busuanzi_value_page_pv">0</span>
+                </span>
+                
+            </p>
+            
+            
+            <ul class="animated fadeInDown post-tags-list"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/c/">c#</a></li></ul>
+            
+        </div>
     </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">c# 에서 문자열 연산의 성능 문제</h1>
-      <div class="post-meta">
-        
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-09-04T00:30:12+09:00">2019-09-04 00:30:12</time></span>
-        </span>
-        
-        
-        
-      </div>
-    </header>
-    <main class="post-main" itemprop="articleBody">
-      <p>유니티에서 로그를 on / off 시키는걸 만들려다 우연히 테스트 해보았는데 꽤 충젹적인 결과가 나와서 공유 해봅니다.</p>
-<figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs undefined">// 1번. 더한다<br>Debug.Log(&quot;abc&quot;+&quot;def&quot;);<br><br>// 2번. string.format() 형태로 쓴다.<br>Debug.Log(&quot;&#123;0&#125;&#123;1&#125;&quot;, &quot;abc&quot;, &quot;def&quot;);<br></code></pre></td></tr></table></figure>
+</div>
+
+<div class="screen-gradient-after">
+    <div class="screen-gradient-content">
+        <div class="screen-gradient-content-inside">
+            <div class="bold-underline-links screen-gradient-sponsor">
+                <p>
+                    <span class="animated fadeIn delay-1s"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="article">
+    <div class="main">
+        <div class="content markdown animated fadeIn">
+            <p>유니티에서 로그를 on / off 시키는걸 만들려다 우연히 테스트 해보았는데 꽤 충젹적인 결과가 나와서 공유 해봅니다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs undefined">// 1번. 더한다<br>Debug.Log(&quot;abc&quot;+&quot;def&quot;);<br><br>// 2번. string.format() 형태로 쓴다.<br>Debug.Log(&quot;&#123;0&#125;&#123;1&#125;&quot;, &quot;abc&quot;, &quot;def&quot;);<br></code></pre></td></tr></table></figure>
 <p>로그를 끄는 걸 가정하고 위 고드는 그대로 배포 된다면<br>문자열 연산이 일어나지 않나 해서 <b>2번이 더 좋을것 같았다.</b></p>
-<h3 id="성능을-측정"><a href="#성능을-측정" class="headerlink" title="성능을 측정"></a>성능을 측정</h3><figure class="hljs highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs csharp">abc= <span class="hljs-number">1</span>ms <span class="hljs-comment">// 안 더한다.</span><br>abc+def= <span class="hljs-number">1</span>ms <span class="hljs-comment">// 한번 더한다.</span><br>abc+def+ghi= <span class="hljs-number">1</span>ms <span class="hljs-comment">// 두번 더한다.</span><br>format:abcdef= <span class="hljs-number">3</span>ms <span class="hljs-comment">// string format, params object[] args 를 첫번째 인자만 썼다.</span><br>format:[<span class="hljs-number">0</span>],abcdef= <span class="hljs-number">10</span>ms <span class="hljs-comment">// 두번째 인자 까지 썼다.</span><br>format:[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>],abcdef,ghi= <span class="hljs-number">19</span>ms <span class="hljs-comment">// 세번째 인자 까지 썼다.</span><br></code></pre></td></tr></table></figure>
+<h3 id="성능을-측정"><a href="#성능을-측정" class="headerlink" title="성능을 측정"></a>성능을 측정</h3><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs csharp">abc= <span class="hljs-number">1</span>ms <span class="hljs-comment">// 안 더한다.</span><br>abc+def= <span class="hljs-number">1</span>ms <span class="hljs-comment">// 한번 더한다.</span><br>abc+def+ghi= <span class="hljs-number">1</span>ms <span class="hljs-comment">// 두번 더한다.</span><br>format:abcdef= <span class="hljs-number">3</span>ms <span class="hljs-comment">// string format, params object[] args 를 첫번째 인자만 썼다.</span><br>format:[<span class="hljs-number">0</span>],abcdef= <span class="hljs-number">10</span>ms <span class="hljs-comment">// 두번째 인자 까지 썼다.</span><br>format:[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>],abcdef,ghi= <span class="hljs-number">19</span>ms <span class="hljs-comment">// 세번째 인자 까지 썼다.</span><br></code></pre></td></tr></table></figure>
 <h3 id="맙소사"><a href="#맙소사" class="headerlink" title="맙소사"></a>맙소사</h3><p>테스트코드 공유해봅니다.</p>
-<figure class="hljs highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><code class="hljs csharp"><span class="hljs-keyword">using</span> System;<br><span class="hljs-keyword">using</span> System.Collections;<br><span class="hljs-keyword">using</span> System.Collections.Generic;<br><span class="hljs-keyword">using</span> UnityEngine;<br><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">FirstScene</span> : <span class="hljs-title">MonoBehaviour</span><br>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Update</span>(<span class="hljs-params"></span>)</span><br>    &#123;<br>        <span class="hljs-keyword">if</span>(Input.GetKeyDown(KeyCode.Space))<br>		&#123;<br>			<span class="hljs-keyword">int</span> count = <span class="hljs-number">100000</span>;<br>			<span class="hljs-keyword">var</span> sw = <span class="hljs-keyword">new</span> System.Diagnostics.Stopwatch();<br>			sw.Start();<br>			<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>; i&lt; count; i++)<br>			&#123;<br>				LogTest1(<span class="hljs-string">"abc"</span>);<br>			&#125;<br>			sw.Stop();<br>			<span class="hljs-keyword">var</span> test1 = sw.ElapsedMilliseconds;<br><br><br>			sw.Reset();<br>			sw.Start();<br>			<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; count; i++)<br>			&#123;<br>				LogTest1(<span class="hljs-string">"abc"</span> + <span class="hljs-string">"def"</span>);<br>			&#125;<br>			sw.Stop();<br>			<span class="hljs-keyword">var</span> test11 = sw.ElapsedMilliseconds;<br><br><br>			sw.Reset();<br>			sw.Start();<br>			<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; count; i++)<br>			&#123;<br>				LogTest1(<span class="hljs-string">"abc"</span> + <span class="hljs-string">"def"</span> + <span class="hljs-string">"ghi"</span>);<br>			&#125;<br>			sw.Stop();<br>			<span class="hljs-keyword">var</span> test111 = sw.ElapsedMilliseconds;<br><br><br>			sw.Reset();<br>			sw.Start();<br>			<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; count; i++)<br>			&#123;<br>				LogTest2(<span class="hljs-string">"abcdef"</span>);<br>			&#125;<br>			sw.Stop();<br>			<span class="hljs-keyword">var</span> test2 = sw.ElapsedMilliseconds;<br><br><br>			sw.Reset();<br>			sw.Start();<br>			<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; count; i++)<br>			&#123;<br>				LogTest2(<span class="hljs-string">"&#123;0&#125;"</span>, <span class="hljs-string">"abcdef"</span>);<br>			&#125;<br>			sw.Stop();<br>			<span class="hljs-keyword">var</span> test22 = sw.ElapsedMilliseconds;<br><br><br>			sw.Reset();<br>			sw.Start();<br>			<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; count; i++)<br>			&#123;<br>				LogTest2(<span class="hljs-string">"&#123;0&#125;&#123;1&#125;"</span>, <span class="hljs-string">"abcdef"</span>, <span class="hljs-string">"ghi"</span>);<br>			&#125;<br>			sw.Stop();<br>			<span class="hljs-keyword">var</span> test222 = sw.ElapsedMilliseconds;<br><br>			<span class="hljs-keyword">string</span> s = <span class="hljs-string">""</span>;<br>			s += <span class="hljs-keyword">string</span>.Format(<span class="hljs-string">"abc= &#123;0&#125;ms\n"</span>, test1);<br>			s += <span class="hljs-keyword">string</span>.Format(<span class="hljs-string">"abc+def= &#123;0&#125;ms\n"</span>, test11);<br>			s += <span class="hljs-keyword">string</span>.Format(<span class="hljs-string">"abc+def+ghi= &#123;0&#125;ms\n"</span>, test111);<br>			s += <span class="hljs-keyword">string</span>.Format(<span class="hljs-string">"format:abcdef= &#123;0&#125;ms\n"</span>, test2);<br>			s += <span class="hljs-keyword">string</span>.Format(<span class="hljs-string">"format:[0],abcdef= &#123;0&#125;ms\n"</span>, test22);<br>			s += <span class="hljs-keyword">string</span>.Format(<span class="hljs-string">"format:[0][1],abcdef,ghi= &#123;0&#125;ms\n"</span>, test222);<br>			Debug.Log(s);<br>		&#125;<br>    &#125;<br><br>	<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">LogTest1</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> msg</span>)</span><br>	&#123;<br><br>	&#125;<br><br>	<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">LogTest2</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> format, <span class="hljs-keyword">params</span> <span class="hljs-keyword">object</span>[] args</span>)</span><br>	&#123;<br><br>	&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><code class="hljs csharp"><span class="hljs-keyword">using</span> System;<br><span class="hljs-keyword">using</span> System.Collections;<br><span class="hljs-keyword">using</span> System.Collections.Generic;<br><span class="hljs-keyword">using</span> UnityEngine;<br><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">FirstScene</span> : <span class="hljs-title">MonoBehaviour</span><br>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Update</span>(<span class="hljs-params"></span>)</span><br>    &#123;<br>        <span class="hljs-keyword">if</span>(Input.GetKeyDown(KeyCode.Space))<br>		&#123;<br>			<span class="hljs-keyword">int</span> count = <span class="hljs-number">100000</span>;<br>			<span class="hljs-keyword">var</span> sw = <span class="hljs-keyword">new</span> System.Diagnostics.Stopwatch();<br>			sw.Start();<br>			<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>; i&lt; count; i++)<br>			&#123;<br>				LogTest1(<span class="hljs-string">"abc"</span>);<br>			&#125;<br>			sw.Stop();<br>			<span class="hljs-keyword">var</span> test1 = sw.ElapsedMilliseconds;<br><br><br>			sw.Reset();<br>			sw.Start();<br>			<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; count; i++)<br>			&#123;<br>				LogTest1(<span class="hljs-string">"abc"</span> + <span class="hljs-string">"def"</span>);<br>			&#125;<br>			sw.Stop();<br>			<span class="hljs-keyword">var</span> test11 = sw.ElapsedMilliseconds;<br><br><br>			sw.Reset();<br>			sw.Start();<br>			<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; count; i++)<br>			&#123;<br>				LogTest1(<span class="hljs-string">"abc"</span> + <span class="hljs-string">"def"</span> + <span class="hljs-string">"ghi"</span>);<br>			&#125;<br>			sw.Stop();<br>			<span class="hljs-keyword">var</span> test111 = sw.ElapsedMilliseconds;<br><br><br>			sw.Reset();<br>			sw.Start();<br>			<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; count; i++)<br>			&#123;<br>				LogTest2(<span class="hljs-string">"abcdef"</span>);<br>			&#125;<br>			sw.Stop();<br>			<span class="hljs-keyword">var</span> test2 = sw.ElapsedMilliseconds;<br><br><br>			sw.Reset();<br>			sw.Start();<br>			<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; count; i++)<br>			&#123;<br>				LogTest2(<span class="hljs-string">"&#123;0&#125;"</span>, <span class="hljs-string">"abcdef"</span>);<br>			&#125;<br>			sw.Stop();<br>			<span class="hljs-keyword">var</span> test22 = sw.ElapsedMilliseconds;<br><br><br>			sw.Reset();<br>			sw.Start();<br>			<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; count; i++)<br>			&#123;<br>				LogTest2(<span class="hljs-string">"&#123;0&#125;&#123;1&#125;"</span>, <span class="hljs-string">"abcdef"</span>, <span class="hljs-string">"ghi"</span>);<br>			&#125;<br>			sw.Stop();<br>			<span class="hljs-keyword">var</span> test222 = sw.ElapsedMilliseconds;<br><br>			<span class="hljs-keyword">string</span> s = <span class="hljs-string">""</span>;<br>			s += <span class="hljs-keyword">string</span>.Format(<span class="hljs-string">"abc= &#123;0&#125;ms\n"</span>, test1);<br>			s += <span class="hljs-keyword">string</span>.Format(<span class="hljs-string">"abc+def= &#123;0&#125;ms\n"</span>, test11);<br>			s += <span class="hljs-keyword">string</span>.Format(<span class="hljs-string">"abc+def+ghi= &#123;0&#125;ms\n"</span>, test111);<br>			s += <span class="hljs-keyword">string</span>.Format(<span class="hljs-string">"format:abcdef= &#123;0&#125;ms\n"</span>, test2);<br>			s += <span class="hljs-keyword">string</span>.Format(<span class="hljs-string">"format:[0],abcdef= &#123;0&#125;ms\n"</span>, test22);<br>			s += <span class="hljs-keyword">string</span>.Format(<span class="hljs-string">"format:[0][1],abcdef,ghi= &#123;0&#125;ms\n"</span>, test222);<br>			Debug.Log(s);<br>		&#125;<br>    &#125;<br><br>	<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">LogTest1</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> msg</span>)</span><br>	&#123;<br><br>	&#125;<br><br>	<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">LogTest2</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> format, <span class="hljs-keyword">params</span> <span class="hljs-keyword">object</span>[] args</span>)</span><br>	&#123;<br><br>	&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 <h3 id="추가로"><a href="#추가로" class="headerlink" title="추가로"></a>추가로</h3><p>Unity 에서는 쓸 수 없지만<br>dotnet core 에서 아래와 같이 쓰는 기능이 있던데</p>
-<figure class="hljs highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs csharp">Log(<span class="hljs-string">$"<span class="hljs-subst">&#123;arg[<span class="hljs-number">0</span>]&#125;</span><span class="hljs-subst">&#123;arg[<span class="hljs-number">1</span>]&#125;</span>"</span>);<br></code></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs csharp">Log(<span class="hljs-string">$"<span class="hljs-subst">&#123;arg[<span class="hljs-number">0</span>]&#125;</span><span class="hljs-subst">&#123;arg[<span class="hljs-number">1</span>]&#125;</span>"</span>);<br></code></pre></td></tr></table></figure>
 <p>이게 속도가 제일 빨랐다.</p>
 
-    </main>
-    <footer class="post-footer">
-      
-      <div class="post-tags">
-        
-        <a class="post-tag button" href="/tags/c/" rel="tag"><i class="fas fa-tags"></i>c#</a>
-        
-      </div>
-      
-    </footer>
-  </article>
-  
-  
-  <nav class="page-nav">
-    <div class="page-nav-next page-nav-item">
-      
-      <a href="/hexo-setting/" rel="next" title="hexo 셋팅 방법"><i class="fas fa-angle-left"></i><span class="nav-title">hexo 셋팅 방법</span></a>
-      
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src>
+            </audio>
+            
+            <ul id="audio-list" style="display:none">
+                
+                
+                <li title="0" data-url="/statics/chengdu.mp3"></li>
+                
+                    
+            </ul>
+            
+            
+            
+        </div>
+        <div class="sidebar">
+            <div class="box animated fadeInRight">
+                <div class="subbox">
+                    <img src="https://res.cloudinary.com/tridiamond/image/upload/v1573019751/TriDiamond_logo_ui_xeublz.jpg" height="300" width="300">
+                    <p>그건일</p>
+                    <span>Think like an artist, develop like an artisan</span>
+                    <dl>
+                        <dd><a href="https://github.com/TriDiamond" target="_blank" rel="external nofollow noopener noreferrer"><span class=" iconfont icon-github"></span></a></dd>
+                        <dd><a href="https://twitter.com/TriDiamond6" target="_blank" rel="external nofollow noopener noreferrer"><span class=" iconfont icon-twitter"></span></a></dd>
+                        <dd><a href="https://stackoverflow.com/users/7602324/tridiamond?tab=profile" target="_blank" rel="external nofollow noopener noreferrer"><span class=" iconfont icon-stack-overflow"></span></a></dd>
+                    </dl>
+                </div>
+                <ul>
+                    <li><a href="/">13 <p>Articles</p></a></li>
+                    <li><a href="/categories">1 <p>Categories</p></a></li>
+                    <li><a href="/tags">15 <p>Tags</p></a></li>
+                </ul>
+            </div>
+            
+            
+            
+            <div class="box sticky animated fadeInRight faster">
+                <div id="toc" class="subbox">
+                    <h4>Contents</h4>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#성능을-측정"><span class="toc-number">1.</span> <span class="toc-text">성능을 측정</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#맙소사"><span class="toc-number">2.</span> <span class="toc-text">맙소사</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#추가로"><span class="toc-number">3.</span> <span class="toc-text">추가로</span></a></li></ol>
+                </div>
+            </div>
+            
+            
+        </div>
     </div>
-    <div class="page-nav-prev page-nav-item">
-      
-      <a href="/neck-stretching/" rel="prev" title="거북목 교정 운동"><span class="nav-title">거북목 교정 운동</span><i class="fas fa-angle-right"></i></a>
-      
-    </div>
-  </nav>
-  
-  
-  
+	
+
 	<div id="disqus_thread"></div>
 	<script>
-	
+
 	/**
 	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 	*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
@@ -219,126 +216,220 @@
 	})();
 	</script>
 	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="external nofollow noopener noreferrer" target="_blank">comments powered by Disqus.</a></noscript>                              
+
 </div>
 
-          </div>
-          
-          
-          
-<aside class="sidebar" id="sidebar" style="background: url(/images/background.png);">
-  
-  <div class="search">
-    <div class="form-group">
-      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="Search" class="form-control">
     </div>
-  </div>
-  <div class="search-result-box" id="search-result"></div>
-  
-  
-<div class="info sidebar-item" id="info">
-  
-  <img class="author-avatar" src="/images/avatar.png" alt="그건일">
-  
-  <h1 class="author-name">그건일</h1>
-  <h2 class="author-description">게임개발자 블로그 해보자</h2>
-  <div class="site-count">
-    
-    <div class="archives-count">
-      <div class="site-count-title">Archives</div>
-      <div><a href="/archives/">13</a></div>
-    </div>
-    
-    
-    
-    <span class="site-count-divider divider">|</span>
-    
-    <div class="categories-count">
-      <div class="site-count-title">Categories</div>
-      <div><a href="/categories/">1</a></div>
-    </div>
-    
-    
-    
-    <span class="site-count-divider divider">|</span>
-    
-    <div class="tags-count">
-      <div class="site-count-title">Tags</div>
-      <div><a href="/tags/">15</a></div>
-    </div>
-    
-  </div>
-  
-  <div class="rss">
-    <a class="rss-link button sidebar-item" href="/atom.xml"><i class="fas fa-rss"></i>RSS</a>
-  </div>
-  
 </div>
-
-
-  <div class="sidebar-sticky">
-    
-    
-    
-    
-    
-    <hr>
-    <div class="post-toc sidebar-item" id="toc-div">
-      <div><i class="fas fa-list-ol"></i>Table of Contents</div>
-      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#성능을-측정"><span class="toc-text">성능을 측정</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#맙소사"><span class="toc-text">맙소사</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#추가로"><span class="toc-text">추가로</span></a></li></ol></div>
+    <div id="back-to-top" class="animated fadeIn faster">
+        <div class="flow"></div>
+        <span class="percentage animated fadeIn faster">0%</span>
+        <span class="iconfont icon-top02 animated fadeIn faster"></span>
     </div>
-    
-    
-    
-    
-    <hr>
-    <div class="blogroll sidebar-item">
-      <div><i class="fas fa-link"></i>Blogroll</div>
-      <ul>
-        
-        <li><i class="fas fa-link"></i><a href="https://github.com/" target="_blank" rel="external nofollow noopener noreferrer">GitHub</a></li>
-        
-      </ul>
-    </div>
-    
-  </div>
-</aside>
-
-
-          
-        </div>
-      </div>
-    </main>
-    
-<footer id="footer" class="footer" style="background: #33363b;">
-  <div class="container">
-    <div class="back-to-top">
-      <button id="back-to-top"><i class="fas fa-angle-double-up" aria-label="Back to Top"></i></button>
-    </div>
-    <div class="footer-container">
-      <div class="footer-left">
-        <div class="copyright">
-          <span class="author">그건일</span><span class="year"><i class="far fa-copyright"></i>2020</span>
-        </div>
-        
-        <div class="busuanzi">
-          <span id="busuanzi_container_site_pv"><i class="fas fa-eye" aria-label="Site Visit Count" aria-hidden="false"></i><span id="busuanzi_value_site_pv"></span></span><span id="busuanzi_container_site_uv"><i class="fas fa-user" aria-label="Site User Count" aria-hidden="false"></i><span id="busuanzi_value_site_uv"></span></span><span id="busuanzi_container_page_pv"><i class="far fa-file-alt"></i><span id="busuanzi_value_page_pv" aria-label="Page Click Count" aria-hidden="false"></span></span>
-        </div>
-        
-      </div>
-      <div class="footer-right">
-        <div class="custom-info">
-          
-          <i class="fab fa-github-alt"></i><a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener noreferrer">GitHub Pages</a>
-          
-        </div>
-        <div class="powered-by">
-          Proudly Powered by <a href="https://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> | Theme is <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank" rel="external nofollow noopener noreferrer">ARIA</a>
-        </div>
-      </div>
-    </div>
-  </div>
+</body>
+<footer>
+    <p class="copyright" id="copyright">
+        &copy; 2020
+        <span class="gradient-text">
+            그건일
+        </span>.
+        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>
+        Theme
+        <span class="gradient-text">
+            <a href="https://github.com/TriDiamond/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="external nofollow noopener noreferrer">Obsidian</a>
+        </span>
+        <small><a href="https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md" title="v1.4.3" target="_blank" rel="external nofollow noopener noreferrer">v1.4.3</a></small>
+    </p>
 </footer>
 
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      preferredFont: "TeX",
+      availableFonts: ["STIX", "TeX"],
+      linebreaks: {
+        automatic: true
+      },
+      EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"]
+      ],
+      processEscapes: true,
+      ignoreClass: "tex2jax_ignore|dno",
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      noUndefined: {
+        attributes: {
+          mathcolor: "red",
+          mathbackground: "#FFEEEE",
+          mathsize: "90%"
+        }
+      },
+      Macros: {
+        href: "{}"
+      }
+    },
+    messageStyle: "none"
+  });
+</script>
+<script>
+  function initialMathJax() {
+    MathJax.Hub.Queue(function () {
+      var all = MathJax.Hub.getAllJax(),
+        i;
+      // console.log(all);
+      for (i = 0; i < all.length; i += 1) {
+        console.log(all[i].SourceElement().parentNode)
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  }
 
-  </body>
-</html>
+  function reprocessMathJax() {
+    if (typeof MathJax !== 'undefined') {
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }
+  }
+</script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/obsidian.js"></script>
+<script src="/js/jquery.truncate.js"></script>
+<script src="/js/search.js"></script>
+<script src="//cdn.bootcss.com/typed.js/2.0.10/typed.min.js"></script>
+<script src="//cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+<script src="https://cdn.bootcss.com/codemirror/5.48.4/codemirror.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/javascript/javascript.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/css/css.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/xml/xml.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/htmlmixed/htmlmixed.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/clike/clike.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/php/php.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/shell/shell.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/python/python.min.js"></script>
+
+
+
+    <script src="/js/busuanzi.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('span[id^="busuanzi_"]').length) {
+                initialBusuanzi();
+            }
+        });
+    </script>
+
+
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="//www.googletagmanager.com/gtag/js?id=UA-149874671-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149874671-1');
+    </script>
+
+
+
+
+
+<script>
+    function initialTyped () {
+        var typedTextEl = $('.typed-text');
+        if (typedTextEl && typedTextEl.length > 0) {
+            var typed = new Typed('.typed-text', {
+                strings: ["Think like an artist, develop like an artisan", "艺术家思维去思考问题，工匠创造精神去开发"],
+                typeSpeed: 90,
+                loop: true,
+                loopCount: Infinity,
+                backSpeed: 20,
+            });
+        }
+    }
+
+    if ($('.article-header') && $('.article-header').length) {
+        $(document).ready(function () {
+            initialTyped();
+        });
+    }
+</script>
+
+
+
+
+
