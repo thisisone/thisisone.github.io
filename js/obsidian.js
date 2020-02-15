@@ -408,12 +408,13 @@ var Obsidian = {
           "xquery": "XQuery",
           "yaml": "YAML"
         };
-		  
+        
+			lang = 'vim';
+
 			var $code = item.text();
-			lang = 'bash';
 			var lines = $code.split('[n] ');
-			var found_first_line = false;	
-			$code = "";
+			var found_first_line = false;
+			var code_lines = "";
 			for(var i=0; i<lines.length; i++)
 			{
 				if(i == 0) {
@@ -430,13 +431,14 @@ var Obsidian = {
 				if(!found_first_line)
 				{
 					found_first_line = true;
-					$code += lines[i];
+					code_lines += lines[i];
 				}
 				else
 				{
-					$code += "\n" + lines[i];
+					code_lines += "\n" + lines[i];
 				}
 			}
+			$code = code_lines;
 
         var displayLangText = "";
         if (lang in langMap) displayLangText = langMap[lang];

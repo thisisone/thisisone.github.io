@@ -260,11 +260,11 @@
     
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p><img src="/avatar/avatar2.gif" alt></p><table><thead><tr><th style="text-align:center">always test</th></tr></thead><tbody><tr><td style="text-align:center">윈터이즈커밍</td></tr></tbody></table>]]></content>
       
     </entry>
     
@@ -282,11 +282,33 @@
     
     
     <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>archives</title>
+      <link href="/archives/index.html"/>
+      <url>/archives/index.html</url>
       
-        <content type="html"><![CDATA[<p><img src="/avatar/avatar2.gif" alt></p><table><thead><tr><th style="text-align:center">always test</th></tr></thead><tbody><tr><td style="text-align:center">윈터이즈커밍</td></tr></tbody></table>]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>whoami</title>
+      <link href="/whoami/index.html"/>
+      <url>/whoami/index.html</url>
+      
+        <content type="html"><![CDATA[<p><br><br><br></p><font color="white">헤햇</font>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     

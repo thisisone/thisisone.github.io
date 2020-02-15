@@ -8,22 +8,36 @@
     </url>
     
     <url>
-        <loc>http://thisisone.github.io/about/</loc>
-        <lastmod>2019-09-01T12:33:22.362Z</lastmod>
+        <loc>http://thisisone.github.io/archives/</loc>
+        <lastmod>2020-02-15T14:01:50.450Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>http://thisisone.github.io/whoami/</loc>
+        <lastmod>2020-02-15T13:59:12.738Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>http://thisisone.github.io/categories/</loc>
-        <lastmod>2019-09-01T12:33:21.889Z</lastmod>
+        <lastmod>2020-02-15T13:55:47.840Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>http://thisisone.github.io/tags/</loc>
-        <lastmod>2019-09-01T12:33:21.858Z</lastmod>
+        <lastmod>2020-02-15T13:55:23.630Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>http://thisisone.github.io/about/</loc>
+        <lastmod>2019-09-01T12:33:22.362Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
