@@ -3,13 +3,6 @@
 
 
     <url>
-        <loc>http://thisisone.github.io/tags/c/</loc>
-        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://thisisone.github.io/tags/youtube/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -17,56 +10,7 @@
     </url>
 
     <url>
-        <loc>http://thisisone.github.io/tags/hyper/</loc>
-        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://thisisone.github.io/tags/app/</loc>
-        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://thisisone.github.io/tags/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C/</loc>
-        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://thisisone.github.io/tags/hexo/</loc>
-        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://thisisone.github.io/tags/%EC%9A%B4%EB%8F%99/</loc>
-        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://thisisone.github.io/tags/node-js/</loc>
-        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://thisisone.github.io/tags/tcp/</loc>
-        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://thisisone.github.io/tags/server/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -103,6 +47,62 @@
     <url>
         <loc>http://thisisone.github.io/tags/linux/</loc>
         <lastmod>2020-02-15T13:17:47.893Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://thisisone.github.io/tags/c/</loc>
+        <lastmod>2020-02-15T13:32:09.556Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://thisisone.github.io/tags/hexo/</loc>
+        <lastmod>2020-02-15T13:34:54.559Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://thisisone.github.io/tags/hyper/</loc>
+        <lastmod>2020-02-15T13:38:34.164Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://thisisone.github.io/tags/app/</loc>
+        <lastmod>2020-02-15T13:38:34.164Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://thisisone.github.io/tags/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C/</loc>
+        <lastmod>2020-02-15T13:38:50.201Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://thisisone.github.io/tags/tcp/</loc>
+        <lastmod>2020-02-15T13:40:17.520Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://thisisone.github.io/tags/server/</loc>
+        <lastmod>2020-02-15T13:40:17.520Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://thisisone.github.io/tags/node-js/</loc>
+        <lastmod>2020-02-15T13:41:28.450Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

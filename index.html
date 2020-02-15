@@ -251,7 +251,7 @@
                 
                     <span>
                         <b class="iconfont icon-text2"></b> <i>Words count</i>
-                        901
+                        956
                     </span>
                 
                 
@@ -271,10 +271,7 @@
 <p>utf-8 파일을 표시 못해서 설정방법을 찾았습니다.<br>그런데 이렇게 셋팅하면 euc-kr 가 깨져보입니다. </p>
 <p>설정파일: C:\Program Files (x86)\Vim_vimrc</p>
 <p>제일 마지막에 써줍니다. </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs undefined">set tenc=korea<br>set enc=utf8<br>set langmenu=none<br>lang en<br></code></pre></td></tr></table></figure>
-<p>출처:</p>
-<ul>
-<li><a href>설치페이지</a><a href="https://www.vim.org/download.php" rel="external nofollow noopener noreferrer" target="_blank">https://...</a></li></ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs undefined">bash<br>[n] set tenc=korea<br>[n] set enc=utf8<br>[n] set langmenu=none<br>[n] lang ...</code></pre></td></tr></table></figure>
             
             <span class="read-more"><a href="/gvim/" title="Read article" class="posttitle">Read article</a> <b class="iconfont icon-arrow-right- gradient-text"></b></span>
         </div>
@@ -301,7 +298,7 @@
                 
                     <span>
                         <b class="iconfont icon-text2"></b> <i>Words count</i>
-                        2.9k
+                        3k
                     </span>
                 
                 
@@ -321,7 +318,7 @@
                 <p>참고 링크: <a href="https://soulsearcher.github.io/2019/08/09/hexo-deploy-failed/" rel="external nofollow noopener noreferrer" target="_blank">https://soulsearcher.github.io/2019/08/09/hexo-deploy-failed/</a></p>
 <p>참고 링크는 이중인증에 대한 내용이지만<br>이중인증과 상관없이 사용가능하다.<br>암호 매번 입력하는것도 번거럽고</p>
 <h3 id="ssh-key-만들기"><a href="#ssh-key-만들기" class="headerlink" title="ssh key 만들기"></a>ssh key 만들기</h3><p>git 깔고<br>git bash 를 이용했다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">ssh-keygen -t rsa -b 4096<br></code></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">[n] ssh-keygen -t rsa -b 4096<br></code></pre></td></tr></table></figure>
 <p>이러면 .ssh 폴더와<br>id_rsa<br>id_rsa.pub<br>가 생긴다.</p>
 <h3 id="ssh-config-추가"><a href="#ssh-config-추가" class="headerlink" title="ssh config 추가"></a>ssh config 추가</h3><p>내가할땐 UseKeychain...</p>
             
@@ -350,13 +347,13 @@
                 
                     <span>
                         <b class="iconfont icon-text2"></b> <i>Words count</i>
-                        9.6k
+                        6.5k
                     </span>
                 
                 
                     <span>
                         <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
-                        9 mins.
+                        6 mins.
                     </span>
                 
                 
@@ -370,7 +367,7 @@
                 <p>샘플을 발견하였는데<br>필요한 대부분의 이벤트가 잘들어가 있었으며<br>세션 별로 setTimeout 를 걸수 있었어서 편리했다.</p>
 <p>빨리 만들어야 해서 for 문돌면서 글자 합쳐 주는 부분이 있는데<br>효율은 잘 모르겠다.</p>
 <p>telnet 으로 테스트 정도는 할 수 있었다.<br>npm 으로 별다른 설치를 하지않아도 되서 좋다..</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45...</span></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45...</span></pre></td></tr></table></figure>
             
             <span class="read-more"><a href="/nodejs-tcp-server-sample/" title="Read article" class="posttitle">Read article</a> <b class="iconfont icon-arrow-right- gradient-text"></b></span>
         </div>
@@ -397,7 +394,7 @@
                 
                     <span>
                         <b class="iconfont icon-text2"></b> <i>Words count</i>
-                        1k
+                        737
                     </span>
                 
                 
@@ -415,8 +412,7 @@
         <div class="md-content animated fadeIn">
             
                 <p>test.bat 를 실행하는 코드</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> exec = <span class="hljs-built_in">require</span>(<span class="hljs-string">'child_process'</span>).exec;<br><span class="hljs-keyword">var</span> child = exec(<span class="hljs-string">"test.bat"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">error, stdout, stderr</span>) </span>&#123;<br>    <span class="hljs-comment">// error !== null 알 수 있다.</span><br>    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"exec end"</span>, stdout, stderr, error);<br>&#125;);<br></code></pre></td></tr></table></figure>
-<p>npm 설치 없이도 되는거 같다.<br>윈도우즈에서는 stdout, ...</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs undefined">javascript<br>[n] var exec = require(&apos;child_process&apos;).exec;<br>[n] var child = exec(&quot;test.bat&quot;, function (error, stdout, stderr) &#123;<br>[n]     // error !== null 알 수 있다.<br>[n]     console.log(&quot;exec end&quot;, stdout, stderr...</code></pre></td></tr></table></figure>
             
             <span class="read-more"><a href="/nodesj-process-execute/" title="Read article" class="posttitle">Read article</a> <b class="iconfont icon-arrow-right- gradient-text"></b></span>
         </div>
@@ -538,13 +534,13 @@
                 
                     <span>
                         <b class="iconfont icon-text2"></b> <i>Words count</i>
-                        10k
+                        8.5k
                     </span>
                 
                 
                     <span>
                         <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
-                        10 mins.
+                        8 mins.
                     </span>
                 
                 
@@ -556,8 +552,7 @@
         <div class="md-content animated fadeIn">
             
                 <p>유니티에서 로그를 on / off 시키는걸 만들려다 우연히 테스트 해보았는데 꽤 충젹적인 결과가 나와서 공유 해봅니다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs undefined">// 1번. 더한다<br>Debug.Log(&quot;abc&quot;+&quot;def&quot;);<br><br>// 2번. string.format() 형태로 쓴다.<br>Debug.Log(&quot;&#123;0&#125;&#123;1&#125;&quot;, &quot;abc&quot;, &quot;def&quot;);<br></code></pre></td></tr></table></figure>
-<p>로그를 끄는 걸 가...</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs undefined">csharp<br>[n] // 1번. 더한다<br>[n] Debug.Log(&quot;abc&quot;+&quot;def&quot;);<br>[n] <br>[n] // 2번. string.format() 형태로 쓴다.<br>[n] Debug.Log(&quot;&#123;0&#125;&#123;1&#125;&quot;, &quot;abc&quot;, &...</code></pre></td></tr></table></figure>
             
             <span class="read-more"><a href="/csharp-string-append-and-format-diff/" title="Read article" class="posttitle">Read article</a> <b class="iconfont icon-arrow-right- gradient-text"></b></span>
         </div>
@@ -584,7 +579,7 @@
                 
                     <span>
                         <b class="iconfont icon-text2"></b> <i>Words count</i>
-                        2.9k
+                        3.2k
                     </span>
                 
                 
@@ -605,12 +600,11 @@
 <li><a href="https://tbr74.github.io/2017/07/09/Study-Hexo-2017-07-09-hexo-markdown/" rel="external nofollow noopener noreferrer" target="_blank">마크다운요약</a></li>
 </ul>
 <p>nas 에서 blog 를 받는다.</p>
-<p>windows 를 새로 설치했다면 hxeo-cli 설치<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install -g hexo-cli<br></code></pre></td></tr></table></figure></p>
-<p>다음 명령어 실행<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install<br></code></pre></td></tr></table></figure></p>
-<p>사이트 띄우기<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo serve<br></code></pre></td></tr></table></figure></p>
-<p>새로운 포스트<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new post 파일명<br></code></pre></td></tr></table></figure></p>
-<p>배포 플러그인 설치<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install --save hexo-deployer-git<br></code></pre></td></tr></table></figure></p>
-<p>변경점 업데이트 문제가...</p>
+<p>windows 를 새로 설치했다면 hxeo-cli 설치<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs undefined">bash<br>[n] npm install -g hexo-cli<br></code></pre></td></tr></table></figure></p>
+<p>다음 명령어 실행<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs undefined">bash<br>[n] npm install<br></code></pre></td></tr></table></figure></p>
+<p>사이트 띄우기<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs undefined">bash<br>[n] hexo serve<br></code></pre></td></tr></table></figure></p>
+<p>새로운 포스트<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs undefined">bash<br>[n] hexo new post 파일명<br></code></pre></td></tr></table></figure></p>
+<p>배포 플러그인 설치<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs undefined">bash<br>[n] npm ...</code></pre></td></tr></table></figure></p>
             
             <span class="read-more"><a href="/hexo-setting/" title="Read article" class="posttitle">Read article</a> <b class="iconfont icon-arrow-right- gradient-text"></b></span>
         </div>
@@ -620,7 +614,7 @@
 
     </div>
     
-    <div id="pager"><a href="/page/2/" class="more" data-loading="加载中..." data-load-more="Load more">Load more</a></div>
+    <div id="pager"><a href="/page/2/" class="more" data-loading="Loading..." data-load-more="Load more">Load more</a></div>
     
 </div>
 <div id="preview"></div>

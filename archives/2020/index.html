@@ -117,7 +117,7 @@
 utf-8 파일을 표시 못해서 설정방법을 찾았습니다.그런데 이렇게 셋팅하면 euc-kr 가 깨져보입니다. 
 설정파일: C:\Program Files (x86)\Vim_vimrc
 제일 마지막에 써줍니다. 
-1234set tenc=korease...
+12345bash[n] set ten...
                                         </p>
                                     </div>
                                 </li>
@@ -134,8 +134,8 @@ utf-8 파일을 표시 못해서 설정방법을 찾았습니다.그런데 이�
                                             참고 링크: https://soulsearcher.github.io/2019/08/09/hexo-deploy-failed/
 참고 링크는 이중인증에 대한 내용이지만이중인증과 상관없이 사용가능하다.암호 매번 입력하는것도 번거럽고
 ssh key 만들기git 깔고git bash 를 이용했다.
-1ssh-keygen -t rsa -b 4096
-이러면 .ssh 폴...
+1[n] ssh-keygen -t rsa -b 4096
+이러면 .s...
                                         </p>
                                     </div>
                                 </li>
@@ -167,7 +167,7 @@ telnet 으로 테스트 정도는 할 수 있었다.npm 으로 별다른 설치�
                                         <a class="timeline-title" target="_self" href="/nodesj-process-execute/">node.js 에서 뭔가 실행하기</a>
                                         <p>
                                             test.bat 를 실행하는 코드
-12345var exec = require('child_process').exec;var child = exec("test.bat", function (error, stdout, stderr) &#123;    // error !== null 알 수 있다.    console.log("exec end", stdout,...
+123456javascript[n] var exec = require(&apos;child_process&apos;).exec;[n] var child = exec(&quot;test.bat&quot;, function (error, stdout, stderr) &#123;[n]     // error !== null...
                                         </p>
                                     </div>
                                 </li>
@@ -225,7 +225,7 @@ DATADOG 의 로고
                                         <a class="timeline-title" target="_self" href="/csharp-string-append-and-format-diff/">c# 에서 문자열 연산의 성능 문제</a>
                                         <p>
                                             유니티에서 로그를 on / off 시키는걸 만들려다 우연히 테스트 해보았는데 꽤 충젹적인 결과가 나와서 공유 해봅니다.
-12345// 1번. 더한다Debug.Log(&quot;abc&quot;+&quot;def&quot;);// 2번. string.format() 형태로 쓴다.Debug.Log(&quot;&#123;0&#125;&#123;1&#125;...
+123456csharp[n] // 1번. 더한다[n] Debug.Log(&quot;abc&quot;+&quot;def&quot;);[n] [n] // 2번. string.format() 형태로 쓴다.[n] Debug.Log(&quot...
                                         </p>
                                     </div>
                                 </li>
@@ -245,10 +245,9 @@ DATADOG 의 로고
 마크다운요약
 
 설치할때nas 에서 blog 를 받는다.
-windows 를 새로 설치했다면 hxeo-cli 설치1npm install -g hexo-cli
-다음 명령어 실행1npm install
-작업할때사이트 띄우기1hexo serve
-새로운 포스트1hexo new post 파일명...
+windows 를 새로 설치했다면 hxeo-cli 설치12bash[n] npm install -g hexo-cli
+다음 명령어 실행12bash[n] npm install
+작업할때사이트 띄우기12bash[n] hexo serv...
                                         </p>
                                     </div>
                                 </li>
@@ -271,7 +270,7 @@ windows 를 새로 설치했다면 hxeo-cli 설치1npm install -g hexo-cli
                                         <a class="timeline-title" target="_self" href="/web_crawler/">웹 크롤링 해보기</a>
                                         <p>
                                             node.js phantom 을 사용
-123456789101112131415161718192021222324252627282930313233343536373839404142434445464748/*jshint esversion: 6 */const URL = "http://search.danawa.com/dsearch.php?k1=ddr4&amp;mod...
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849javascript[n] /*jshint esversion: 6 */[n] [n] const URL = &quot;http://search.danawa.co...
                                         </p>
                                     </div>
                                 </li>
@@ -285,13 +284,13 @@ windows 를 새로 설치했다면 hxeo-cli 설치1npm install -g hexo-cli
                                     <div class="timeline-content">
                                         <a class="timeline-title" target="_self" href="/keystore/">안드로이드 앱 용 keystore 만들기</a>
                                         <p>
-                                            명령어1keytool -genkey -v -keystore [파일명] -alias [앱이름] -keyalg RSA -keysize 2048 -validity [유효일]
+                                            명령어12bash[n] keytool -genkey -v -keystore [파일명] -alias [앱이름] -keyalg RSA -keysize 2048 -validity [유효일]
 삽질기
 keytool 명령어가 keystore 인줄 잘못 봤음
 keytool 은 jdk 에 있었음 (anroid sdk 에 있는 줄)
 암호가 6자는 넘어야함
 
-// :\Java\jdk1...
+// :\...
                                         </p>
                                     </div>
                                 </li>
@@ -323,7 +322,7 @@ keytool 은 jdk 에 있었음 (anroid sdk 에 있는 줄)
 설치 &amp; 설정
 hyper.is 에서 설치파일을 다운로드합니다.
 hyper 를 실행합니다.
-플러그인을 커맨드 명령으로 설치한다.123$ hyper install hyp...
+플러그인을 커맨드 명령으로 설치한다.1234bash[n] hyper inst...
                                         </p>
                                     </div>
                                 </li>
