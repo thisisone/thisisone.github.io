@@ -17,20 +17,6 @@
     </url>
 
     <url>
-        <loc>http://thisisone.github.io/tags/hyper/</loc>
-        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://thisisone.github.io/tags/app/</loc>
-        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://thisisone.github.io/tags/hexo/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -46,6 +32,20 @@
 
     <url>
         <loc>http://thisisone.github.io/tags/%EC%9A%B4%EB%8F%99/</loc>
+        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://thisisone.github.io/tags/hyper/</loc>
+        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://thisisone.github.io/tags/app/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

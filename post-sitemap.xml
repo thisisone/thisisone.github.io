@@ -32,14 +32,6 @@
     </url>
 
     <url>
-        <loc>http://thisisone.github.io/csharp-string-append-and-format-diff/</loc>
-        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://thisisone.github.io/gvim/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -48,7 +40,7 @@
     </url>
 
     <url>
-        <loc>http://thisisone.github.io/draw-profile-image/</loc>
+        <loc>http://thisisone.github.io/csharp-string-append-and-format-diff/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -56,7 +48,7 @@
     </url>
 
     <url>
-        <loc>http://thisisone.github.io/hyper-is/</loc>
+        <loc>http://thisisone.github.io/draw-profile-image/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -81,6 +73,14 @@
 
     <url>
         <loc>http://thisisone.github.io/neck-stretching/</loc>
+        <lastmod>2020-02-08T18:18:28.403Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://thisisone.github.io/hyper-is/</loc>
         <lastmod>2020-02-08T18:18:28.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
