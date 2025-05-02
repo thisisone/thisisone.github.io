@@ -62,4 +62,4 @@ for (var i = 0; i < lines.length; i++) {
   break;
 }
 
-fs.writeFileSync("index.html", "utf-8", output);
+fs.writeFileSync("index.html", output, "utf-8");
