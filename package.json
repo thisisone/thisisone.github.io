@@ -1,0 +1,15 @@
+{
+  "name": "cflare-res-0",
+  "version": "1.0.0",
+  "description": "github\r https://github.com/thisisone/thisisone.github.io",
+  "main": "ver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}
