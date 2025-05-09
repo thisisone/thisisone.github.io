@@ -1,2 +1,2 @@
-export const VERSION=24;
-export const BUILD_DATE='2025-05-09 13:52:59';
+export const VERSION=25;
+export const BUILD_DATE='2025-05-09 14:09:06';
