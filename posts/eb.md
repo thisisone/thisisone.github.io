@@ -27,8 +27,6 @@ WEB PLAYER - [🔗LINK](https://play.unity.com/en/games/fb8df491-0bdd-417e-88b8-
 
 PRIVACY POLIC - [🔗LINKY](/eb/policy)
 
-BLOG - [🔗LINK](https://addforce1.blogspot.com/search/label/122Easy)
+BLOG (with TAG) - [🔗LINK](https://addforce1.blogspot.com/search/label/122Easy)
 
 <br/>
-
-doc v4
