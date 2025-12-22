@@ -1,5 +1,5 @@
 {
-  "date": "2025-12-22 22:13:13",
+  "date": "2025-12-23 01:49:58",
   "release_version": 13,
   "update_url": "https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl",
   "category_list": [
@@ -8,7 +8,7 @@
   ],
   "stage_list": [
     {
-      "id": 1,
+      "id": 0,
       "name": "ingame_0",
       "speed": 1,
       "cat": "anime",
