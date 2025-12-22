@@ -1,4 +1,66 @@
 {
   "release_version": 13,
-  "update_url": "https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl"
+  "update_url": "https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl",
+  "category_list": [
+    "anime",
+    "realistic"
+  ],
+  "stage_list": [
+    {
+      "stage_id": 1,
+      "stage_name": "ingame_0",
+      "playback": 1,
+      "cat": "anime",
+      "creator": "Nado",
+      "creator_link": "https://nadoproject3rd.blogspot.com/"
+    },
+    {
+      "stage_id": 1,
+      "stage_name": "ingame_1",
+      "playback": 1,
+      "cat": "anime",
+      "creator": "Nado",
+      "creator_link": "https://nadoproject3rd.blogspot.com/"
+    },
+    {
+      "stage_id": 2,
+      "stage_name": "ingame_2",
+      "playback": 1,
+      "cat": "anime",
+      "creator": "Nado",
+      "creator_link": "https://nadoproject3rd.blogspot.com/"
+    },
+    {
+      "stage_id": 3,
+      "stage_name": "ingame_3",
+      "playback": 1,
+      "cat": "anime",
+      "creator": "Nado",
+      "creator_link": "https://nadoproject3rd.blogspot.com/"
+    },
+    {
+      "stage_id": 4,
+      "stage_name": "ingame_4",
+      "playback": 1,
+      "cat": "anime",
+      "creator": "Nado",
+      "creator_link": "https://nadoproject3rd.blogspot.com/"
+    },
+    {
+      "stage_id": 5,
+      "stage_name": "ingame_5",
+      "playback": 1,
+      "cat": "realistic",
+      "creator": "Nado",
+      "creator_link": "https://nadoproject3rd.blogspot.com/"
+    },
+    {
+      "stage_id": 6,
+      "stage_name": "ingame_6",
+      "playback": 1,
+      "cat": "anime",
+      "creator": "Nado",
+      "creator_link": "https://nadoproject3rd.blogspot.com/"
+    }
+  ]
 }
