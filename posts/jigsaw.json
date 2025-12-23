@@ -1,5 +1,5 @@
 {
-  "date": "2025-12-23 02:30:21",
+  "date": "2025-12-23 11:07:50",
   "release_version": 13,
   "update_url": "https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl",
   "category_list": [
@@ -13,7 +13,45 @@
       "speed": 1,
       "cat": "anime",
       "creator": "Nado",
-      "creator_link": "https://nadoproject3rd.blogspot.com/"
+      "creator_link": "https://nadoproject3rd.blogspot.com/",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.3,
+          "mb": 0.5,
+          "ml": 0.5,
+          "mr": 0.5,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.25,
+          "ml": 0.25,
+          "mr": 0.25,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.1,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ]
     },
     {
       "id": 1,
@@ -21,7 +59,45 @@
       "speed": 1,
       "cat": "anime",
       "creator": "Nado",
-      "creator_link": "https://nadoproject3rd.blogspot.com/"
+      "creator_link": "https://nadoproject3rd.blogspot.com/",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.3,
+          "mb": 0.5,
+          "ml": 0.5,
+          "mr": 0.5,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.25,
+          "ml": 0.25,
+          "mr": 0.25,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.1,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ]
     },
     {
       "id": 2,
@@ -29,7 +105,45 @@
       "speed": 1,
       "cat": "anime",
       "creator": "Nado",
-      "creator_link": "https://nadoproject3rd.blogspot.com/"
+      "creator_link": "https://nadoproject3rd.blogspot.com/",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.3,
+          "mb": 0.5,
+          "ml": 0.5,
+          "mr": 0.5,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.25,
+          "ml": 0.25,
+          "mr": 0.25,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.1,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ]
     },
     {
       "id": 3,
@@ -37,7 +151,45 @@
       "speed": 1,
       "cat": "anime",
       "creator": "Nado",
-      "creator_link": "https://nadoproject3rd.blogspot.com/"
+      "creator_link": "https://nadoproject3rd.blogspot.com/",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.3,
+          "mb": 0.5,
+          "ml": 0.5,
+          "mr": 0.5,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.25,
+          "ml": 0.25,
+          "mr": 0.25,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.1,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ]
     },
     {
       "id": 4,
@@ -45,7 +197,45 @@
       "speed": 1,
       "cat": "anime",
       "creator": "Nado",
-      "creator_link": "https://nadoproject3rd.blogspot.com/"
+      "creator_link": "https://nadoproject3rd.blogspot.com/",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.3,
+          "mb": 0.5,
+          "ml": 0.5,
+          "mr": 0.5,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.25,
+          "ml": 0.25,
+          "mr": 0.25,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.1,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ]
     },
     {
       "id": 5,
@@ -53,7 +243,45 @@
       "speed": 1,
       "cat": "realistic",
       "creator": "Nado",
-      "creator_link": "https://nadoproject3rd.blogspot.com/"
+      "creator_link": "https://nadoproject3rd.blogspot.com/",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.3,
+          "mb": 0.5,
+          "ml": 0.5,
+          "mr": 0.5,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.25,
+          "ml": 0.25,
+          "mr": 0.25,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.1,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ]
     },
     {
       "id": 6,
@@ -61,7 +289,45 @@
       "speed": 1,
       "cat": "realistic",
       "creator": "Nado",
-      "creator_link": "https://nadoproject3rd.blogspot.com/"
+      "creator_link": "https://nadoproject3rd.blogspot.com/",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.3,
+          "mb": 0.5,
+          "ml": 0.5,
+          "mr": 0.5,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.25,
+          "ml": 0.25,
+          "mr": 0.25,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.1,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ]
     }
   ]
 }
