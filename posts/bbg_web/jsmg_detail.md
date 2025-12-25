@@ -2,7 +2,7 @@
 
 ⚙️img /jsmg/app_icon.png tw_app_icon_64
 
-⚙️img_btn /images/icon_play_store.png https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl w-32
+⚙️img_btn /images/icon_play_store.png https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl tw_play_button
 
 ## RELATED LINKS
 

@@ -4,7 +4,7 @@
 
 ⚙️youtube https://www.youtube.com/embed/NteijEBUw_Y
 
-⚙️img_btn /images/icon_play_store.png https://play.google.com/store/apps/details?id=com.nadoproject.jewel_master_girl w-32
+⚙️img_btn /images/icon_play_store.png https://play.google.com/store/apps/details?id=com.nadoproject.jewel_master_girl tw_play_button
 
 ## RELATED LINKS
 
