@@ -1,13 +1,13 @@
 # 122 Easy
 
+⚙️img /eb/easy_1_icon_v2.png
+
 Tap the squares to increase the numbers. Matching a row of identical
 numbers earns you points.
 
 ## PLAY VIDEO
 
-<div class="flex justify-center">
-    <iframe width="315" height="576" src="https://www.youtube.com/embed/01QWJnp6Y4E" title="122 Easy v15 - playdemo (1m shorts)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+⚙️youtube https://www.youtube.com/embed/01QWJnp6Y4E
 
 ## Android
 
