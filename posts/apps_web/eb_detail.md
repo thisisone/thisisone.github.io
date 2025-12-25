@@ -11,22 +11,20 @@ numbers earns you points.
 
 ## Android
 
-PLAY STORE - [🔗LINK](https://play.google.com/store/apps/details?id=com.sidnft.easy_block_game)
+PLAY STORE 👉 [🔗LINK](https://play.google.com/store/apps/details?id=com.sidnft.easy_block_game)
 
-ONE STORE - [🔗LINK](https://m.onestore.net/en-sg/apps/appsDetail?prodId=0001002923)
+ONE STORE 👉 [🔗LINK](https://m.onestore.net/en-sg/apps/appsDetail?prodId=0001002923)
 
 <br/>
 
 ### iOS & PC
 
-WEB PLAYER - [🔗LINK](https://play.unity.com/en/games/fb8df491-0bdd-417e-88b8-af692eb40f42/122-easy-v10)
+WEB PLAYER 👉 [🔗LINK](https://play.unity.com/en/games/fb8df491-0bdd-417e-88b8-af692eb40f42/122-easy-v10)
 
 <br/>
 
-## OTHER LINK
+## RELATED LINKS
 
-PRIVACY POLIC - [🔗LINKY](/eb/policy)
+PRIVACY POLIC 👉 [🔗LINKY](/eb/policy)
 
-BLOG (with TAG) - [🔗LINK](https://addforce1.blogspot.com/search/label/122Easy)
-
-<br/>
+BLOG 👉 [🔗LINK](https://addforce1.blogspot.com/search/label/122Easy)
