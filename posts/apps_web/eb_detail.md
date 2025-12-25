@@ -15,13 +15,9 @@ PLAY STORE 👉 [🔗LINK](https://play.google.com/store/apps/details?id=com.sid
 
 ONE STORE 👉 [🔗LINK](https://m.onestore.net/en-sg/apps/appsDetail?prodId=0001002923)
 
-<br/>
-
 ### iOS & PC
 
 WEB PLAYER 👉 [🔗LINK](https://play.unity.com/en/games/fb8df491-0bdd-417e-88b8-af692eb40f42/122-easy-v10)
-
-<br/>
 
 ## RELATED LINKS
 
