@@ -18,4 +18,4 @@ PLAY STORE 👉 [🔗LINK](https://play.google.com/store/apps/details?id=com.sid
 
 PRIVACY POLIC 👉 [🔗LINKY](/af/policy)
 
-BLOG 👉 [🔗LINK](https://addforce1.blogspot.com/search/label/AddForce1)
+BLOG 👉 [🔗LINK](https://addforce1.blogspot.com/search/label/AF)
