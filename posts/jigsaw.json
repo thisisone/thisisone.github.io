@@ -1,5 +1,5 @@
 {
-  "date": "2025-12-26 18:56:34",
+  "date": "2025-12-26 18:58:25",
   "release_version": 13,
   "update_url": "https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl",
   "category_list": [
@@ -12,7 +12,7 @@
       "name": "ingame_0",
       "speed": 1,
       "cat": "anime",
-      "creator": "Nado",
+      "creator": "Block Blast Girls",
       "creator_link": "https://blockblast-bd3c9.web.app/bbg",
       "levels": [
         {
@@ -58,7 +58,7 @@
       "name": "ingame_1",
       "speed": 1,
       "cat": "anime",
-      "creator": "Block Blast Girls",
+      "creator": "Nado",
       "creator_link": "https://nadoproject3rd.blogspot.com/",
       "levels": [
         {
