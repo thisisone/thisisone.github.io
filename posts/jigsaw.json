@@ -1,5 +1,5 @@
 {
-  "date": "2025-12-26 19:03:54",
+  "date": "2025-12-26 22:23:27",
   "release_version": 13,
   "update_url": "https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl",
   "category_list": [
@@ -328,6 +328,100 @@
           "py": 7
         }
       ]
+    },
+    {
+      "id": 7,
+      "name": "ingame_7",
+      "speed": 1,
+      "cat": "anime",
+      "creator": "Jewel Master Girl",
+      "creator_link": "https://blockblast-bd3c9.web.app/jmg",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.15,
+          "ml": 0.15,
+          "mr": 0.15,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.25,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.05,
+          "ml": 0.05,
+          "mr": 0.05,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.15,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ],
+      "download_url": "https://thisisone.github.io/jsmg/ingame_7"
+    },
+    {
+      "id": 8,
+      "name": "ingame_8",
+      "speed": 1,
+      "cat": "anime",
+      "creator": "Jewel Master Girl",
+      "creator_link": "https://blockblast-bd3c9.web.app/jmg",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.15,
+          "ml": 0.15,
+          "mr": 0.15,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.25,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.05,
+          "ml": 0.05,
+          "mr": 0.05,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.15,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ],
+      "download_url": "https://thisisone.github.io/jsmg/ingame_8"
     }
   ]
 }
