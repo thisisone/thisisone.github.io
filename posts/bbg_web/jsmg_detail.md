@@ -1,3 +1,5 @@
+⚙️comment here is https://thisisone.github.io/posts/bbg_web/jsmg_detail.md
+
 # V Puzzle Girls
 
 ⚙️img /jsmg/app_icon_3.jpg tw_app_icon_64
