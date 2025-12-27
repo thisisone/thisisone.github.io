@@ -7,9 +7,3 @@
 ## RELATED LINKS
 
 BLOG - [🔗LINK](https://nadoproject3rd.blogspot.com/search/label/VPUZZLE)
-
-
-
-V Puzzle Girls
-VPUZZLE = V Puzzle Girls
-JSMG = Jigsaw Mater Girl (old name)
