@@ -4,6 +4,8 @@
 
 ⚙️img /jsmg/app_icon_3.jpg tw_app_icon_64
 
+⚙️youtube https://www.youtube.com/embed/Fyy1g-I8jZM
+
 ⚙️img_btn /images/icon_play_store.png https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl tw_play_button
 
 ## RELATED LINKS
