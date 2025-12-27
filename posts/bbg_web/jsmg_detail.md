@@ -6,4 +6,4 @@
 
 ## RELATED LINKS
 
-BLOG - [🔗LINK](https://nadoproject3rd.blogspot.com/search/label/JSMG)
+BLOG - [🔗LINK](https://nadoproject3rd.blogspot.com/search/label/VPUZZLE)
