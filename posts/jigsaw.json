@@ -1,5 +1,5 @@
 {
-  "date": "2025-12-26 23:55:14",
+  "date": "2025-12-27 12:48:48",
   "release_version": 13,
   "update_url": "https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl",
   "category_list": [
@@ -198,10 +198,10 @@
     {
       "id": 4,
       "name": "ingame_4",
-      "display_name": "GIRL #4",
+      "display_name": "Vanilla",
       "speed": 1,
       "cat": "anime",
-      "creator": "Jigsaw Master Girl",
+      "creator": "V Puzzle Girls",
       "creator_link": "https://blockblast-bd3c9.web.app/jsmg",
       "levels": [
         {
