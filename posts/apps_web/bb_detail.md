@@ -6,7 +6,7 @@ It's a game where you stack boxes to make a map and explore. (Tech Demo)
 
 ## PLAY VIDEO
 
-⚙️youtube https://www.youtube.com/embed/01QWJnp6Y4E
+⚙️youtube https://www.youtube.com/embed/E8r_Pqkz1Uk
 
 ### PC
 
