@@ -8,7 +8,7 @@ It's a game where you stack boxes to make a map and explore. (Tech Demo)
 
 ⚙️youtube https://www.youtube.com/embed/E8r_Pqkz1Uk
 
-### PC
+### PC WebBuild
 
 ⚙️img_btn /images/icon_unity_play.png https://play.unity.com/en/games/692b14f7-8cb7-4bbf-b957-e491e1952f4a/build-game-v2 w-32
 
