@@ -1,6 +1,6 @@
 # 122 Easy
 
-⚙️img /eb/easy_1_icon_v2.png
+⚙️img /eb/easy_1_icon_v2.png tw_app_icon_64
 
 Tap the squares to increase the numbers. Matching a row of identical
 numbers earns you points.

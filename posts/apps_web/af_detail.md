@@ -1,6 +1,6 @@
 # Add Force 1
 
-⚙️img /af/app_icon.png
+⚙️img /af/app_icon.png tw_app_icon_64
 
 a messy physical-based defense game
 
@@ -12,10 +12,14 @@ a messy physical-based defense game
 
 ## Android
 
-PLAY STORE 👉 [🔗LINK](https://play.google.com/store/apps/details?id=com.sidnft.add_force_1)
+⚙️img_btn /images/icon_play_store.png https://play.google.com/store/apps/details?id=com.sidnft.add_force_1 w-32
 
-## RELATED LINKS
+### iOS & PC
 
-PRIVACY POLIC 👉 [🔗LINKY](/af/policy)
+⚙️img_btn /images/icon_unity_play.png https://play.unity.com/en/games/9b166456-f0ec-43e1-9e43-f0f0ce85ec12/add-force-1-v38 w-32
 
-BLOG 👉 [🔗LINK](https://addforce1.blogspot.com/search/label/AF)
+## RELATED LINKS🔗
+
+👉 [🔗PRIVACY POLIC](/af/policy)
+
+👉 [🔗BLOG](https://addforce1.blogspot.com/search/label/AF)
