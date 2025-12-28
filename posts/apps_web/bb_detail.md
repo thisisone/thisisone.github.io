@@ -16,4 +16,4 @@ It's a game where you stack boxes to make a map and explore. (Tech Demo)
 
 👉 [🔗PRIVACY POLICY](/bb/policy)
 
-👉 [🔗BLOG](https://addforce1.blogspot.com/search/label/BlockBuild)
+👉 [🔗BLOG](https://addforce1.blogspot.com/search/label/VarcoRoom)
