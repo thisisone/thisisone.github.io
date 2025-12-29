@@ -1,0 +1,484 @@
+{
+  "date": "2025-12-30 01:21:11",
+  "release_version": 13,
+  "update_url": "https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl",
+  "category_list": [
+    "anime",
+    "realistic"
+  ],
+  "stage_list": [
+    {
+      "id": 0,
+      "name": "ingame_0",
+      "display_name": "DEVIL GIRL",
+      "speed": 1,
+      "cat": "anime",
+      "creator": "Block Blast Girls",
+      "creator_link": "https://blockblast-bd3c9.web.app/bbg",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.15,
+          "ml": 0.15,
+          "mr": 0.15,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.25,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.05,
+          "ml": 0.05,
+          "mr": 0.05,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.15,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "ingame_1",
+      "display_name": "GIRL #1",
+      "speed": 1,
+      "cat": "anime",
+      "creator": "Nado Project",
+      "creator_link": "https://blockblast-bd3c9.web.app/",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.15,
+          "ml": 0.15,
+          "mr": 0.15,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.25,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.05,
+          "ml": 0.05,
+          "mr": 0.05,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.15,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "ingame_2",
+      "display_name": "GIRL #1-2",
+      "speed": 1,
+      "cat": "anime",
+      "creator": "Nado Project",
+      "creator_link": "https://blockblast-bd3c9.web.app/",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.15,
+          "ml": 0.15,
+          "mr": 0.15,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.25,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.05,
+          "ml": 0.05,
+          "mr": 0.05,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.15,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "ingame_3",
+      "display_name": "GIRL #3",
+      "speed": 1,
+      "cat": "anime",
+      "creator": "Nado Project",
+      "creator_link": "https://blockblast-bd3c9.web.app/",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.15,
+          "ml": 0.15,
+          "mr": 0.15,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.25,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.05,
+          "ml": 0.05,
+          "mr": 0.05,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.15,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "ingame_4",
+      "display_name": "Vanilla",
+      "speed": 1,
+      "cat": "anime",
+      "creator": "V Puzzle Girls",
+      "creator_link": "https://blockblast-bd3c9.web.app/jsmg",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.15,
+          "ml": 0.15,
+          "mr": 0.15,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.25,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.05,
+          "ml": 0.05,
+          "mr": 0.05,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.15,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "ingame_5",
+      "display_name": "GIRL #5",
+      "speed": 1,
+      "cat": "realistic",
+      "creator": "Nado Project",
+      "creator_link": "https://blockblast-bd3c9.web.app/",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.15,
+          "ml": 0.15,
+          "mr": 0.15,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.25,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.05,
+          "ml": 0.05,
+          "mr": 0.05,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.15,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "ingame_6",
+      "display_name": "GIRL #6",
+      "speed": 1,
+      "cat": "realistic",
+      "creator": "Nado Project",
+      "creator_link": "https://blockblast-bd3c9.web.app/",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.15,
+          "ml": 0.15,
+          "mr": 0.15,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.25,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.05,
+          "ml": 0.05,
+          "mr": 0.05,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.15,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "ingame_7",
+      "display_name": "JEWEL GIRL #2",
+      "speed": 1,
+      "cat": "anime",
+      "creator": "Jewel Master Girl",
+      "creator_link": "https://blockblast-bd3c9.web.app/jmg",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.15,
+          "ml": 0.15,
+          "mr": 0.15,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.25,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.05,
+          "ml": 0.05,
+          "mr": 0.05,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.15,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ],
+      "download_url": "https://thisisone.github.io/jsmg/ingame_7"
+    },
+    {
+      "id": 8,
+      "name": "ingame_8",
+      "display_name": "JEWEL GIRL #1",
+      "speed": 1,
+      "cat": "anime",
+      "creator": "Jewel Master Girl",
+      "creator_link": "https://blockblast-bd3c9.web.app/jmg",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.15,
+          "ml": 0.15,
+          "mr": 0.15,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.25,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.05,
+          "ml": 0.05,
+          "mr": 0.05,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.15,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ],
+      "download_url": "https://thisisone.github.io/jsmg/ingame_8"
+    },
+    {
+      "id": 9,
+      "name": "ingame_9",
+      "display_name": "SWIMSUIT GIRL",
+      "speed": 1,
+      "cat": "anime",
+      "creator": "Nado Project",
+      "creator_link": "https://blockblast-bd3c9.web.app/",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.15,
+          "ml": 0.15,
+          "mr": 0.15,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.25,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.05,
+          "ml": 0.05,
+          "mr": 0.05,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.15,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ],
+      "download_url": "https://thisisone.github.io/jsmg/ingame_9"
+    }
+  ]
+}
