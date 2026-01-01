@@ -9,16 +9,6 @@ numbers earns you points.
 
 ⚙️youtube https://www.youtube.com/embed/eQlHm0e3JrI
 
-## Update log
-
-⚙️from_now 2026-01-01 22:00
-
-v20
-
-- Replace UI
-- Add Game Mode
-- Add Player EXP
-
 ## Android
 
 ⚙️img_btn /images/icon_play_store.png https://play.google.com/store/apps/details?id=com.sidnft.easy_block_game w-32
@@ -28,6 +18,14 @@ v20
 ### iOS & PC
 
 ⚙️img_btn /images/icon_unity_play.png https://play.unity.com/en/games/fb8df491-0bdd-417e-88b8-af692eb40f42/122-easy-v10 w-32
+
+⚙️from_now 2026-01-01 ## UPDATE LOG
+
+v20
+
+- Replace UI
+- Add Game Mode
+- Add Player EXP
 
 ## RELATED LINKS🔗
 
