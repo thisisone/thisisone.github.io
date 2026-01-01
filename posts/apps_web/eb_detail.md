@@ -7,7 +7,17 @@ numbers earns you points.
 
 ## PLAY VIDEO
 
-⚙️youtube https://www.youtube.com/embed/01QWJnp6Y4E
+⚙️youtube https://www.youtube.com/embed/eQlHm0e3JrI
+
+## Update log
+
+⚙️from_now 2026-01-01 22:00
+
+v20
+
+- Replace UI
+- Add Game Mode
+- Add Player EXP
 
 ## Android
 
