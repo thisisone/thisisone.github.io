@@ -1,3 +1,5 @@
+⚙️comment https://thisisone.github.io/posts/apps_web/eb_detail.md
+
 # 122 Easy
 
 ⚙️img /eb/easy_1_icon_v2.png tw_app_icon_64
@@ -19,9 +21,9 @@ numbers earns you points.
 
 ⚙️img_btn /images/icon_unity_play.png https://play.unity.com/en/games/fb8df491-0bdd-417e-88b8-af692eb40f42/122-easy-v10 w-32
 
-⚙️from_now 2026-01-01 ## UPDATE LOG
+## UPDATE LOG
 
-v20
+⚙️from_now 2026-01-01 v20
 
 - Replace UI
 - Add Game Mode
