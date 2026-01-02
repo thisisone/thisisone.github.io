@@ -1,5 +1,5 @@
 {
-  "date": "2026-01-02 13:15:56",
+  "date": "2026-01-02 14:03:55",
   "release_version": 13,
   "update_url": "https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl",
   "category_list": [
@@ -535,7 +535,7 @@
     {
       "id": 12,
       "display_name": "GIRL #9-2",
-      "speed": 1,
+      "speed": 0.5,
       "cat": "realistic",
       "creator": "Nado Project",
       "creator_link": "https://blockblast-bd3c9.web.app/",
@@ -579,12 +579,12 @@
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_12",
       "name": "ingame_12",
-      "download_md5": "0a786c7336932af2a632695aff9417c2"
+      "download_md5": "c100e3dea1fa08d88596ec809b6ce107"
     },
     {
       "id": 13,
       "display_name": "GIRL #13",
-      "speed": 1,
+      "speed": 0.75,
       "cat": "realistic",
       "creator": "Nado Project",
       "creator_link": "https://blockblast-bd3c9.web.app/",
@@ -628,12 +628,12 @@
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_13",
       "name": "ingame_13",
-      "download_md5": "59c7861537fa8578c82ff3eb16eb17e8"
+      "download_md5": "e4014c41c629df07eb4dbf0d15b059b4"
     },
     {
       "id": 14,
       "display_name": "GIRL #14",
-      "speed": 1,
+      "speed": 0.75,
       "cat": "realistic",
       "creator": "Nado Project",
       "creator_link": "https://blockblast-bd3c9.web.app/",
@@ -677,12 +677,12 @@
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_14",
       "name": "ingame_14",
-      "download_md5": "9ccc419f59289e6eca43e9d7238b4778"
+      "download_md5": "b776087e38add33346c03b20bb698fa4"
     },
     {
       "id": 15,
       "display_name": "GIRL #14-2",
-      "speed": 1,
+      "speed": 0.5,
       "cat": "realistic",
       "creator": "Nado Project",
       "creator_link": "https://blockblast-bd3c9.web.app/",
@@ -726,12 +726,12 @@
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_15",
       "name": "ingame_15",
-      "download_md5": "6193129c8421bfadf685025d8050d467"
+      "download_md5": "74de46371472587456dba6a6e51a8f15"
     },
     {
       "id": 16,
       "display_name": "GIRL #16",
-      "speed": 1,
+      "speed": 0.5,
       "cat": "realistic",
       "creator": "Nado Project",
       "creator_link": "https://blockblast-bd3c9.web.app/",
@@ -775,12 +775,12 @@
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_16",
       "name": "ingame_16",
-      "download_md5": "5089fdaf7891e2067df250a315d2be26"
+      "download_md5": "8122d666ca36076e94296a02a63ae9ac"
     },
     {
       "id": 17,
       "display_name": "GIRL #17",
-      "speed": 1,
+      "speed": 0.5,
       "cat": "realistic",
       "creator": "Nado Project",
       "creator_link": "https://blockblast-bd3c9.web.app/",
@@ -824,12 +824,12 @@
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_17",
       "name": "ingame_17",
-      "download_md5": "f4b9567480ab002908b75334433dc82d"
+      "download_md5": "df2010479001677ed0debf869b2329d1"
     },
     {
       "id": 18,
       "display_name": "GIRL #18",
-      "speed": 1,
+      "speed": 0.5,
       "cat": "realistic",
       "creator": "Nado Project",
       "creator_link": "https://blockblast-bd3c9.web.app/",
@@ -873,7 +873,7 @@
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_18",
       "name": "ingame_18",
-      "download_md5": "22483bee3be998b76bde569e8a8906df"
+      "download_md5": "90968064fe0078fb5139e68208dcf79a"
     }
   ]
 }
