@@ -1,5 +1,5 @@
 {
-  "date": "2026-01-02 15:03:01",
+  "date": "2026-01-02 19:19:36",
   "release_version": 13,
   "update_url": "https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl",
   "category_list": [
@@ -778,55 +778,6 @@
       "download_md5": "8122d666ca36076e94296a02a63ae9ac"
     },
     {
-      "id": 17,
-      "display_name": "GIRL #17",
-      "speed": 1,
-      "cat": "realistic",
-      "creator": "Nado Project",
-      "creator_link": "https://blockblast-bd3c9.web.app/",
-      "levels": [
-        {
-          "lv": 1,
-          "mt": 0.3,
-          "mb": 0.15,
-          "ml": 0.15,
-          "mr": 0.15,
-          "px": 3,
-          "py": 4
-        },
-        {
-          "lv": 2,
-          "mt": 0.25,
-          "mb": 0.1,
-          "ml": 0.1,
-          "mr": 0.1,
-          "px": 4,
-          "py": 5
-        },
-        {
-          "lv": 3,
-          "mt": 0.2,
-          "mb": 0.05,
-          "ml": 0.05,
-          "mr": 0.05,
-          "px": 5,
-          "py": 6
-        },
-        {
-          "lv": 4,
-          "mt": 0.15,
-          "mb": 0,
-          "ml": 0,
-          "mr": 0,
-          "px": 6,
-          "py": 7
-        }
-      ],
-      "download_url": "https://thisisone.github.io/jsmg/ingame_17",
-      "name": "ingame_17",
-      "download_md5": "df2010479001677ed0debf869b2329d1"
-    },
-    {
       "id": 18,
       "display_name": "GIRL #18",
       "speed": 1,
@@ -874,6 +825,55 @@
       "download_url": "https://thisisone.github.io/jsmg/ingame_18",
       "name": "ingame_18",
       "download_md5": "90968064fe0078fb5139e68208dcf79a"
+    },
+    {
+      "id": 19,
+      "display_name": "GIRL #19",
+      "speed": 1,
+      "cat": "realistic",
+      "creator": "Nado Project",
+      "creator_link": "https://blockblast-bd3c9.web.app/",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.15,
+          "ml": 0.15,
+          "mr": 0.15,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.25,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.05,
+          "ml": 0.05,
+          "mr": 0.05,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.15,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ],
+      "download_url": "https://thisisone.github.io/jsmg/ingame_19",
+      "name": "ingame_19",
+      "download_md5": "18c637845e3f539ea920f769665b87d0"
     }
   ]
 }
