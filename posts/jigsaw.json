@@ -1,5 +1,5 @@
 {
-  "date": "2026-01-03 13:45:06",
+  "date": "2026-01-03 14:24:58",
   "release_version": 13,
   "update_url": "https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl",
   "category_list": [
@@ -925,8 +925,57 @@
       "download_md5": "6f0b4fcc089923335e0333bcd6d36ba2"
     },
     {
+      "id": 21,
+      "display_name": "REDCAP #1",
+      "speed": 1,
+      "cat": "anime",
+      "creator": "Nado Project",
+      "creator_link": "https://blockblast-bd3c9.web.app/",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.15,
+          "ml": 0.15,
+          "mr": 0.15,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.25,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.05,
+          "ml": 0.05,
+          "mr": 0.05,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.15,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ],
+      "download_url": "https://thisisone.github.io/jsmg/ingame_21",
+      "name": "ingame_21",
+      "download_md5": "b74e689bae26f2dc82187bd72906268b"
+    },
+    {
       "id": 22,
-      "display_name": "REDCAP",
+      "display_name": "REDCAP #2",
       "speed": 0.75,
       "cat": "anime",
       "creator": "Nado Project",
