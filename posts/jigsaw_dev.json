@@ -1,5 +1,5 @@
 {
-  "date": "2026-01-03 20:41:25",
+  "date": "2026-01-03 21:14:36",
   "release_version": 13,
   "update_url": "https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl",
   "category_list": [
@@ -1118,7 +1118,7 @@
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_25",
       "name": "ingame_25",
-      "download_md5": "34e01195778c53038d0943f0ac31aa28"
+      "download_md5": "79d93dc8e88657bc8307c4243dcb34b6"
     },
     {
       "id": 26,
@@ -1465,7 +1465,7 @@
     },
     {
       "id": 33,
-      "display_name": "GIRL #33",
+      "display_name": "WHITE CAP #3",
       "speed": 1.25,
       "cat": "anime",
       "creator": "Nado Project",
@@ -1514,7 +1514,7 @@
     },
     {
       "id": 34,
-      "display_name": "GIRL #34",
+      "display_name": "WHITE CAP #4",
       "speed": 1.25,
       "cat": "anime",
       "creator": "Nado Project",
@@ -1760,7 +1760,7 @@
     {
       "id": 39,
       "display_name": "GIRL #39",
-      "speed": 1.25,
+      "speed": 1,
       "cat": "anime",
       "creator": "Nado Project",
       "creator_link": "https://blockblast-bd3c9.web.app/",
