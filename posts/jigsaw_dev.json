@@ -1,5 +1,5 @@
 {
-  "date": "2026-01-03 21:14:36",
+  "date": "2026-01-04 14:41:33",
   "release_version": 13,
   "update_url": "https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl",
   "category_list": [
@@ -1072,55 +1072,6 @@
       "download_md5": "c5c386fbd01b4d825d3f2ca6b2a79e36"
     },
     {
-      "id": 25,
-      "display_name": "GIRL #25",
-      "speed": 1.25,
-      "cat": "anime",
-      "creator": "Nado Project",
-      "creator_link": "https://blockblast-bd3c9.web.app/",
-      "levels": [
-        {
-          "lv": 1,
-          "mt": 0.3,
-          "mb": 0.15,
-          "ml": 0.15,
-          "mr": 0.15,
-          "px": 3,
-          "py": 4
-        },
-        {
-          "lv": 2,
-          "mt": 0.25,
-          "mb": 0.1,
-          "ml": 0.1,
-          "mr": 0.1,
-          "px": 4,
-          "py": 5
-        },
-        {
-          "lv": 3,
-          "mt": 0.2,
-          "mb": 0.05,
-          "ml": 0.05,
-          "mr": 0.05,
-          "px": 5,
-          "py": 6
-        },
-        {
-          "lv": 4,
-          "mt": 0.15,
-          "mb": 0,
-          "ml": 0,
-          "mr": 0,
-          "px": 6,
-          "py": 7
-        }
-      ],
-      "download_url": "https://thisisone.github.io/jsmg/ingame_25",
-      "name": "ingame_25",
-      "download_md5": "79d93dc8e88657bc8307c4243dcb34b6"
-    },
-    {
       "id": 26,
       "display_name": "GIRL #26",
       "speed": 1.25,
@@ -1219,55 +1170,6 @@
       "download_md5": "1ceb95a7b5435a4ad3b0a5b135022864"
     },
     {
-      "id": 28,
-      "display_name": "GIRL #28",
-      "speed": 1.25,
-      "cat": "anime",
-      "creator": "Nado Project",
-      "creator_link": "https://blockblast-bd3c9.web.app/",
-      "levels": [
-        {
-          "lv": 1,
-          "mt": 0.3,
-          "mb": 0.15,
-          "ml": 0.15,
-          "mr": 0.15,
-          "px": 3,
-          "py": 4
-        },
-        {
-          "lv": 2,
-          "mt": 0.25,
-          "mb": 0.1,
-          "ml": 0.1,
-          "mr": 0.1,
-          "px": 4,
-          "py": 5
-        },
-        {
-          "lv": 3,
-          "mt": 0.2,
-          "mb": 0.05,
-          "ml": 0.05,
-          "mr": 0.05,
-          "px": 5,
-          "py": 6
-        },
-        {
-          "lv": 4,
-          "mt": 0.15,
-          "mb": 0,
-          "ml": 0,
-          "mr": 0,
-          "px": 6,
-          "py": 7
-        }
-      ],
-      "download_url": "https://thisisone.github.io/jsmg/ingame_28",
-      "name": "ingame_28",
-      "download_md5": "5398556c15dd8f469afffd35e21b5116"
-    },
-    {
       "id": 29,
       "display_name": "GIRL #29",
       "speed": 1.25,
@@ -1364,104 +1266,6 @@
       "download_url": "https://thisisone.github.io/jsmg/ingame_30",
       "name": "ingame_30",
       "download_md5": "844879b6099ef36ff2a651a289484ffd"
-    },
-    {
-      "id": 31,
-      "display_name": "GIRL #31",
-      "speed": 1.25,
-      "cat": "anime",
-      "creator": "Nado Project",
-      "creator_link": "https://blockblast-bd3c9.web.app/",
-      "levels": [
-        {
-          "lv": 1,
-          "mt": 0.3,
-          "mb": 0.15,
-          "ml": 0.15,
-          "mr": 0.15,
-          "px": 3,
-          "py": 4
-        },
-        {
-          "lv": 2,
-          "mt": 0.25,
-          "mb": 0.1,
-          "ml": 0.1,
-          "mr": 0.1,
-          "px": 4,
-          "py": 5
-        },
-        {
-          "lv": 3,
-          "mt": 0.2,
-          "mb": 0.05,
-          "ml": 0.05,
-          "mr": 0.05,
-          "px": 5,
-          "py": 6
-        },
-        {
-          "lv": 4,
-          "mt": 0.15,
-          "mb": 0,
-          "ml": 0,
-          "mr": 0,
-          "px": 6,
-          "py": 7
-        }
-      ],
-      "download_url": "https://thisisone.github.io/jsmg/ingame_31",
-      "name": "ingame_31",
-      "download_md5": "665f53e2889b804cca9fb5657cd5c2bb"
-    },
-    {
-      "id": 32,
-      "display_name": "GIRL #32",
-      "speed": 1.25,
-      "cat": "anime",
-      "creator": "Nado Project",
-      "creator_link": "https://blockblast-bd3c9.web.app/",
-      "levels": [
-        {
-          "lv": 1,
-          "mt": 0.3,
-          "mb": 0.15,
-          "ml": 0.15,
-          "mr": 0.15,
-          "px": 3,
-          "py": 4
-        },
-        {
-          "lv": 2,
-          "mt": 0.25,
-          "mb": 0.1,
-          "ml": 0.1,
-          "mr": 0.1,
-          "px": 4,
-          "py": 5
-        },
-        {
-          "lv": 3,
-          "mt": 0.2,
-          "mb": 0.05,
-          "ml": 0.05,
-          "mr": 0.05,
-          "px": 5,
-          "py": 6
-        },
-        {
-          "lv": 4,
-          "mt": 0.15,
-          "mb": 0,
-          "ml": 0,
-          "mr": 0,
-          "px": 6,
-          "py": 7
-        }
-      ],
-      "download_url": "https://thisisone.github.io/jsmg/ingame_32",
-      "name": "ingame_32",
-      "download_md5": "7d42b3e77b5b4df391cd72774d726cfa"
     },
     {
       "id": 33,
