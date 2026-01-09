@@ -13,4 +13,4 @@
 
 ## RELATED LINKS
 
-⚙️link BLOG (Jwewl Master Girl) https://nadoproject3rd.blogspot.com/search/label/JMG
+⚙️link BLOG https://nadoproject3rd.blogspot.com/search/label/JMG

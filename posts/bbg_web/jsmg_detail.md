@@ -21,4 +21,4 @@
 
 ## RELATED LINKS
 
-⚙️link BLOG (V Puzzle Girls) https://nadoproject3rd.blogspot.com/search/label/VPUZZLE
+⚙️link BLOG https://nadoproject3rd.blogspot.com/search/label/VPUZZLE
