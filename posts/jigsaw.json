@@ -1,5 +1,5 @@
 {
-  "date": "2026-01-10 02:26:00",
+  "date": "2026-01-10 02:39:42",
   "release_version": 13,
   "update_url": "https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl",
   "category_list": [
@@ -151,7 +151,7 @@
     {
       "id": 3,
       "name": "ingame_3",
-      "display_name": "GIRL #3",
+      "display_name": "#3",
       "speed": 1,
       "cat": "anime",
       "creator": "Nado Project",
@@ -245,7 +245,7 @@
     {
       "id": 5,
       "name": "ingame_5",
-      "display_name": "GIRL #5",
+      "display_name": "#5",
       "speed": 1,
       "cat": "realistic",
       "creator": "Nado Project",
@@ -292,7 +292,7 @@
     {
       "id": 6,
       "name": "ingame_6",
-      "display_name": "GIRL #6",
+      "display_name": "#6",
       "speed": 1,
       "cat": "realistic",
       "creator": "Nado Project",
@@ -486,7 +486,7 @@
     {
       "id": 11,
       "name": "ingame_11",
-      "display_name": "GIRL #11",
+      "display_name": "#11",
       "speed": 1,
       "cat": "realistic",
       "creator": "Nado Project",
@@ -535,7 +535,7 @@
     {
       "id": 12,
       "name": "ingame_12",
-      "display_name": "GIRL #11-2",
+      "display_name": "#11-2",
       "speed": 1,
       "cat": "realistic",
       "creator": "Nado Project",
@@ -584,7 +584,7 @@
     {
       "id": 13,
       "name": "ingame_13",
-      "display_name": "GIRL #13",
+      "display_name": "#13",
       "speed": 1,
       "cat": "realistic",
       "creator": "Nado Project",
@@ -633,7 +633,7 @@
     {
       "id": 14,
       "name": "ingame_14",
-      "display_name": "GIRL #14-2",
+      "display_name": "#14-2",
       "speed": 1,
       "cat": "realistic",
       "creator": "Nado Project",
@@ -682,7 +682,7 @@
     {
       "id": 15,
       "name": "ingame_15",
-      "display_name": "GIRL #15",
+      "display_name": "#15",
       "speed": 1,
       "cat": "realistic",
       "creator": "Nado Project",
@@ -731,7 +731,7 @@
     {
       "id": 16,
       "name": "ingame_16",
-      "display_name": "GIRL #16",
+      "display_name": "#16",
       "speed": 1,
       "cat": "realistic",
       "creator": "Nado Project",
@@ -780,7 +780,7 @@
     {
       "id": 18,
       "name": "ingame_18",
-      "display_name": "GIRL #18",
+      "display_name": "#18",
       "speed": 1,
       "cat": "realistic",
       "creator": "Nado Project",
@@ -829,7 +829,7 @@
     {
       "id": 19,
       "name": "ingame_19",
-      "display_name": "GIRL #19",
+      "display_name": "#19",
       "speed": 1,
       "cat": "realistic",
       "creator": "Nado Project",
@@ -878,7 +878,7 @@
     {
       "id": 20,
       "name": "ingame_20",
-      "display_name": "GIRL #20",
+      "display_name": "#20",
       "speed": 0.75,
       "cat": "anime",
       "creator": "Nado Project",
@@ -1025,7 +1025,7 @@
     {
       "id": 24,
       "name": "ingame_24",
-      "display_name": "GIRL #24",
+      "display_name": "#24",
       "speed": 0.75,
       "cat": "anime",
       "creator": "Nado Project",
@@ -1074,7 +1074,7 @@
     {
       "id": 27,
       "name": "ingame_27",
-      "display_name": "GIRL #27",
+      "display_name": "#27",
       "speed": 1.25,
       "cat": "anime",
       "creator": "Nado Project",
@@ -1123,7 +1123,7 @@
     {
       "id": 29,
       "name": "ingame_29",
-      "display_name": "GIRL #29",
+      "display_name": "#29",
       "speed": 1.25,
       "cat": "anime",
       "creator": "Nado Project",
@@ -1172,7 +1172,7 @@
     {
       "id": 30,
       "name": "ingame_30",
-      "display_name": "GIRL #30",
+      "display_name": "#30",
       "speed": 1.25,
       "cat": "anime",
       "creator": "Nado Project",
@@ -1319,7 +1319,7 @@
     {
       "id": 35,
       "name": "ingame_35",
-      "display_name": "GIRL #35",
+      "display_name": "#35",
       "speed": 1.25,
       "cat": "anime",
       "creator": "Nado Project",
@@ -1368,7 +1368,7 @@
     {
       "id": 36,
       "name": "ingame_36",
-      "display_name": "GIRL #36",
+      "display_name": "#36",
       "speed": 1.25,
       "cat": "anime",
       "creator": "Nado Project",
@@ -1417,7 +1417,7 @@
     {
       "id": 37,
       "name": "ingame_37",
-      "display_name": "GIRL #37",
+      "display_name": "#37",
       "speed": 1.25,
       "cat": "anime",
       "creator": "Nado Project",
@@ -1466,7 +1466,7 @@
     {
       "id": 38,
       "name": "ingame_38",
-      "display_name": "GIRL #38",
+      "display_name": "#38",
       "speed": 1.25,
       "cat": "anime",
       "creator": "Nado Project",
@@ -1515,7 +1515,7 @@
     {
       "id": 39,
       "name": "ingame_39",
-      "display_name": "GIRL #39",
+      "display_name": "#39",
       "speed": 1,
       "cat": "anime",
       "creator": "Nado Project",
@@ -1564,7 +1564,7 @@
     {
       "id": 41,
       "name": "ingame_41",
-      "display_name": "GIRL #41",
+      "display_name": "#41",
       "speed": 1,
       "cat": "anime",
       "creator": "Nado Project",
@@ -1613,7 +1613,7 @@
     {
       "id": 42,
       "name": "ingame_42",
-      "display_name": "GIRL #42",
+      "display_name": "#42",
       "speed": 1,
       "cat": "anime",
       "creator": "Nado Project",
@@ -1662,7 +1662,7 @@
     {
       "id": 43,
       "name": "ingame_43",
-      "display_name": "GIRL #43",
+      "display_name": "#43",
       "speed": 1,
       "cat": "anime",
       "creator": "Nado Project",
@@ -1711,7 +1711,7 @@
     {
       "id": 44,
       "name": "ingame_44",
-      "display_name": "GIRL #44",
+      "display_name": "#44",
       "speed": 1,
       "cat": "anime",
       "creator": "Nado Project",
@@ -1760,7 +1760,7 @@
     {
       "id": 47,
       "name": "ingame_47",
-      "display_name": "GIRL #47",
+      "display_name": "#47",
       "speed": 1,
       "cat": "anime",
       "creator": "Nado Project",
