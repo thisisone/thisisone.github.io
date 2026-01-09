@@ -11,13 +11,13 @@
 ## UPDATE
 
 ⚙️from_now 2026-01-09 Add anime +5
-⚙️link BLOG https://nadoproject3rd.blogspot.com/2026/01/v-puzzle-girls-add-anime-5-vpuzzle.html
+⚙️link Article https://nadoproject3rd.blogspot.com/2026/01/v-puzzle-girls-add-anime-5-vpuzzle.html
 
 ⚙️from_now 2026-01-04 Add anime +12
-⚙️link BLOG https://nadoproject3rd.blogspot.com/2026/01/video-blending-demo-vpuzzle.html
+⚙️link Article https://nadoproject3rd.blogspot.com/2026/01/video-blending-demo-vpuzzle.html
 
 ⚙️from_now 2026-01-03 Add anime +3
-⚙️link BLOG https://nadoproject3rd.blogspot.com/2026/01/v-puzzle-girls-update-anime-3.html
+⚙️link Article https://nadoproject3rd.blogspot.com/2026/01/v-puzzle-girls-update-anime-3.html
 
 ## RELATED LINKS
 

@@ -9,7 +9,7 @@
 ## UPDATE
 
 ⚙️from_now 2026-01-08 v44 Update
-⚙️link BLOG https://nadoproject3rd.blogspot.com/2026/01/jewelmastergirl-v44-released-jmg.html
+⚙️link Article https://nadoproject3rd.blogspot.com/2026/01/jewelmastergirl-v44-released-jmg.html
 
 ## RELATED LINKS
 
