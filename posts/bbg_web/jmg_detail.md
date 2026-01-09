@@ -6,6 +6,11 @@
 
 ⚙️img_btn /images/icon_play_store.png https://play.google.com/store/apps/details?id=com.nadoproject.jewel_master_girl tw_play_button
 
+## UPDATE
+
+⚙️from_now 2026-01-08 v44 Update
+⚙️link BLOG https://nadoproject3rd.blogspot.com/2026/01/jewelmastergirl-v44-released-jmg.html
+
 ## RELATED LINKS
 
-BLOG - [🔗LINK](https://nadoproject3rd.blogspot.com/search/label/JMG)
+⚙️link BLOG (Jwewl Master Girl) https://nadoproject3rd.blogspot.com/search/label/JMG
