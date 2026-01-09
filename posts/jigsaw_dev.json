@@ -1,5 +1,5 @@
 {
-  "date": "2026-01-04 14:41:33",
+  "date": "2026-01-09 19:35:33",
   "release_version": 13,
   "update_url": "https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl",
   "category_list": [
@@ -9,6 +9,7 @@
   "stage_list": [
     {
       "id": 0,
+      "name": "ingame_0",
       "display_name": "DEVIL GIRL",
       "speed": 1,
       "cat": "anime",
@@ -51,11 +52,11 @@
           "px": 6,
           "py": 7
         }
-      ],
-      "name": "ingame_0"
+      ]
     },
     {
       "id": 1,
+      "name": "ingame_1",
       "display_name": "WHITE CAP",
       "speed": 1,
       "cat": "anime",
@@ -98,11 +99,11 @@
           "px": 6,
           "py": 7
         }
-      ],
-      "name": "ingame_1"
+      ]
     },
     {
       "id": 2,
+      "name": "ingame_2",
       "display_name": "WHITE CAP #2",
       "speed": 1,
       "cat": "anime",
@@ -145,11 +146,11 @@
           "px": 6,
           "py": 7
         }
-      ],
-      "name": "ingame_2"
+      ]
     },
     {
       "id": 3,
+      "name": "ingame_3",
       "display_name": "GIRL #3",
       "speed": 1,
       "cat": "anime",
@@ -192,11 +193,11 @@
           "px": 6,
           "py": 7
         }
-      ],
-      "name": "ingame_3"
+      ]
     },
     {
       "id": 4,
+      "name": "ingame_4",
       "display_name": "Vanilla",
       "speed": 1,
       "cat": "anime",
@@ -239,11 +240,11 @@
           "px": 6,
           "py": 7
         }
-      ],
-      "name": "ingame_4"
+      ]
     },
     {
       "id": 5,
+      "name": "ingame_5",
       "display_name": "GIRL #5",
       "speed": 1,
       "cat": "realistic",
@@ -286,11 +287,11 @@
           "px": 6,
           "py": 7
         }
-      ],
-      "name": "ingame_5"
+      ]
     },
     {
       "id": 6,
+      "name": "ingame_6",
       "display_name": "GIRL #6",
       "speed": 1,
       "cat": "realistic",
@@ -333,12 +334,12 @@
           "px": 6,
           "py": 7
         }
-      ],
-      "name": "ingame_6"
+      ]
     },
     {
       "id": 7,
-      "display_name": "JEWEL GIRL #2",
+      "name": "ingame_7",
+      "display_name": "JEWEL GIRL #0",
       "speed": 1,
       "cat": "anime",
       "creator": "Jewel Master Girl",
@@ -382,11 +383,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_7",
-      "name": "ingame_7",
       "download_md5": "30f987fb84dad01576fc015908986713"
     },
     {
       "id": 8,
+      "name": "ingame_8",
       "display_name": "JEWEL GIRL #1",
       "speed": 1,
       "cat": "anime",
@@ -431,11 +432,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_8",
-      "name": "ingame_8",
       "download_md5": "965aa830efd5f00aabd62fb97a636545"
     },
     {
       "id": 9,
+      "name": "ingame_9",
       "display_name": "SWIMSUIT GIRL",
       "speed": 1,
       "cat": "anime",
@@ -480,11 +481,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_9",
-      "name": "ingame_9",
       "download_md5": "adf4cc631006a7870962c82cda77e327"
     },
     {
       "id": 11,
+      "name": "ingame_11",
       "display_name": "GIRL #11",
       "speed": 1,
       "cat": "realistic",
@@ -529,11 +530,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_11",
-      "name": "ingame_11",
       "download_md5": "fc8b144d16edcf4c569ecd1db3b53c5a"
     },
     {
       "id": 12,
+      "name": "ingame_12",
       "display_name": "GIRL #11-2",
       "speed": 1,
       "cat": "realistic",
@@ -578,11 +579,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_12",
-      "name": "ingame_12",
       "download_md5": "c100e3dea1fa08d88596ec809b6ce107"
     },
     {
       "id": 13,
+      "name": "ingame_13",
       "display_name": "GIRL #13",
       "speed": 1,
       "cat": "realistic",
@@ -627,60 +628,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_13",
-      "name": "ingame_13",
       "download_md5": "e4014c41c629df07eb4dbf0d15b059b4"
     },
     {
       "id": 14,
-      "display_name": "GIRL #14",
-      "speed": 1,
-      "cat": "realistic",
-      "creator": "Nado Project",
-      "creator_link": "https://blockblast-bd3c9.web.app/",
-      "levels": [
-        {
-          "lv": 1,
-          "mt": 0.3,
-          "mb": 0.15,
-          "ml": 0.15,
-          "mr": 0.15,
-          "px": 3,
-          "py": 4
-        },
-        {
-          "lv": 2,
-          "mt": 0.25,
-          "mb": 0.1,
-          "ml": 0.1,
-          "mr": 0.1,
-          "px": 4,
-          "py": 5
-        },
-        {
-          "lv": 3,
-          "mt": 0.2,
-          "mb": 0.05,
-          "ml": 0.05,
-          "mr": 0.05,
-          "px": 5,
-          "py": 6
-        },
-        {
-          "lv": 4,
-          "mt": 0.15,
-          "mb": 0,
-          "ml": 0,
-          "mr": 0,
-          "px": 6,
-          "py": 7
-        }
-      ],
-      "download_url": "https://thisisone.github.io/jsmg/ingame_14",
       "name": "ingame_14",
-      "download_md5": "b776087e38add33346c03b20bb698fa4"
-    },
-    {
-      "id": 15,
       "display_name": "GIRL #14-2",
       "speed": 1,
       "cat": "realistic",
@@ -724,12 +676,61 @@
           "py": 7
         }
       ],
-      "download_url": "https://thisisone.github.io/jsmg/ingame_15",
+      "download_url": "https://thisisone.github.io/jsmg/ingame_14",
+      "download_md5": "b776087e38add33346c03b20bb698fa4"
+    },
+    {
+      "id": 15,
       "name": "ingame_15",
+      "display_name": "GIRL #15",
+      "speed": 1,
+      "cat": "realistic",
+      "creator": "Nado Project",
+      "creator_link": "https://blockblast-bd3c9.web.app/",
+      "levels": [
+        {
+          "lv": 1,
+          "mt": 0.3,
+          "mb": 0.15,
+          "ml": 0.15,
+          "mr": 0.15,
+          "px": 3,
+          "py": 4
+        },
+        {
+          "lv": 2,
+          "mt": 0.25,
+          "mb": 0.1,
+          "ml": 0.1,
+          "mr": 0.1,
+          "px": 4,
+          "py": 5
+        },
+        {
+          "lv": 3,
+          "mt": 0.2,
+          "mb": 0.05,
+          "ml": 0.05,
+          "mr": 0.05,
+          "px": 5,
+          "py": 6
+        },
+        {
+          "lv": 4,
+          "mt": 0.15,
+          "mb": 0,
+          "ml": 0,
+          "mr": 0,
+          "px": 6,
+          "py": 7
+        }
+      ],
+      "download_url": "https://thisisone.github.io/jsmg/ingame_15",
       "download_md5": "74de46371472587456dba6a6e51a8f15"
     },
     {
       "id": 16,
+      "name": "ingame_16",
       "display_name": "GIRL #16",
       "speed": 1,
       "cat": "realistic",
@@ -774,11 +775,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_16",
-      "name": "ingame_16",
       "download_md5": "8122d666ca36076e94296a02a63ae9ac"
     },
     {
       "id": 18,
+      "name": "ingame_18",
       "display_name": "GIRL #18",
       "speed": 1,
       "cat": "realistic",
@@ -823,11 +824,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_18",
-      "name": "ingame_18",
       "download_md5": "90968064fe0078fb5139e68208dcf79a"
     },
     {
       "id": 19,
+      "name": "ingame_19",
       "display_name": "GIRL #19",
       "speed": 1,
       "cat": "realistic",
@@ -872,60 +873,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_19",
-      "name": "ingame_19",
       "download_md5": "18c637845e3f539ea920f769665b87d0"
     },
     {
-      "id": 20,
-      "display_name": "GIRL #20",
-      "speed": 0.75,
-      "cat": "anime",
-      "creator": "Nado Project",
-      "creator_link": "https://blockblast-bd3c9.web.app/",
-      "levels": [
-        {
-          "lv": 1,
-          "mt": 0.3,
-          "mb": 0.15,
-          "ml": 0.15,
-          "mr": 0.15,
-          "px": 3,
-          "py": 4
-        },
-        {
-          "lv": 2,
-          "mt": 0.25,
-          "mb": 0.1,
-          "ml": 0.1,
-          "mr": 0.1,
-          "px": 4,
-          "py": 5
-        },
-        {
-          "lv": 3,
-          "mt": 0.2,
-          "mb": 0.05,
-          "ml": 0.05,
-          "mr": 0.05,
-          "px": 5,
-          "py": 6
-        },
-        {
-          "lv": 4,
-          "mt": 0.15,
-          "mb": 0,
-          "ml": 0,
-          "mr": 0,
-          "px": 6,
-          "py": 7
-        }
-      ],
-      "download_url": "https://thisisone.github.io/jsmg/ingame_20",
-      "name": "ingame_20",
-      "download_md5": "6f0b4fcc089923335e0333bcd6d36ba2"
-    },
-    {
       "id": 21,
+      "name": "ingame_21",
       "display_name": "REDCAP #1",
       "speed": 1,
       "cat": "anime",
@@ -970,11 +922,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_21",
-      "name": "ingame_21",
       "download_md5": "b74e689bae26f2dc82187bd72906268b"
     },
     {
       "id": 22,
+      "name": "ingame_22",
       "display_name": "REDCAP #2",
       "speed": 0.75,
       "cat": "anime",
@@ -1019,11 +971,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_22",
-      "name": "ingame_22",
       "download_md5": "4242de1254039877167b6a0f955ce976"
     },
     {
       "id": 24,
+      "name": "ingame_24",
       "display_name": "GIRL #24",
       "speed": 0.75,
       "cat": "anime",
@@ -1068,60 +1020,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_24",
-      "name": "ingame_24",
       "download_md5": "c5c386fbd01b4d825d3f2ca6b2a79e36"
     },
     {
-      "id": 26,
-      "display_name": "GIRL #26",
-      "speed": 1.25,
-      "cat": "anime",
-      "creator": "Nado Project",
-      "creator_link": "https://blockblast-bd3c9.web.app/",
-      "levels": [
-        {
-          "lv": 1,
-          "mt": 0.3,
-          "mb": 0.15,
-          "ml": 0.15,
-          "mr": 0.15,
-          "px": 3,
-          "py": 4
-        },
-        {
-          "lv": 2,
-          "mt": 0.25,
-          "mb": 0.1,
-          "ml": 0.1,
-          "mr": 0.1,
-          "px": 4,
-          "py": 5
-        },
-        {
-          "lv": 3,
-          "mt": 0.2,
-          "mb": 0.05,
-          "ml": 0.05,
-          "mr": 0.05,
-          "px": 5,
-          "py": 6
-        },
-        {
-          "lv": 4,
-          "mt": 0.15,
-          "mb": 0,
-          "ml": 0,
-          "mr": 0,
-          "px": 6,
-          "py": 7
-        }
-      ],
-      "download_url": "https://thisisone.github.io/jsmg/ingame_26",
-      "name": "ingame_26",
-      "download_md5": "5cc7b81c12d49e90ece63acebe9cbd06"
-    },
-    {
       "id": 27,
+      "name": "ingame_27",
       "display_name": "GIRL #27",
       "speed": 1.25,
       "cat": "anime",
@@ -1166,11 +1069,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_27",
-      "name": "ingame_27",
       "download_md5": "1ceb95a7b5435a4ad3b0a5b135022864"
     },
     {
       "id": 29,
+      "name": "ingame_29",
       "display_name": "GIRL #29",
       "speed": 1.25,
       "cat": "anime",
@@ -1215,11 +1118,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_29",
-      "name": "ingame_29",
       "download_md5": "012fce6c292cb663644a98a372d911ea"
     },
     {
       "id": 30,
+      "name": "ingame_30",
       "display_name": "GIRL #30",
       "speed": 1.25,
       "cat": "anime",
@@ -1264,11 +1167,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_30",
-      "name": "ingame_30",
       "download_md5": "844879b6099ef36ff2a651a289484ffd"
     },
     {
       "id": 33,
+      "name": "ingame_33",
       "display_name": "WHITE CAP #3",
       "speed": 1.25,
       "cat": "anime",
@@ -1313,12 +1216,12 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_33",
-      "name": "ingame_33",
       "download_md5": "d78a5552e9cee32ac56c104f601dc04f"
     },
     {
       "id": 34,
-      "display_name": "WHITE CAP #4",
+      "name": "ingame_34",
+      "display_name": "WHITE CAP #3",
       "speed": 1.25,
       "cat": "anime",
       "creator": "Nado Project",
@@ -1362,11 +1265,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_34",
-      "name": "ingame_34",
       "download_md5": "d7e20d1366f04d2118690b61cb928c2d"
     },
     {
       "id": 35,
+      "name": "ingame_35",
       "display_name": "GIRL #35",
       "speed": 1.25,
       "cat": "anime",
@@ -1411,11 +1314,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_35",
-      "name": "ingame_35",
       "download_md5": "502a9837733116de828ed94975e64020"
     },
     {
       "id": 36,
+      "name": "ingame_36",
       "display_name": "GIRL #36",
       "speed": 1.25,
       "cat": "anime",
@@ -1460,11 +1363,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_36",
-      "name": "ingame_36",
       "download_md5": "d6fd341c4945e5a038e01fd0e3019526"
     },
     {
       "id": 37,
+      "name": "ingame_37",
       "display_name": "GIRL #37",
       "speed": 1.25,
       "cat": "anime",
@@ -1509,11 +1412,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_37",
-      "name": "ingame_37",
       "download_md5": "bd5b7573f66135a61ddb551ef423d592"
     },
     {
       "id": 38,
+      "name": "ingame_38",
       "display_name": "GIRL #38",
       "speed": 1.25,
       "cat": "anime",
@@ -1558,11 +1461,11 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_38",
-      "name": "ingame_38",
       "download_md5": "6b8e4e2df733a467db3cee15ff1faf02"
     },
     {
       "id": 39,
+      "name": "ingame_39",
       "display_name": "GIRL #39",
       "speed": 1,
       "cat": "anime",
@@ -1607,57 +1510,7 @@
         }
       ],
       "download_url": "https://thisisone.github.io/jsmg/ingame_39",
-      "name": "ingame_39",
       "download_md5": "71ad750d83c1a4f0f027767b543b655e"
-    },
-    {
-      "id": 40,
-      "display_name": "GIRL #40",
-      "speed": 1.25,
-      "cat": "anime",
-      "creator": "Nado Project",
-      "creator_link": "https://blockblast-bd3c9.web.app/",
-      "levels": [
-        {
-          "lv": 1,
-          "mt": 0.3,
-          "mb": 0.15,
-          "ml": 0.15,
-          "mr": 0.15,
-          "px": 3,
-          "py": 4
-        },
-        {
-          "lv": 2,
-          "mt": 0.25,
-          "mb": 0.1,
-          "ml": 0.1,
-          "mr": 0.1,
-          "px": 4,
-          "py": 5
-        },
-        {
-          "lv": 3,
-          "mt": 0.2,
-          "mb": 0.05,
-          "ml": 0.05,
-          "mr": 0.05,
-          "px": 5,
-          "py": 6
-        },
-        {
-          "lv": 4,
-          "mt": 0.15,
-          "mb": 0,
-          "ml": 0,
-          "mr": 0,
-          "px": 6,
-          "py": 7
-        }
-      ],
-      "download_url": "https://thisisone.github.io/jsmg/ingame_40",
-      "name": "ingame_40",
-      "download_md5": "f852a94263fadc1d291a06d507a7723d"
     }
   ]
 }
