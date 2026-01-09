@@ -1,5 +1,5 @@
 {
-  "date": "2026-01-09 20:37:32",
+  "date": "2026-01-10 02:26:00",
   "release_version": 13,
   "update_url": "https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl",
   "category_list": [
@@ -1758,9 +1758,9 @@
       "download_md5": "e9d0b4e3627d358c572cdde9f9731b90"
     },
     {
-      "id": 45,
-      "name": "ingame_45",
-      "display_name": "GIRL #45",
+      "id": 47,
+      "name": "ingame_47",
+      "display_name": "GIRL #47",
       "speed": 1,
       "cat": "anime",
       "creator": "Nado Project",
@@ -1803,57 +1803,8 @@
           "py": 7
         }
       ],
-      "download_url": "https://thisisone.github.io/jsmg/ingame_45",
-      "download_md5": "0456c75f1a11c796574e6b76a7af48d9"
-    },
-    {
-      "id": 46,
-      "name": "ingame_46",
-      "display_name": "GIRL #46",
-      "speed": 1,
-      "cat": "anime",
-      "creator": "Nado Project",
-      "creator_link": "https://blockblast-bd3c9.web.app/",
-      "levels": [
-        {
-          "lv": 1,
-          "mt": 0.3,
-          "mb": 0.15,
-          "ml": 0.15,
-          "mr": 0.15,
-          "px": 3,
-          "py": 4
-        },
-        {
-          "lv": 2,
-          "mt": 0.25,
-          "mb": 0.1,
-          "ml": 0.1,
-          "mr": 0.1,
-          "px": 4,
-          "py": 5
-        },
-        {
-          "lv": 3,
-          "mt": 0.2,
-          "mb": 0.05,
-          "ml": 0.05,
-          "mr": 0.05,
-          "px": 5,
-          "py": 6
-        },
-        {
-          "lv": 4,
-          "mt": 0.15,
-          "mb": 0,
-          "ml": 0,
-          "mr": 0,
-          "px": 6,
-          "py": 7
-        }
-      ],
-      "download_url": "https://thisisone.github.io/jsmg/ingame_46",
-      "download_md5": "0f15e597572633d268066d4a39814849"
+      "download_url": "https://thisisone.github.io/jsmg/ingame_47",
+      "download_md5": "7cdcf2ab0b5ffd428bfbf507ff9b45f4"
     }
   ]
 }
