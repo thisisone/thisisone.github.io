@@ -6,8 +6,9 @@
 
 ⚙️from_now 2026-01-10 v22
 
-1. We have implemented a ranking table using Google Play Games.
-2. Send game logs using Unity analytics.
+We have implemented a ranking table using Google Play Games.
+
+Send game logs using Unity analytics.
 
 - PLAYER EXP
 - PLAY MODE

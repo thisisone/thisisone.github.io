@@ -6,8 +6,9 @@
 
 ⚙️from_now 2026-01-10 v22
 
-1. Google Play Games 를 사용하여 순위표를 구현했습니다.
-2. Unity Analytics 를 사용하여 게임로그를 전송합니다.
+Google Play Games 를 사용하여 순위표를 구현했습니다.
+
+Unity Analytics 를 사용하여 게임로그를 전송합니다.
 
 - PLAYER EXP
 - PLAY MODE
