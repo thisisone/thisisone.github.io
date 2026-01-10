@@ -21,16 +21,13 @@ numbers earns you points.
 
 ⚙️img_btn /images/icon_unity_play.png https://play.unity.com/en/games/fb8df491-0bdd-417e-88b8-af692eb40f42/122-easy-v10 w-32
 
-## UPDATE LOG
+## UPDATE
 
 ⚙️from_now 2026-01-01 v20
-
-- Replace UI
-- Add Game Mode
-- Add Player EXP
+⚙️link Article https://addforce1.blogspot.com/2026/01/122-easy-v22-add-leader-board.html
 
 ## RELATED LINKS🔗
 
-👉 [🔗PRIVACY POLICY](/eb/policy)
+⚙️link PRIVACY POLICY /eb/policy
 
-👉 [🔗BLOG](https://addforce1.blogspot.com/search/label/122Easy)
+⚙️link BLOG https://addforce1.blogspot.com/search/label/122Easy
