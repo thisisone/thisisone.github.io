@@ -1,0 +1,17 @@
+{
+  "name": "mytest #1",
+  "description": "mytest #1 desc",
+  "image": "https://arweave.net/iilWqlf0vxCBlInL2mD1vM0r7Jyuv0rRMJoZKJrwxhQ/0.png",
+  "edition": 1,
+  "date": 1678874410897,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Purple"
+    },
+    {
+      "trait_type": "Theme",
+      "value": "Light"
+    }
+  ]
+}
