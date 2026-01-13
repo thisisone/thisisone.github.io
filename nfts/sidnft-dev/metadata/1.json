@@ -1,0 +1,25 @@
+{
+  "name": "#1 - copy",
+  "description": "#1 nft, detail page: https://apps.sidnft.com/nft-dev/detail/1",
+  "image": "https://thisisone.github.io/nfts/mytest/1.png",
+  "edition": 1,
+  "date": 1678874410897,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "bg-0"
+    },
+    {
+      "trait_type": "Pot",
+      "value": "pot-1"
+    },
+    {
+      "trait_type": "Dak",
+      "value": "dak-1"
+    },
+    {
+      "trait_type": "DetailUrl",
+      "value": "https://apps.sidnft.com/nft-dev/detail/1"
+    }
+  ]
+}
