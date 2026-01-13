@@ -7,3 +7,5 @@
 ## RELATED LINKS
 
 BLOG - [🔗LINK](https://nadoproject3rd.blogspot.com/search/label/BlockBlastGirls)
+
+PRIVACY POLICY - [🔗LINK](/bbg_policy)
