@@ -14,3 +14,5 @@
 ## RELATED LINKS
 
 ⚙️link BLOG https://nadoproject3rd.blogspot.com/search/label/JMG
+
+⚙️link PRIVATE POLICY /jmg_policy

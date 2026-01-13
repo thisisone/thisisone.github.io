@@ -22,3 +22,5 @@
 ## RELATED LINKS
 
 ⚙️link BLOG https://nadoproject3rd.blogspot.com/search/label/VPUZZLE
+
+⚙️link PRIVATE POLICY /jsmg_policy
