@@ -2,12 +2,9 @@
   "date": "2026-01-15 17:54:55",
   "release_version": 13,
   "use_internal_ad": false,
-  "admob_min_interval": 150,
+  "admob_min_interval": 60,
   "update_url": "https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl",
-  "category_list": [
-    "anime",
-    "realistic"
-  ],
+  "category_list": ["anime", "realistic"],
   "stage_list": [
     {
       "id": 0,
