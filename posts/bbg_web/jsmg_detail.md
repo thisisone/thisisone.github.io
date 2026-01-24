@@ -4,11 +4,14 @@
 
 ⚙️img /jsmg/app_icon_2.jpg tw_app_icon_64
 
-⚙️youtube https://www.youtube.com/embed/Fyy1g-I8jZM
+⚙️youtube https://www.youtube.com/embed/lP2Hk8M-9X4
 
 ⚙️img_btn /images/icon_play_store.png https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl tw_play_button
 
 ## UPDATE
+
+⚙️from_now 2026-01-24 v28 Released / Fixed AD Problem
+⚙️link Article https://nadoproject3rd.blogspot.com/2026/01/v-puzzle-girls-v4-working.html
 
 ⚙️from_now 2026-01-09 Add anime +5
 ⚙️link Article https://nadoproject3rd.blogspot.com/2026/01/v-puzzle-girls-add-anime-5-vpuzzle.html
