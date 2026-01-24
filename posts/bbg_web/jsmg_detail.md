@@ -2,7 +2,7 @@
 
 # V Puzzle Girls
 
-⚙️img /jsmg/app_icon_3.jpg tw_app_icon_64
+⚙️img /jsmg/app_icon_2.jpg tw_app_icon_64
 
 ⚙️youtube https://www.youtube.com/embed/Fyy1g-I8jZM
 
