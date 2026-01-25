@@ -1,29 +1,20 @@
-⚙️comment here is https://thisisone.github.io/posts/bbg_web/jsmg_detail.md
+⚙️comment here is https://thisisone.github.io/posts/bbg_web/jag_detail.md
 
 # V Puzzle Girls
 
-⚙️img /jsmg/app_icon_2.jpg tw_app_icon_64
+⚙️img /jag/app_icon_2.jpg tw_app_icon_64
 
-⚙️youtube https://www.youtube.com/embed/lP2Hk8M-9X4
+⚙️comment youtube https://www.youtube.com/embed/lP2Hk8M-9X4
 
-⚙️img_btn /images/icon_play_store.png https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl tw_play_button
+⚙️comment img_btn /images/icon_play_store.png https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl tw_play_button
 
 ## UPDATE
 
-⚙️from_now 2026-01-24 v28 Released / Fixed AD Problem
-⚙️link Article https://nadoproject3rd.blogspot.com/2026/01/v-puzzle-girls-v4-working.html
-
-⚙️from_now 2026-01-09 Add anime +5
-⚙️link Article https://nadoproject3rd.blogspot.com/2026/01/v-puzzle-girls-add-anime-5-vpuzzle.html
-
-⚙️from_now 2026-01-04 Add anime +12
-⚙️link Article https://nadoproject3rd.blogspot.com/2026/01/video-blending-demo-vpuzzle.html
-
-⚙️from_now 2026-01-03 Add anime +3
-⚙️link Article https://nadoproject3rd.blogspot.com/2026/01/v-puzzle-girls-update-anime-3.html
+⚙️from_now 2026-01-22 Started
+⚙️link Article https://nadoproject3rd.blogspot.com/2026/01/jigsawanimegirl-project-started.html
 
 ## RELATED LINKS
 
-⚙️link BLOG https://nadoproject3rd.blogspot.com/search/label/VPUZZLE
+⚙️link BLOG https://nadoproject3rd.blogspot.com/search/label/JigsawAnimeGirl
 
-⚙️link PRIVATE POLICY /jsmg_policy
+⚙️link PRIVATE POLICY /ja_policy

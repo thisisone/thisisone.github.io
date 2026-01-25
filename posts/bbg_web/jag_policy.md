@@ -1,6 +1,8 @@
-# V Puzzle Girls
+⚙️comment here is https://thisisone.github.io/posts/bbg_web/jag_policy.md
 
-⚙️img /jsmg/app_icon_2.jpg tw_app_icon_64
+# Jigsaw Anime Girl
+
+⚙️img /jag/app_icon_2.jpg tw_app_icon_64
 
 ## PRIVACY POLICY
 
