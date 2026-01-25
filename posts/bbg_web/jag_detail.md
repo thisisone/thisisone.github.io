@@ -1,6 +1,6 @@
 ⚙️comment here is https://thisisone.github.io/posts/bbg_web/jag_detail.md
 
-# V Puzzle Girls
+# Jigsaw Anime Girl
 
 ⚙️img /jag/app_icon_2.jpg tw_app_icon_64
 
@@ -17,4 +17,4 @@
 
 ⚙️link BLOG https://nadoproject3rd.blogspot.com/search/label/JigsawAnimeGirl
 
-⚙️link PRIVATE POLICY /ja_policy
+⚙️link PRIVATE POLICY /jag_policy
