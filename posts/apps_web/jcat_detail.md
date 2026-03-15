@@ -1,18 +1,20 @@
 ⚙️comment https://thisisone.github.io/posts/apps_web/jcat_detail.md
 
-# JCAT
+# jigsaw puzzles - brain games
 
 ⚙️comment img /eb/easy_1_icon_v2.png tw_app_icon_64
 
-detail desc
+Put the puzzle together with the video and the image
+
+Not only cats, but also various topics are prepared.
 
 ## PLAY VIDEO
 
-⚙️youtube https://www.youtube.com/embed/eQlHm0e3JrI
+⚙️youtube https://www.youtube.com/embed/Q-ohM6d2WlA
 
 ## Android
 
-⚙️img_btn /images/icon_play_store.png https://play.google.com/store/apps/details?id=com.sidnft.easy_block_game w-32
+⚙️img_btn /images/icon_play_store.png https://play.google.com/store/apps/details?id=com.sidnft.jigcat w-32
 
 ⚙️comment img_btn /images/icon_onestore.png https://m.onestore.net/en-sg/apps/appsDetail?prodId=0001002923 w-32
 
@@ -22,7 +24,10 @@ detail desc
 
 ## UPDATE
 
-⚙️from_now 2026-01-31 v1 ~ v10
+⚙️from_now 2026-03-15 v24
+⚙️link Article https://addforce1.blogspot.com/2026/03/jcat-release-ready-v24.html
+
+⚙️from_now 2026-03-15 v1 ~ 10
 ⚙️link Article https://addforce1.blogspot.com/2026/01/jcat-project-started.html
 
 ## RELATED LINKS🔗
