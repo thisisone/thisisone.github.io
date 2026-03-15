@@ -2,7 +2,7 @@
 
 # jigsaw puzzles - brain games
 
-⚙️comment img /eb/easy_1_icon_v2.png tw_app_icon_64
+⚙️img /jcat/app_icon_512.webp tw_app_icon_64
 
 Put the puzzle together with the video and the image
 
