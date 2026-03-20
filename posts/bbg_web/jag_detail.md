@@ -6,9 +6,12 @@
 
 ⚙️comment youtube https://www.youtube.com/embed/lP2Hk8M-9X4
 
-⚙️comment img_btn /images/icon_play_store.png https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl tw_play_button
+⚙️img_btn /images/icon_play_store.png https://play.google.com/store/apps/details?id=com.nadoproject.jagirl tw_play_button
 
 ## UPDATE
+
+⚙️from_now 2026-03-20 Game Release
+⚙️link Article https://nadoproject3rd.blogspot.com/2026/03/jigsaw-anime-girl-released.html
 
 ⚙️from_now 2026-01-22 Started
 ⚙️link Article https://nadoproject3rd.blogspot.com/2026/01/jigsawanimegirl-project-started.html
