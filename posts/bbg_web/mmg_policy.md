@@ -1,29 +1,14 @@
-⚙️comment here is https://thisisone.github.io/posts/bbg_web/jsmg_detail.md
-
 # MMG
 
 ⚙️img /jsmg/app_icon_2.jpg tw_app_icon_64
 
-⚙️youtube https://www.youtube.com/embed/lP2Hk8M-9X4
+## PRIVACY POLICY
 
-⚙️img_btn /images/icon_play_store.png https://play.google.com/store/apps/details?id=com.nadoproject.jigsaw_master_girl tw_play_button
+Modules applied to this app
 
-## UPDATE
+- Admob
+- Unity Analytics
 
-⚙️from_now 2026-01-24 v28 Released / Fixed AD Problem
-⚙️link Article https://nadoproject3rd.blogspot.com/2026/01/v-puzzle-girls-v4-working.html
+The app sends, analyzes, and reflects gameplay data in updates.
 
-⚙️from_now 2026-01-09 Add anime +5
-⚙️link Article https://nadoproject3rd.blogspot.com/2026/01/v-puzzle-girls-add-anime-5-vpuzzle.html
-
-⚙️from_now 2026-01-04 Add anime +12
-⚙️link Article https://nadoproject3rd.blogspot.com/2026/01/video-blending-demo-vpuzzle.html
-
-⚙️from_now 2026-01-03 Add anime +3
-⚙️link Article https://nadoproject3rd.blogspot.com/2026/01/v-puzzle-girls-update-anime-3.html
-
-## RELATED LINKS
-
-⚙️link BLOG https://nadoproject3rd.blogspot.com/search/label/VPUZZLE
-
-⚙️link PRIVATE POLICY /jsmg_policy
+The transfer of gameplay data is interrupted when the "Play Data Send" in the setting is turned off.
