@@ -1,6 +1,9 @@
-# MMG
+⚙️comment src\posts\bbg_web\mmg_policy.md
+⚙️comment here is https://thisisone.github.io/posts/bbg_web/mmg_policy.md
 
-⚙️img /jsmg/app_icon_2.jpg tw_app_icon_64
+# Match3 Master Girl
+
+⚙️img /mmg/app_icon.webp tw_app_icon_64
 
 ## PRIVACY POLICY
 
