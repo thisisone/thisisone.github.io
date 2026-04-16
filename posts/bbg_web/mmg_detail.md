@@ -5,7 +5,7 @@
 
 ⚙️img /mmg/app_icon.webp tw_app_icon_64
 
-⚙️img mmg_loop_quad_gif.webp tw_app_icon_64
+⚙️img /mmg/mmg_loop_quad_gif.webp tw_app_icon_64
 
 ⚙️comment ⚙️youtube https://www.youtube.com/embed/lP2Hk8M-9X4
 
