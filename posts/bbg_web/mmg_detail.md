@@ -1,6 +1,6 @@
 # MMG
 
-⚙️img /jsmg/app_icon_2.jpg tw_app_icon_64
+⚙️img /mmg/app_icon.webp tw_app_icon_64
 
 ## PRIVACY POLICY
 
