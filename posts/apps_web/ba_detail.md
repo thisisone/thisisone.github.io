@@ -1,6 +1,6 @@
 # Tab to Dismantle
 
-⚙️img /ba/app_icon.png tw_app_icon_64
+⚙️img /ba/ba_16_gif.webp tw_app_icon_64
 
 Tap the squares to increase the numbers. Matching a row of identical
 numbers earns you points.
