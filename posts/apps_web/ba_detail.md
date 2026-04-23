@@ -7,7 +7,7 @@ numbers earns you points.
 
 ## PLAY VIDEO
 
-⚙️youtube https://www.youtube.com/embed/_EVuM-JzcMw
+⚙️youtube https://www.youtube.com/shorts/xSO717ii3PU
 
 ## Android
 
@@ -16,6 +16,14 @@ numbers earns you points.
 ### iOS & PC
 
 ⚙️img_btn /images/icon_unity_play.png https://play.unity.com/en/games/77df60bd-c725-4198-88d5-8e63c80348c9/tab-to-dismantle-v6 w-32
+
+## UPDATE
+
+⚙️from_now 2026-04-22 v16
+
+- change unity 6.3
+- add effect
+- add timer
 
 ## RELATED LINKS🔗
 
