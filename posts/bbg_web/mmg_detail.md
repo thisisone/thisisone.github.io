@@ -13,6 +13,9 @@
 
 ## UPDATE
 
+⚙️from_now 2026-04-22 Released v26
+⚙️link Article https://nadoproject3rd.blogspot.com/2026/04/match3-master-girl-v26-first-released.html
+
 ⚙️from_now 2026-02-10 Started
 ⚙️link Article https://nadoproject3rd.blogspot.com/2026/02/3-match-game-started.html
 
