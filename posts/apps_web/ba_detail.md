@@ -19,6 +19,11 @@ numbers earns you points.
 
 ## UPDATE
 
+⚙️from_now 2026-05-04 v18
+
+- Add Failure Directions / Move + U-turn
+- Mitigate score difference in case of failure
+
 ⚙️from_now 2026-04-22 v16
 
 - change unity 6.3
