@@ -7,7 +7,7 @@ numbers earns you points.
 
 ## PLAY VIDEO
 
-⚙️youtube https://www.youtube.com/shorts/xSO717ii3PU
+⚙️youtube https://www.youtube.com/watch?v=4AerTkM7Dmk
 
 ## Android
 
@@ -30,8 +30,8 @@ numbers earns you points.
 - add effect
 - add timer
 
-## RELATED LINKS🔗
+## RELATED LINKS
 
-👉 [🔗PRIVACY POLIC](/ba/policy)
+👉 PRIVACY POLICY - [LINK](/ba/policy)
 
-👉 [🔗BLOG](https://addforce1.blogspot.com/search/label/BA)
+👉 BLOG - [LINK](https://addforce1.blogspot.com/search/label/BA)
