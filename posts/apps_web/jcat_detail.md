@@ -26,10 +26,10 @@ Not only cats, but also various topics are prepared.
 ## UPDATE
 
 ⚙️from_now 2026-06-07 v45
-⚙️link Article https://addforce1.blogspot.com/2026/04/jcat-update-v30-working.html
+⚙️link Article https://addforce1.blogspot.com/2026/06/jcat-v44-update-released.html
 
 ⚙️from_now 2026-04-07 v30
-⚙️link Articlehttps://addforce1.blogspot.com/2026/06/jcat-v44-update-released.html
+⚙️link Article https://addforce1.blogspot.com/2026/04/jcat-update-v30-working.html
 
 ⚙️from_now 2026-03-15 v24
 ⚙️link Article https://addforce1.blogspot.com/2026/03/jcat-release-ready-v24.html
